@@ -9,7 +9,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 # -- CONFIG --
-RECIPIENTS   = ["ir2511@columbia.edu"]
+RECIPIENTS = ["ir2511@columbia.edu", "katie.brehm@lvmh.com"]
 SENDER_EMAIL = "onboarding@resend.dev"
 SENDER_NAME  = "Premiere Intelligence"
 
