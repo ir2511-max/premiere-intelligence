@@ -4,7 +4,9 @@ Première Intelligence - Daily Email Briefing
 Runs every weekday at 7:30 AM ET via GitHub Actions.
 """
 
-import os, json, anthropic, httpx, re
+import os, json, anthropic, httpx, re, hashlib, smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -123,22 +125,21 @@ def build_email(data):
 </html>"""
 
 # -- SEND EMAIL --
-def send_email(subject, html):
-    response = httpx.post(
-        "https://api.resend.com/emails",
-        headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "from": f"{SENDER_NAME} <{SENDER_EMAIL}>",
-            "to": RECIPIENTS,
-            "subject": subject,
-            "html": html,
-        },
-        timeout=30,
-    )
-    response.raise_for_status()
-    print(f"Email sent to {RECIPIENTS}")
-    return response.json()
+def send_email(subject, html, recipient):
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From'] = f"Premiere Intelligence <{os.environ['GMAIL_ADDRESS']}>"
+    msg['To'] = recipient
+    msg.attach(MIMEText(html, 'html'))
 
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+        server.login(
+            os.environ['GMAIL_ADDRESS'],
+            os.environ['GMAIL_APP_PASSWORD']
+        )
+        server.sendmail(os.environ['GMAIL_ADDRESS'], recipient, msg.as_string())
+    print(f"Email sent to {recipient}")
+  
 # -- MAIN --
 def main():
     et = ZoneInfo("America/New_York")
