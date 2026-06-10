@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 # -- CONFIG --
 RECIPIENTS = ["ir2511@columbia.edu", "katie.brehm@lvmh.com"]
 SENDER_EMAIL = "onboarding@resend.dev"
-SENDER_NAME  = "Premiere Intelligence"
+SENDER_NAME  = "Première Intelligence"
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 RESEND_API_KEY    = os.environ["RESEND_API_KEY"]
