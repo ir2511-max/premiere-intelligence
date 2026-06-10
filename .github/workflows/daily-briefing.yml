@@ -17,3 +17,9 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install anthropic httpx
+      - name: Send briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python send_briefing.py
