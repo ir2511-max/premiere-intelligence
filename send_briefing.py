@@ -33,6 +33,8 @@ CRITICAL RULES:
 3. Write in a sharp, confident editorial voice - no fluff, no hedging.
 4. Score each story 1-5 for relevance to a luxury media executive.
 5. Assign each story one category from: MAISONS & BRANDS, CREATIVE & CAMPAIGNS, POLICY & RISK, COMMERCE & RETAIL, DATA & PERFORMANCE, MEDIA & PLATFORMS.
+6. NEVER include stories older than 48 hours. If you cannot confirm a story is from the last 48 hours, omit it.
+7. NEVER repeat stories that have appeared in previous briefings. If a story is a follow-up or update to older news, only include it if there is a genuinely NEW development today.
 
 Return ONLY valid JSON, no markdown, no preamble:
 {
@@ -61,7 +63,7 @@ def fetch_briefing(today_str):
         system=SYSTEM_PROMPT,
         messages=[{
             "role": "user",
-            "content": f"Today is {today_str}. Search for the most important real news stories from the last 24-48 hours at the intersection of AI, luxury, media, and technology. Return only verified, linkable stories in the JSON format specified."
+            "content": f"Today is {today_str}. Search for the most important real news stories published TODAY or yesterday only. Do not include anything older than 48 hours. Each story must have a publication date you can confirm."
         }]
     )
     text = "".join(b.text for b in response.content if b.type == "text")
