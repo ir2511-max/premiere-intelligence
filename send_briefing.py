@@ -91,7 +91,7 @@ def build_email(data):
           <div style="margin-bottom:8px;">
             <span style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;">{s["category"]}</span>
           </div>
-          <h2 style="font-family:Georgia,serif;font-size:20px;font-weight:600;line-height:1.2;margin:0 0 10px;color:#1a1a18;">{s["headline"]}</h2>
+          <h2 style="font-family:Georgia,serif;font-size:16px;font-weight:600;line-height:1.2;margin:0 0 10px;color:#1a1a18;">{s["headline"]}</h2>
           <p style="font-size:13px;line-height:1.7;color:#3a3830;margin:0 0 12px;">{s["summary"]}</p>
           <span style="font-size:10px;letter-spacing:0.08em;color:#9a9088;margin-right:12px;">{source_line}</span>
           {read_link}
@@ -101,18 +101,18 @@ def build_email(data):
 <html lang="en">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#f0ebe0;font-family:'Helvetica Neue',Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0ebe0;padding:40px 20px;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f0ebe0;padding:40px 16px;">
     <tr><td align="center">
       <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
         <tr><td style="padding-bottom:6px;">
           <p style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6560;margin:0;">{data["date"]}</p>
         </td></tr>
-        <tr><td style="border-bottom:2px solid #1a1a18;padding-bottom:16px;">
-          <h1 style="font-family:Georgia,serif;font-size:16px;font-weight:600;line-height:1.2;margin:0;color:#1a1a18;">PREMIÈRE INTELLIGENCE</h1>
+        <tr><td style="border-bottom:2px solid #1a1a18;padding-bottom:20px;">
+          <h1 style="font-family:Georgia,serif;font-size:20px;font-weight:600;line-height:1.2;margin:0;color:#1a1a18;">PREMIÈRE INTELLIGENCE</h1>
           <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;margin:8px 0 0;">The luxury-tech briefing</p>
         </td></tr>
         <tr><td style="border-bottom:1px solid #c8c2b4;padding:20px 0;">
-          <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1a18;margin:0;">{data.get("lede", "")}</p>
+          <p style="font-family:Georgia,serif;font-style:italic;font-size:20px;line-height:1.6;color:#1a1a18;margin:0;">{data.get("lede", "")}</p>
         </td></tr>
         {stories_html}
         <tr><td style="padding-top:32px;text-align:center;">
