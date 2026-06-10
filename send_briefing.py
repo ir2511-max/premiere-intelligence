@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
 """
-Première Intelligence - Daily Email Briefing
+Premiere Intelligence - Daily Email Briefing
 Runs every weekday at 7:30 AM ET via GitHub Actions.
 """
 
-import os, json, anthropic, httpx, re, hashlib, smtplib
+import os, json, anthropic, httpx, re, smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 # -- CONFIG --
-RECIPIENTS = ["ir2511@columbia.edu", "katie.brehm@lvmh.com"]
-SENDER_EMAIL = "onboarding@resend.dev"
-SENDER_NAME  = "Première Intelligence"
-
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
-RESEND_API_KEY    = os.environ["RESEND_API_KEY"]
+RECIPIENTS = {
+    "isabella": "ir2511@columbia.edu",
+    "katie":    "katie.brehm@lvmh.com",
+}
+GMAIL_ADDRESS      = os.environ["GMAIL_ADDRESS"]
+GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
+ANTHROPIC_API_KEY  = os.environ["ANTHROPIC_API_KEY"]
 
 # -- PROMPT --
 SYSTEM_PROMPT = """You are the editor of "Premiere Intelligence," a daily luxury-tech intelligence briefing for senior executives at LVMH. Your reader works in Media Data & Performance at a world-class luxury conglomerate.
@@ -44,6 +45,7 @@ Return ONLY valid JSON, no markdown, no preamble:
       "headline": "Story headline here",
       "summary": "3-4 sentence sharp editorial summary.",
       "source": "Publication Name",
+      "date": "D Mon",
       "url": "https://real-article-url.com"
     }
   ]
@@ -52,9 +54,8 @@ Return ONLY valid JSON, no markdown, no preamble:
 # -- FETCH BRIEFING --
 def fetch_briefing(today_str):
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
     response = client.messages.create(
-        model="claude-sonnet-4-5"
+        model="claude-sonnet-4-5",
         max_tokens=3000,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         system=SYSTEM_PROMPT,
@@ -63,7 +64,6 @@ def fetch_briefing(today_str):
             "content": f"Today is {today_str}. Search for the most important real news stories from the last 24-48 hours at the intersection of AI, luxury, media, and technology. Return only verified, linkable stories in the JSON format specified."
         }]
     )
-
     text = "".join(b.text for b in response.content if b.type == "text")
     json_match = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
     if json_match:
@@ -78,20 +78,22 @@ def fetch_briefing(today_str):
 def build_email(data):
     stories_html = ""
     for s in sorted(data["stories"], key=lambda x: -x["score"]):
-        pips = "".join(
-            f'<span style="display:inline-block;width:10px;height:4px;border-radius:1px;background:{"#9a8a6a" if i < s["score"] else "#ddd"};margin-right:2px;"></span>'
-            for i in range(5)
-        )
-        read_link = f'<a href="{s["url"]}" style="font-size:10px;letter-spacing:0.1em;color:#9a8a6a;text-decoration:none;text-transform:uppercase;">Read</a>' if s.get("url","").startswith("http") else ""
+        read_link = (
+            f'<a href="{s["url"]}" style="font-size:10px;letter-spacing:0.1em;'
+            f'color:#9a8a6a;text-decoration:none;text-transform:uppercase;">Read</a>'
+        ) if s.get("url", "").startswith("http") else ""
+
+        article_date = s.get("date", "")
+        source_line = f'{s["source"]}' + (f' &nbsp;·&nbsp; {article_date}' if article_date else "")
 
         stories_html += f"""
         <tr><td style="padding:28px 0;border-bottom:1px solid #d8d0c4;">
           <div style="margin-bottom:8px;">
             <span style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;">{s["category"]}</span>
           </div>
-          <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:600;line-height:1.2;margin:0 0 10px;color:#1a1a18;">{s["headline"]}</h2>
+          <h2 style="font-family:Georgia,serif;font-size:20px;font-weight:600;line-height:1.2;margin:0 0 10px;color:#1a1a18;">{s["headline"]}</h2>
           <p style="font-size:13px;line-height:1.7;color:#3a3830;margin:0 0 12px;">{s["summary"]}</p>
-          <span style="font-size:10px;letter-spacing:0.08em;color:#6b6560;margin-right:16px;">{s["source"]}</span>
+          <span style="font-size:10px;letter-spacing:0.08em;color:#9a9088;margin-right:12px;">{source_line}</span>
           {read_link}
         </td></tr>"""
 
@@ -106,8 +108,8 @@ def build_email(data):
           <p style="font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#6b6560;margin:0;">{data["date"]}</p>
         </td></tr>
         <tr><td style="border-bottom:2px solid #1a1a18;padding-bottom:16px;">
-          <h1 style="font-family:Georgia,serif;font-size:48px;font-weight:600;line-height:0.92;margin:0;color:#1a1a18;">PREMIERE<br>INTELLIGENCE</h1>
-          <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;margin:10px 0 0;">The luxury-tech briefing</p>
+          <h1 style="font-family:Georgia,serif;font-size:16px;font-weight:600;line-height:1.2;margin:0;color:#1a1a18;">PREMIÈRE INTELLIGENCE</h1>
+          <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;margin:8px 0 0;">The luxury-tech briefing</p>
         </td></tr>
         <tr><td style="border-bottom:1px solid #c8c2b4;padding:20px 0;">
           <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1a18;margin:0;">{data["lede"]}</p>
@@ -128,18 +130,15 @@ def build_email(data):
 def send_email(subject, html, recipient):
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subject
-    msg['From'] = f"Premiere Intelligence <{os.environ['GMAIL_ADDRESS']}>"
+    msg['From'] = f"Premiere Intelligence <{GMAIL_ADDRESS}>"
     msg['To'] = recipient
     msg.attach(MIMEText(html, 'html'))
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-        server.login(
-            os.environ['GMAIL_ADDRESS'],
-            os.environ['GMAIL_APP_PASSWORD']
-        )
-        server.sendmail(os.environ['GMAIL_ADDRESS'], recipient, msg.as_string())
+        server.login(GMAIL_ADDRESS, GMAIL_APP_PASSWORD)
+        server.sendmail(GMAIL_ADDRESS, recipient, msg.as_string())
     print(f"Email sent to {recipient}")
-  
+
 # -- MAIN --
 def main():
     et = ZoneInfo("America/New_York")
@@ -153,11 +152,10 @@ def main():
         return
 
     print(f"Found {len(data['stories'])} stories.")
-    html = build_email(data)
     subject = f"Premiere Intelligence - {today_str}"
     for recipient in RECIPIENTS.values():
-    html = build_email(data)
-    send_email(subject, html, recipient)
+        html = build_email(data)
+        send_email(subject, html, recipient)
 
 if __name__ == "__main__":
     main()
