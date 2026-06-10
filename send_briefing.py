@@ -112,7 +112,7 @@ def build_email(data):
           <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6b6560;margin:8px 0 0;">The luxury-tech briefing</p>
         </td></tr>
         <tr><td style="border-bottom:1px solid #c8c2b4;padding:20px 0;">
-          <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1a18;margin:0;">{data.get["lede"]}</p>
+          <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1a18;margin:0;">{data.get("lede", "")}</p>
         </td></tr>
         {stories_html}
         <tr><td style="padding-top:32px;text-align:center;">
