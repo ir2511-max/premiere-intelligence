@@ -54,7 +54,7 @@ def fetch_briefing(today_str):
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-5"
         max_tokens=3000,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         system=SYSTEM_PROMPT,
@@ -155,7 +155,9 @@ def main():
     print(f"Found {len(data['stories'])} stories.")
     html = build_email(data)
     subject = f"Premiere Intelligence - {today_str}"
-    send_email(subject, html)
+    for recipient in RECIPIENTS.values():
+    html = build_email(data)
+    send_email(subject, html, recipient)
 
 if __name__ == "__main__":
     main()
