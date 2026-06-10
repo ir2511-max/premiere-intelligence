@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Premiere Intelligence - Daily Email Briefing
+Première Intelligence - Daily Email Briefing
 Runs every weekday at 7:30 AM ET via GitHub Actions.
 """
 
