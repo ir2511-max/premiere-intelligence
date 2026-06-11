@@ -67,13 +67,17 @@ def fetch_briefing(today_str):
         }]
     )
     text = "".join(b.text for b in response.content if b.type == "text")
+    if not text.strip():
+        raise ValueError("Empty response from Claude")
     json_match = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
     if json_match:
         clean = json_match.group(1).strip()
     else:
         start = text.find("{")
         end = text.rfind("}")
-        clean = text[start:end+1] if start != -1 and end != -1 else text.strip()
+        if start == -1 or end == -1:
+            raise ValueError(f"No JSON found in response: {text[:200]}")
+        clean = text[start:end+1]
     return json.loads(clean)
 
 # -- BUILD EMAIL --
