@@ -22,10 +22,13 @@ ANTHROPIC_API_KEY  = os.environ["ANTHROPIC_API_KEY"]
 # -- PROMPT --
 SYSTEM_PROMPT = """You are the editor of "Premiere Intelligence," a daily luxury-tech intelligence briefing for senior executives at LVMH. Your reader works in Media Data & Performance at a world-class luxury conglomerate.
 
-Your job: surface 5-8 of the most signal-rich stories from TODAY at the intersection of:
+Your job: surface 5-8 of the most signal-rich stories from TODAY across these topics:
 - AI + luxury fashion (LVMH, Kering, Richemont, Hermes, Prada, etc.)
 - AI + media / advertising / performance marketing
 - Media, data & tech shaping the luxury industry
+- Major AI industry news (new models, big product launches, IPOs, partnerships)
+- Big tech moves relevant to media and commerce (Apple, Google, Meta, OpenAI, etc.)
+- Retail and commerce tech that signals where luxury is heading
 
 CRITICAL RULES:
 1. Only include stories you are highly confident are REAL, recent (last 48h), and verifiable. If uncertain, omit.
@@ -56,19 +59,32 @@ Return ONLY valid JSON, no markdown, no preamble:
 # -- FETCH BRIEFING --
 def fetch_briefing(today_str):
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-    response = client.messages.create(
-        model="claude-sonnet-4-5",
-        max_tokens=3000,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": f"Today is {today_str}. Search for the most important real news stories published TODAY or yesterday only. Do not include anything older than 48 hours. Each story must have a publication date you can confirm."
-        }]
-    )
-    text = "".join(b.text for b in response.content if b.type == "text")
-    if not text.strip():
-        raise ValueError("Empty response from Claude")
+    
+    for attempt in range(3):
+        response = client.messages.create(
+            model="claude-sonnet-4-5",
+            max_tokens=3000,
+            tools=[{"type": "web_search_20250305", "name": "web_search"}],
+            system=SYSTEM_PROMPT,
+            messages=[{
+                "role": "user",
+                "content": f"Today is {today_str}. Search for the most important real news stories published TODAY or yesterday only. Do not include anything older than 48 hours. Each story must have a publication date you can confirm. Return ONLY the JSON object, no other text."
+            }]
+        )
+        text = "".join(b.text for b in response.content if b.type == "text")
+        json_match = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
+        if json_match:
+            return json.loads(json_match.group(1).strip())
+        start = text.find("{")
+        end = text.rfind("}")
+        if start != -1 and end != -1:
+            try:
+                return json.loads(text[start:end+1])
+            except:
+                pass
+        print(f"Attempt {attempt+1} failed, retrying...")
+    
+    raise ValueError("Could not get valid JSON after 3 attempts")
     json_match = re.search(r"```json\s*(.*?)\s*```", text, re.DOTALL)
     if json_match:
         clean = json_match.group(1).strip()
