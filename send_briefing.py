@@ -11,7 +11,6 @@ from zoneinfo import ZoneInfo
 # -- CONFIG --
 RECIPIENTS = {
     "isabella": "ir2511@columbia.edu",
-    "katie":    "katie.brehm@lvmh.com",
 }
 SENDER_EMAIL      = "onboarding@resend.dev"
 SENDER_NAME       = "Premiere Intelligence"
