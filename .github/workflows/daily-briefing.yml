@@ -1,9 +1,12 @@
-name: Premiere Intelligence — Daily Briefing
+name: Première Intelligence — Daily Briefing
 
 on:
   schedule:
-    - cron: '30 11 * * 1-5'
-  workflow_dispatch:
+    - cron: '30 11 * * 1-5'   # 11:30 UTC = 7:30 AM ET (change to 30 12 in winter/EST)
+  workflow_dispatch:            # allows manual trigger from GitHub UI
+
+permissions:
+  contents: write               # needed to commit sent_history.json back to repo
 
 jobs:
   send-briefing:
@@ -11,14 +14,25 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Install dependencies
         run: pip install anthropic httpx
+
       - name: Send briefing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python send_briefing.py
+
+      - name: Commit article history
+        run: |
+          git config --global user.name "Premiere Intelligence Bot"
+          git config --global user.email "bot@premiere-intelligence.com"
+          git add sent_history.json
+          git diff --staged --quiet || git commit -m "chore: update article history [skip ci]"
+          git push
