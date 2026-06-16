@@ -55,18 +55,18 @@ def save_history(existing: list, new_stories: list, today_str: str):
 # ── PROMPT ───────────────────────────────────────────────────────────────────
 SYSTEM_PROMPT = """You are the editor of "Premiere Intelligence," a daily luxury-tech intelligence briefing for senior executives at LVMH. Your reader works in Media Data & Performance at a world-class luxury conglomerate.
 
-Your job: surface 5–8 of the most signal-rich stories from TODAY at the intersection of:
+Your job: surface EXACTLY 5 of the most signal-rich stories published in the past 7 days at the intersection of:
 - AI + luxury fashion (LVMH, Kering, Richemont, Hermès, Prada, etc.)
 - AI + media / advertising / performance marketing
 - Media, data & tech shaping the luxury industry
 
 CRITICAL RULES:
-1. Only include stories you are highly confident are REAL, recent (last 48h), and verifiable. If uncertain, omit.
+1. Only include stories published within the last 7 days. You MUST verify the publication date from the search result before including any story. If you cannot confirm a date within the past 7 days, omit it.
 2. Every story MUST have a real, working URL from a credible publication.
 3. Write in a sharp, confident editorial voice — no fluff, no hedging.
 4. Score each story 1–5 for relevance to a luxury media executive.
 5. Assign each story one category from: MAISONS & BRANDS, CREATIVE & CAMPAIGNS, POLICY & RISK, COMMERCE & RETAIL, DATA & PERFORMANCE, MEDIA & PLATFORMS.
-6. Every story must be a DISTINCT article. No two stories may share the same URL, the same publication + headline, or cover the same specific news event. If two sources covered the same story, pick only the best one.
+6. STRICT DEDUPLICATION: Before finalising your 5 stories, check every pair. If two stories cover the same underlying event, announcement, report, or deal — even from different publications — keep only ONE. Choose the source with the sharpest editorial angle. The final 5 must each cover a completely different news event.
 7. Do NOT include any story from the EXCLUDED RECENT ARTICLES list provided by the user — these have already been covered in previous editions.
 
 Return ONLY valid JSON, no markdown, no preamble:
@@ -80,6 +80,7 @@ Return ONLY valid JSON, no markdown, no preamble:
       "headline": "Story headline here",
       "summary": "3–4 sentence sharp editorial summary.",
       "source": "Publication Name",
+      "date": "D Month YYYY",
       "url": "https://real-article-url.com"
     }
   ]
@@ -106,8 +107,9 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
         messages=[{
             "role": "user",
             "content": (
-                f"Today is {today_str}. Search for the most important real news stories "
-                f"from the last 24–48 hours at the intersection of AI, luxury, media, and technology. "
+                f"Today is {today_str}. Search for the 5 most important news stories published in the past 7 days "
+                f"at the intersection of AI, luxury, media, and technology. "
+                f"For each story, confirm its publication date before including it. "
                 f"Return only verified, linkable stories in the JSON format specified."
                 f"{exclusion_block}"
             )
@@ -144,6 +146,7 @@ def build_email(data: dict) -> str:
           <h2 style="font-family:Georgia,serif;font-size:22px;font-weight:600;line-height:1.2;margin:0 0 10px;color:#1a1410;">{s["headline"]}</h2>
           <p style="font-size:13px;line-height:1.7;color:#3a2e28;margin:0 0 12px;">{s["summary"]}</p>
           <span style="font-size:10px;letter-spacing:0.08em;color:#7a6358;margin-right:16px;">{s["source"]}</span>
+          <span style="font-size:10px;letter-spacing:0.08em;color:#b89a72;margin-right:16px;">{s.get("date","")}</span>
           {read_link}
         </td></tr>"""
 
@@ -161,7 +164,7 @@ def build_email(data: dict) -> str:
         </td></tr>
         <tr><td style="border-bottom:2px solid #1a1410;padding-bottom:16px;">
           <table width="100%" cellpadding="0" cellspacing="0"><tr>
-            <td><h1 style="font-family:Georgia,serif;font-size:72px;font-weight:700;line-height:0.88;margin:0;color:#1a1410;">ISABELLA'S<br>ALERTS</h1>
+            <td><h1 style="font-family:Georgia,serif;font-size:72px;font-weight:700;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
             <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#7a6358;margin:10px 0 0;">The luxury-tech briefing</p></td>
           </tr></table>
         </td></tr>
@@ -177,7 +180,7 @@ def build_email(data: dict) -> str:
         <!-- Footer -->
         <tr><td style="padding-top:32px;text-align:center;">
           <p style="font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#c9b5a8;margin:0;">
-            Premiere Intelligence &nbsp;·&nbsp; The luxury-tech briefing &nbsp;·&nbsp; Delivered weekdays at 7:30 AM
+            Première Intelligence &nbsp;·&nbsp; The luxury-tech briefing &nbsp;·&nbsp; Delivered weekdays at 7:30 AM
           </p>
         </td></tr>
 
