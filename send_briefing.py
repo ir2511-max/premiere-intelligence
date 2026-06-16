@@ -164,7 +164,7 @@ def build_email(data: dict) -> str:
         </td></tr>
         <tr><td style="border-bottom:2px solid #1a1410;padding-bottom:16px;">
           <table width="100%" cellpadding="0" cellspacing="0"><tr>
-            <td><h1 style="font-family:Georgia,serif;font-size:50px;font-weight:500;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
+            <td><h1 style="font-family:Georgia,serif;font-size:50px;font-weight:700;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
             <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#7a6358;margin:10px 0 0;">The luxury-tech briefing</p></td>
           </tr></table>
         </td></tr>
