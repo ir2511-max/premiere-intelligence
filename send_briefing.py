@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 
 # ── CONFIG ──────────────────────────────────────────────────────────────────
-RECIPIENTS   = ["irodado27@gsb.columbia.edu"]
+RECIPIENTS   = ["ir2511@columbia.edu"]
 SENDER_EMAIL = "onboarding@resend.dev"
 SENDER_NAME  = "Première Intelligence"
 
