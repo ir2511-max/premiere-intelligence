@@ -95,28 +95,40 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
     if recent_articles:
         lines = "\n".join(
             f"- {a['headline']} | {a['url']} (sent {a['date']})"
-            for a in recent_articles[-40:]  # cap at 40 to stay within context
+            for a in recent_articles[-40:]
         )
         exclusion_block = f"\n\nEXCLUDED RECENT ARTICLES — do not include any of these:\n{lines}"
 
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=3000,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        system=SYSTEM_PROMPT,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Today is {today_str}. Search for the 5 most important news stories published in the past 7 days "
-                f"at the intersection of AI, luxury, media, and technology. "
-                f"For each story, confirm its publication date before including it. "
-                f"Return only verified, linkable stories in the JSON format specified."
-                f"{exclusion_block}"
-            )
-        }]
-    )
+    messages = [{
+        "role": "user",
+        "content": (
+            f"Today is {today_str}. Search for the 5 most important news stories published in the past 7 days "
+            f"at the intersection of AI, luxury, media, and technology. "
+            f"For each story, confirm its publication date before including it. "
+            f"Return only verified, linkable stories in the JSON format specified."
+            f"{exclusion_block}"
+        )
+    }]
 
-    text = "".join(b.text for b in response.content if b.type == "text")
+    # Multi-turn loop: claude-sonnet-4-6 uses web search across multiple turns
+    response = None
+    for _ in range(10):
+        response = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=5000,
+            tools=[{"type": "web_search_20250305", "name": "web_search"}],
+            system=SYSTEM_PROMPT,
+            messages=messages
+        )
+        if response.stop_reason == "end_turn":
+            break
+        # Append assistant turn (includes tool_use + tool_result blocks) and continue
+        messages.append({"role": "assistant", "content": response.content})
+
+    text = "".join(
+        b.text for b in response.content
+        if hasattr(b, "text") and b.type == "text"
+    )
     import re as _re
     json_match = _re.search(r"```json\s*(.*?)\s*```", text, _re.DOTALL)
     if json_match:
@@ -164,7 +176,7 @@ def build_email(data: dict) -> str:
         </td></tr>
         <tr><td style="border-bottom:2px solid #1a1410;padding-bottom:16px;">
           <table width="100%" cellpadding="0" cellspacing="0"><tr>
-            <td><h1 style="font-family:Georgia,serif;font-size:50px;font-weight:700;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
+            <td><h1 style="font-family:Georgia,serif;font-size:50px;font-weight:600;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
             <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#7a6358;margin:10px 0 0;">The luxury-tech briefing</p></td>
           </tr></table>
         </td></tr>
@@ -180,7 +192,7 @@ def build_email(data: dict) -> str:
         <!-- Footer -->
         <tr><td style="padding-top:32px;text-align:center;">
           <p style="font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#c9b5a8;margin:0;">
-            Première Intelligence &nbsp;·&nbsp; The luxury-tech briefing &nbsp;·&nbsp; Delivered weekdays at 7:30 AM
+            Premiere Intelligence &nbsp;·&nbsp; The luxury-tech briefing &nbsp;·&nbsp; Delivered weekdays at 7:30 AM
           </p>
         </td></tr>
 
