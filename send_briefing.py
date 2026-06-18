@@ -110,25 +110,19 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
         )
     }]
 
-    # Multi-turn loop: claude-sonnet-4-6 uses web search across multiple turns
-    response = None
-    for _ in range(10):
-        response = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=5000,
-            tools=[{"type": "web_search_20250305", "name": "web_search"}],
-            system=SYSTEM_PROMPT,
-            messages=messages
-        )
-        if response.stop_reason == "end_turn":
-            break
-        # Append assistant turn (includes tool_use + tool_result blocks) and continue
-        messages.append({"role": "assistant", "content": response.content})
+    response = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=8096,
+        tools=[{"type": "web_search_20250305", "name": "web_search"}],
+        system=SYSTEM_PROMPT,
+        messages=messages
+    )
 
     text = "".join(
         b.text for b in response.content
         if hasattr(b, "text") and b.type == "text"
     )
+    print(f"Response stop_reason: {response.stop_reason}, text length: {len(text)}")
     import re as _re
     json_match = _re.search(r"```json\s*(.*?)\s*```", text, _re.DOTALL)
     if json_match:
@@ -176,7 +170,7 @@ def build_email(data: dict) -> str:
         </td></tr>
         <tr><td style="border-bottom:2px solid #1a1410;padding-bottom:16px;">
           <table width="100%" cellpadding="0" cellspacing="0"><tr>
-            <td><h1 style="font-family:Georgia,serif;font-size:50px;font-weight:600;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
+            <td><h1 style="font-family:Georgia,serif;font-size:72px;font-weight:700;line-height:0.88;margin:0;color:#1a1410;">PREMIÈRE<br>INTELLIGENCE</h1>
             <p style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#7a6358;margin:10px 0 0;">The luxury-tech briefing</p></td>
           </tr></table>
         </td></tr>
