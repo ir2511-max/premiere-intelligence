@@ -1,9 +1,7 @@
 name: Première Intelligence — Daily Briefing
 
 on:
-  schedule:
-    - cron: '30 11 * * 1-5'   # 11:30 UTC = 7:30 AM ET (change to 30 12 in winter/EST)
-  workflow_dispatch:            # allows manual trigger from GitHub UI
+  workflow_dispatch:            # triggered by cron-job.org at 7:30 AM ET
 
 permissions:
   contents: write               # needed to commit sent_history.json back to repo
