@@ -24,6 +24,10 @@ jobs:
       - name: Debug secrets
         run: |
           echo "OPENAI key length: ${#OPENAI_API_KEY}"
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "ERROR: OPENAI_API_KEY is empty — stopping workflow"
+            exit 1
+          fi
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
