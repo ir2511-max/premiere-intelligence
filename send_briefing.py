@@ -10,42 +10,34 @@ from zoneinfo import ZoneInfo
 from pathlib import Path
 
 # ── CONFIG ──────────────────────────────────────────────────────────────────
-RECIPIENTS   = ["ir2511@columbia.edu"]
-SENDER_EMAIL = "onboarding@resend.dev"
-SENDER_NAME  = "Première Intelligence"
+RECIPIENTS        = ["ir2511@columbia.edu"]
+SENDER_EMAIL      = "onboarding@resend.dev"
+SENDER_NAME       = "Première Intelligence"
+PAGES_BASE_URL    = "https://ir2511-max.github.io/premiere-intelligence"
+AUDIO_DIR         = "audio"
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 RESEND_API_KEY    = os.environ["RESEND_API_KEY"]
+OPENAI_API_KEY    = os.environ.get("OPENAI_API_KEY", "")
 
 HISTORY_FILE = "sent_history.json"
-HISTORY_DAYS = 14  # avoid repeating anything from the past 2 weeks
+HISTORY_DAYS = 14
 
-# ── HISTORY ───────────────────────────────────────────────────────────────────
+# ── HISTORY ──────────────────────────────────────────────────────────────────
 def load_history() -> list:
-    """Load recent article URLs and headlines to pass to Claude as exclusions."""
     if not Path(HISTORY_FILE).exists():
         return []
     with open(HISTORY_FILE) as f:
         history = json.load(f)
     et = ZoneInfo("America/New_York")
     cutoff = datetime.now(et) - timedelta(days=HISTORY_DAYS)
-    return [
-        item for item in history
-        if datetime.fromisoformat(item["sent_at"]) > cutoff
-    ]
+    return [item for item in history if datetime.fromisoformat(item["sent_at"]) > cutoff]
 
 def save_history(existing: list, new_stories: list, today_str: str):
-    """Append today's articles to the history file."""
     et = ZoneInfo("America/New_York")
     new_entries = [
-        {
-            "url": s["url"],
-            "headline": s["headline"],
-            "sent_at": datetime.now(et).isoformat(),
-            "date": today_str,
-        }
-        for s in new_stories
-        if s.get("url", "").startswith("http")
+        {"url": s["url"], "headline": s["headline"], "sent_at": datetime.now(et).isoformat(), "date": today_str}
+        for s in new_stories if s.get("url", "").startswith("http")
     ]
     updated = existing + new_entries
     with open(HISTORY_FILE, "w") as f:
@@ -89,8 +81,6 @@ Return ONLY valid JSON, no markdown, no preamble:
 # ── FETCH BRIEFING ────────────────────────────────────────────────────────────
 def fetch_briefing(today_str: str, recent_articles: list) -> dict:
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
-    # Build exclusion block from recent history
     exclusion_block = ""
     if recent_articles:
         lines = "\n".join(
@@ -99,16 +89,13 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
         )
         exclusion_block = f"\n\nEXCLUDED RECENT ARTICLES — do not include any of these:\n{lines}"
 
-    messages = [{
-        "role": "user",
-        "content": (
-            f"Today is {today_str}. Search for the 5 most important news stories published in the past 7 days "
-            f"at the intersection of AI, luxury, media, and technology. "
-            f"For each story, confirm its publication date before including it. "
-            f"Return only verified, linkable stories in the JSON format specified."
-            f"{exclusion_block}"
-        )
-    }]
+    messages = [{"role": "user", "content": (
+        f"Today is {today_str}. Search for the 5 most important news stories published in the past 7 days "
+        f"at the intersection of AI, luxury, media, and technology. "
+        f"For each story, confirm its publication date before including it. "
+        f"Return only verified, linkable stories in the JSON format specified."
+        f"{exclusion_block}"
+    )}]
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
@@ -118,10 +105,7 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
         messages=messages
     )
 
-    text = "".join(
-        b.text for b in response.content
-        if hasattr(b, "text") and b.type == "text"
-    )
+    text = "".join(b.text for b in response.content if hasattr(b, "text") and b.type == "text")
     print(f"Response stop_reason: {response.stop_reason}, text length: {len(text)}")
     import re as _re
     json_match = _re.search(r"```json\s*(.*?)\s*```", text, _re.DOTALL)
@@ -133,8 +117,61 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
         clean = text[start:end+1] if start != -1 and end != -1 else text.strip()
     return json.loads(clean)
 
+# ── AUDIO ─────────────────────────────────────────────────────────────────────
+def generate_audio_script(data: dict) -> str:
+    stories_text = ""
+    for i, s in enumerate(sorted(data["stories"], key=lambda x: -x["score"]), 1):
+        stories_text += (
+            f" Story {i}: {s['headline']}. "
+            f"{s['summary']}"
+        )
+    return (
+        f"Good morning. Today is {data['date']}. "
+        f"Welcome to Première Intelligence, your daily luxury-tech briefing. "
+        f"Here is today's signal: {data['lede']} "
+        f"Here are your five stories for today."
+        f"{stories_text} "
+        f"That's your Première Intelligence briefing. Have a sharp day."
+    )
+
+def generate_audio(script: str, date_slug: str) -> str | None:
+    if not OPENAI_API_KEY:
+        print("No OPENAI_API_KEY — skipping audio")
+        return None
+    os.makedirs(AUDIO_DIR, exist_ok=True)
+    # Clean up audio older than 14 days
+    et = ZoneInfo("America/New_York")
+    cutoff = datetime.now(et) - timedelta(days=14)
+    for f in os.listdir(AUDIO_DIR):
+        if f.endswith(".mp3"):
+            try:
+                fdate = datetime.strptime(f.replace(".mp3", ""), "%Y-%m-%d").replace(tzinfo=et)
+                if fdate < cutoff:
+                    os.remove(os.path.join(AUDIO_DIR, f))
+                    print(f"✓ Removed old audio: {f}")
+            except ValueError:
+                pass
+    # Truncate to OpenAI's 4096 char limit
+    script = script[:4096]
+    try:
+        response = httpx.post(
+            "https://api.openai.com/v1/audio/speech",
+            headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
+            json={"model": "tts-1", "input": script, "voice": "nova"},
+            timeout=60,
+        )
+        response.raise_for_status()
+        filepath = f"{AUDIO_DIR}/{date_slug}.mp3"
+        with open(filepath, "wb") as f:
+            f.write(response.content)
+        print(f"✓ Audio saved → {filepath}")
+        return filepath
+    except Exception as e:
+        print(f"⚠ Audio generation failed: {e}")
+        return None
+
 # ── BUILD EMAIL HTML ──────────────────────────────────────────────────────────
-def build_email(data: dict) -> str:
+def build_email(data: dict, audio_url: str | None = None) -> str:
     stories_html = ""
     for s in sorted(data["stories"], key=lambda x: -x["score"]):
         pips = "".join(
@@ -142,7 +179,6 @@ def build_email(data: dict) -> str:
             for i in range(5)
         )
         read_link = f'<a href="{s["url"]}" style="font-size:10px;letter-spacing:0.1em;color:#b89a72;text-decoration:none;text-transform:uppercase;">Read →</a>' if s.get("url","").startswith("http") else ""
-
         stories_html += f"""
         <tr><td style="padding:28px 0;border-bottom:1px solid #e0d0c8;">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -154,6 +190,13 @@ def build_email(data: dict) -> str:
           <span style="font-size:10px;letter-spacing:0.08em;color:#7a6358;margin-right:16px;">{s["source"]}</span>
           <span style="font-size:10px;letter-spacing:0.08em;color:#b89a72;margin-right:16px;">{s.get("date","")}</span>
           {read_link}
+        </td></tr>"""
+
+    audio_button = ""
+    if audio_url:
+        audio_button = f"""
+        <tr><td style="padding:16px 0 0;">
+          <a href="{audio_url}" style="display:inline-block;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#1a1410;text-decoration:none;border:1px solid #1a1410;padding:8px 20px;">🎧 Listen to today's briefing</a>
         </td></tr>"""
 
     return f"""<!DOCTYPE html>
@@ -175,9 +218,10 @@ def build_email(data: dict) -> str:
           </tr></table>
         </td></tr>
 
-        <!-- Lede -->
+        <!-- Lede + audio button -->
         <tr><td style="border-bottom:1px solid #c9b5a8;padding:20px 0;">
-          <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1410;margin:0;">{data["lede"]}</p>
+          <p style="font-family:Georgia,serif;font-style:italic;font-size:16px;line-height:1.6;color:#1a1410;margin:0 0 16px;">{data["lede"]}</p>
+          {audio_button}
         </td></tr>
 
         <!-- Stories -->
@@ -201,12 +245,7 @@ def send_email(subject: str, html: str):
     response = httpx.post(
         "https://api.resend.com/emails",
         headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json"},
-        json={
-            "from": f"{SENDER_NAME} <{SENDER_EMAIL}>",
-            "to": RECIPIENTS,
-            "subject": subject,
-            "html": html,
-        },
+        json={"from": f"{SENDER_NAME} <{SENDER_EMAIL}>", "to": RECIPIENTS, "subject": subject, "html": html},
         timeout=30,
     )
     response.raise_for_status()
@@ -216,23 +255,27 @@ def send_email(subject: str, html: str):
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 def main():
     et = ZoneInfo("America/New_York")
-    today_str = datetime.now(et).strftime("%A, %d %B %Y")
+    today_str  = datetime.now(et).strftime("%A, %d %B %Y")
+    date_slug  = datetime.now(et).strftime("%Y-%m-%d")
     print(f"Fetching briefing for {today_str}…")
 
     recent_articles = load_history()
     print(f"Loaded {len(recent_articles)} recent articles to exclude.")
 
     data = fetch_briefing(today_str, recent_articles)
-
     if not data.get("stories"):
-        print("No stories found today — skipping email.")
+        print("No stories found today — skipping.")
         return
 
     print(f"Found {len(data['stories'])} stories.")
-    html = build_email(data)
-    subject = f"Premiere Intelligence — {today_str}"
-    send_email(subject, html)
 
+    # Generate audio
+    audio_script = generate_audio_script(data)
+    audio_file   = generate_audio(audio_script, date_slug)
+    audio_url    = f"{PAGES_BASE_URL}/audio/{date_slug}.mp3" if audio_file else None
+
+    html = build_email(data, audio_url)
+    send_email(f"Premiere Intelligence — {today_str}", html)
     save_history(recent_articles, data["stories"], today_str)
 
 if __name__ == "__main__":

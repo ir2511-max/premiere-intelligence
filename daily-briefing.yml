@@ -1,0 +1,38 @@
+name: Première Intelligence — Daily Briefing
+
+on:
+  workflow_dispatch:            # triggered by cron-job.org at 7:30 AM ET
+
+permissions:
+  contents: write
+
+jobs:
+  send-briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install anthropic httpx
+
+      - name: Send briefing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python send_briefing.py
+
+      - name: Commit history and audio
+        run: |
+          git config --global user.name "Premiere Intelligence Bot"
+          git config --global user.email "bot@premiere-intelligence.com"
+          git add sent_history.json
+          git add audio/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update history and audio [skip ci]"
+          git push
