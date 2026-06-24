@@ -18,7 +18,7 @@ AUDIO_DIR         = "audio"
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 RESEND_API_KEY    = os.environ["RESEND_API_KEY"]
-OPENAI_API_KEY    = os.environ.get("OPENAI_API_KEY", "").strip()
+OPENAI_API_KEY    = ""  # read fresh in generate_audio
 
 HISTORY_FILE = "sent_history.json"
 HISTORY_DAYS = 14
@@ -135,8 +135,11 @@ def generate_audio_script(data: dict) -> str:
     )
 
 def generate_audio(script: str, date_slug: str) -> str | None:
-    print(f"OPENAI_API_KEY length: {len(OPENAI_API_KEY)}")
-    if not OPENAI_API_KEY:
+    key = os.environ.get("OPENAI_API_KEY", "")
+    print(f"Raw key bytes: {repr(key[:20])}")
+    key = key.strip()
+    print(f"Stripped key length: {len(key)}")
+    if not key:
         print("No OPENAI_API_KEY — skipping audio")
         return None
     os.makedirs(AUDIO_DIR, exist_ok=True)
@@ -157,7 +160,7 @@ def generate_audio(script: str, date_slug: str) -> str | None:
     try:
         response = httpx.post(
             "https://api.openai.com/v1/audio/speech",
-            headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
             json={"model": "tts-1", "input": script, "voice": "nova"},
             timeout=60,
         )
@@ -256,6 +259,8 @@ def send_email(subject: str, html: str):
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 def main():
     et = ZoneInfo("America/New_York")
+    raw_key = os.environ.get("OPENAI_API_KEY", "NOT_SET")
+    print(f"OPENAI key status: len={len(raw_key)}, starts={raw_key[:7] if len(raw_key) > 7 else raw_key!r}")
     today_str  = datetime.now(et).strftime("%A, %d %B %Y")
     date_slug  = datetime.now(et).strftime("%Y-%m-%d")
     print(f"Fetching briefing for {today_str}…")
