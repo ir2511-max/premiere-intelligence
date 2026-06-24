@@ -1,0 +1,52 @@
+{
+  "date": "Wednesday, 24 June 2026",
+  "lede": "Cannes Lions 2026 doubles as AI's creative-industry coronation week \u2014 with Google DeepMind buying into Hollywood storytelling, Demis Hassabis defending the talent wars live on the Croisette, and OpenAI quietly maturing into a full-stack performance advertising platform.",
+  "stories": [
+    {
+      "category": "CREATIVE & CAMPAIGNS",
+      "score": 5,
+      "headline": "Google DeepMind Puts $75M Into A24 \u2014 AI Gets Its First Foothold in Auteur Filmmaking",
+      "summary": "Google DeepMind has announced a $75 million investment in indie studio A24 to build AI-powered production tools \u2014 not by training on A24's film library, but by embedding DeepMind researchers directly into the studio's creative workflow. The deal gives Google access to what the industry has spent a decade trying to reverse-engineer: A24's taste-making production process. Demis Hassabis called it a pivot from scientific AI partnerships into the creative industries; A24 partner Scott Belsky insisted the tools 'won't look anything like prompted generation.' The backlash from filmmakers like Justine Bateman was immediate \u2014 signalling that creative AI legitimacy remains the sector's thorniest unsolved problem.",
+      "source": "Adweek / The Hollywood Reporter",
+      "date": "22 June 2026",
+      "url": "https://www.adweek.com/creativity/google-and-a24-argue-ai-will-usher-in-a-new-era-of-creative-risk-taking/"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 5,
+      "headline": "Demis Hassabis Hits the Croisette: Google's Still Winning AI Talent \u2014 and Eyes Creative Industries Next",
+      "summary": "In an exclusive on-stage interview at Cannes Lions, Google DeepMind CEO Demis Hassabis dismissed fears of a talent exodus following the high-profile exits of Noam Shazeer and John Jumper \u2014 exits that had sent Google's shares tumbling 7%. Hassabis argued that access to Google's custom TPU fleets and unparalleled data scale remain the most compelling recruiting tools in the industry. His appearance at Cannes \u2014 paired with the A24 deal announcement \u2014 signals that DeepMind is now explicitly targeting the creative and media industries as its next frontier, a strategic expansion luxury and media executives should watch closely.",
+      "source": "Semafor",
+      "date": "23 June 2026",
+      "url": "https://www.semafor.com/article/06/23/2026/deepmind-chief-demis-hassabis-says-googles-still-winning-ai-talent"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 5,
+      "headline": "OpenAI Launches Conversion-Optimised Ad Campaigns \u2014 ChatGPT Is Now a Full Performance Marketing Channel",
+      "summary": "OpenAI has rolled out conversion-optimised campaigns with pixel and server-side measurement tools that track purchases and signups directly through ChatGPT \u2014 moving decisively from a branding experiment into performance advertising infrastructure. The platform has added audience targeting, geographic controls, outcome-based bidding, and AI-generated creative tools that let advertisers generate, localise, and translate ad assets autonomously. ChatGPT now processes 2.5 billion daily prompts and is projecting $2.5 billion in ad revenue for 2026 \u2014 numbers that demand a budget line, not just a test-and-learn allocation, from every luxury performance marketing team.",
+      "source": "MarketingProfs",
+      "date": "19 June 2026",
+      "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 4,
+      "headline": "Cannes Lions Formalises the AI Creative Era: New AI Craft Lion and Creative Brand Lion Debut at 73rd Edition",
+      "summary": "Cannes Lions 2026 opened its 73rd edition with two structural reforms that reframe how the industry measures creative excellence in the AI era. The new AI Craft subcategory rewards work where human creativity and AI combine at the craft level \u2014 a direct legitimisation of generative tools in award-winning production. The inaugural Creative Brand Lion shifts focus from campaign outputs to the internal systems, data cultures, and organisational capabilities that make world-class creative repeatable. For luxury brand teams, both categories set a new benchmark: AI fluency is no longer a technology choice but a competitive credential.",
+      "source": "Exchange4media",
+      "date": "23 June 2026",
+      "url": "https://www.exchange4media.com/cannes-lions-news/cannes-lions-2026-opens-with-ai-creators-and-brand-creativity-in-focus-155665.html"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 4,
+      "headline": "Zero-Click Search Reaches 68% of US Google Sessions \u2014 Luxury Brand Discovery Has Structurally Broken",
+      "summary": "New research confirms that 68% of US Google searches now end without a click to any external destination, with AI Overviews in Google's AI Mode producing a zero-click rate of 93%. For luxury brands that have built DTC acquisition funnels on organic search, this is not a trend to monitor \u2014 it is an infrastructure crisis already in motion. AI-referred visitors who do click convert at 4.4x the rate of traditional organic visitors, reframing the performance brief: the new job is not driving traffic but earning citation-level trust in AI-generated answers. Generative Engine Optimisation (GEO) \u2014 optimising for AI answer inclusion rather than keyword ranking \u2014 has gone from fringe discipline to defensive baseline.",
+      "source": "MarketingProfs",
+      "date": "19 June 2026",
+      "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week"
+    }
+  ],
+  "date_slug": "2026-06-24"
+}
