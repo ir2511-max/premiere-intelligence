@@ -135,7 +135,7 @@ def generate_audio_script(data: dict) -> str:
     )
 
 def generate_audio(script: str, date_slug: str) -> str | None:
-    key = os.environ.get("OPENAI_API_KEY", "")
+    key = os.environ.get("OPENAI_API_KEY", "") or os.environ.get("OAI_KEY", "")
     print(f"Raw key bytes: {repr(key[:20])}")
     key = key.strip()
     print(f"Stripped key length: {len(key)}")

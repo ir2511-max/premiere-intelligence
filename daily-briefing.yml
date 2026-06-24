@@ -1,7 +1,7 @@
 name: Première Intelligence — Daily Briefing
 
 on:
-  workflow_dispatch:            # triggered by cron-job.org at 7:30 AM ET
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,21 +21,12 @@ jobs:
       - name: Install dependencies
         run: pip install anthropic httpx
 
-      - name: Debug secrets
-        run: |
-          echo "OPENAI key length: ${#OPENAI_API_KEY}"
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "ERROR: OPENAI_API_KEY is empty — stopping workflow"
-            exit 1
-          fi
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
       - name: Send briefing
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OAI_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python send_briefing.py
 
       - name: Commit history and audio
