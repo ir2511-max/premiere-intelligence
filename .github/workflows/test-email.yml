@@ -3,6 +3,9 @@ name: Test Email with Audio Button
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   test-email:
     runs-on: ubuntu-latest
