@@ -40,6 +40,9 @@ jobs:
           python-version: '3.12'
       - run: pip install httpx
 
+      - name: Pull latest commit
+        run: git pull
+
       - name: Generate audio
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
