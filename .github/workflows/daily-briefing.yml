@@ -1,25 +1,20 @@
 name: Première Intelligence — Daily Briefing
 
 on:
-  workflow_dispatch:            # triggered by cron-job.org at 7:30 AM ET
+  workflow_dispatch:
 
 permissions:
-  contents: write               # needed to commit sent_history.json back to repo
+  contents: write
 
 jobs:
   send-briefing:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: pip install anthropic httpx
+      - run: pip install anthropic httpx
 
       - name: Send briefing
         env:
@@ -27,10 +22,34 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python send_briefing.py
 
-      - name: Commit article history
+      - name: Commit history and briefing JSON
         run: |
           git config --global user.name "Premiere Intelligence Bot"
           git config --global user.email "bot@premiere-intelligence.com"
-          git add sent_history.json
-          git diff --staged --quiet || git commit -m "chore: update article history [skip ci]"
+          git add sent_history.json latest_briefing.json
+          git diff --staged --quiet || git commit -m "chore: update briefing [skip ci]"
+          git push
+
+  generate-audio:
+    needs: send-briefing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install httpx
+
+      - name: Generate audio
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python generate_audio.py
+
+      - name: Commit audio
+        run: |
+          git config --global user.name "Premiere Intelligence Bot"
+          git config --global user.email "bot@premiere-intelligence.com"
+          git pull --no-edit || true
+          git add audio/
+          git diff --staged --quiet || git commit -m "chore: add audio [skip ci]"
           git push
