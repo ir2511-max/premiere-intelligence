@@ -18,7 +18,7 @@ AUDIO_DIR         = "audio"
 
 ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
 RESEND_API_KEY    = os.environ["RESEND_API_KEY"]
-OPENAI_API_KEY    = ""  # read fresh in generate_audio
+OPENAI_API_KEY    = os.environ.get("OPENAI_API_KEY", "").strip()
 
 HISTORY_FILE = "sent_history.json"
 HISTORY_DAYS = 14
@@ -135,10 +135,8 @@ def generate_audio_script(data: dict) -> str:
     )
 
 def generate_audio(script: str, date_slug: str) -> str | None:
-    key = os.environ.get("OPENAI_API_KEY", "") or os.environ.get("OAI_KEY", "")
-    print(f"Raw key bytes: {repr(key[:20])}")
-    key = key.strip()
-    print(f"Stripped key length: {len(key)}")
+    key = OPENAI_API_KEY
+    print(f"Audio key length: {len(key)}")
     if not key:
         print("No OPENAI_API_KEY — skipping audio")
         return None
