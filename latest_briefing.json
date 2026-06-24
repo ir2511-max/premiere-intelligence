@@ -1,51 +1,51 @@
 {
   "date": "Wednesday, 24 June 2026",
-  "lede": "Cannes Lions 2026 doubles as AI's creative-industry coronation week \u2014 with Google DeepMind buying into Hollywood storytelling, Demis Hassabis defending the talent wars live on the Croisette, and OpenAI quietly maturing into a full-stack performance advertising platform.",
+  "lede": "From Cannes Lions to Harvard Business Review, this week's signal is unambiguous: AI is no longer disrupting luxury and media \u2014 it is restructuring them, and the brands that fail to govern how machines read, price, and recommend them are already losing ground.",
   "stories": [
-    {
-      "category": "CREATIVE & CAMPAIGNS",
-      "score": 5,
-      "headline": "Google DeepMind Puts $75M Into A24 \u2014 AI Gets Its First Foothold in Auteur Filmmaking",
-      "summary": "Google DeepMind has announced a $75 million investment in indie studio A24 to build AI-powered production tools \u2014 not by training on A24's film library, but by embedding DeepMind researchers directly into the studio's creative workflow. The deal gives Google access to what the industry has spent a decade trying to reverse-engineer: A24's taste-making production process. Demis Hassabis called it a pivot from scientific AI partnerships into the creative industries; A24 partner Scott Belsky insisted the tools 'won't look anything like prompted generation.' The backlash from filmmakers like Justine Bateman was immediate \u2014 signalling that creative AI legitimacy remains the sector's thorniest unsolved problem.",
-      "source": "Adweek / The Hollywood Reporter",
-      "date": "22 June 2026",
-      "url": "https://www.adweek.com/creativity/google-and-a24-argue-ai-will-usher-in-a-new-era-of-creative-risk-taking/"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "Demis Hassabis Hits the Croisette: Google's Still Winning AI Talent \u2014 and Eyes Creative Industries Next",
-      "summary": "In an exclusive on-stage interview at Cannes Lions, Google DeepMind CEO Demis Hassabis dismissed fears of a talent exodus following the high-profile exits of Noam Shazeer and John Jumper \u2014 exits that had sent Google's shares tumbling 7%. Hassabis argued that access to Google's custom TPU fleets and unparalleled data scale remain the most compelling recruiting tools in the industry. His appearance at Cannes \u2014 paired with the A24 deal announcement \u2014 signals that DeepMind is now explicitly targeting the creative and media industries as its next frontier, a strategic expansion luxury and media executives should watch closely.",
-      "source": "Semafor",
-      "date": "23 June 2026",
-      "url": "https://www.semafor.com/article/06/23/2026/deepmind-chief-demis-hassabis-says-googles-still-winning-ai-talent"
-    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "OpenAI Launches Conversion-Optimised Ad Campaigns \u2014 ChatGPT Is Now a Full Performance Marketing Channel",
-      "summary": "OpenAI has rolled out conversion-optimised campaigns with pixel and server-side measurement tools that track purchases and signups directly through ChatGPT \u2014 moving decisively from a branding experiment into performance advertising infrastructure. The platform has added audience targeting, geographic controls, outcome-based bidding, and AI-generated creative tools that let advertisers generate, localise, and translate ad assets autonomously. ChatGPT now processes 2.5 billion daily prompts and is projecting $2.5 billion in ad revenue for 2026 \u2014 numbers that demand a budget line, not just a test-and-learn allocation, from every luxury performance marketing team.",
-      "source": "MarketingProfs",
-      "date": "19 June 2026",
-      "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week"
+      "headline": "LLMs Misunderstand Luxury Brands \u2014 And HBR Has the Research to Prove It",
+      "summary": "Harvard Business Review published INSEAD and Jellyfish research on June 22 revealing that large language models reliably process explicit luxury cues \u2014 brand names, prices \u2014 but consistently misinterpret the implicit signals that actually drive desirability: scarcity, heritage, artistic association, minimalism, and spatial context. As AI agents increasingly mediate consumer choice, this creates a structural visibility and interpretation risk for maisons that have never had to explain themselves to a machine. The paper introduces a 'bot psychology' framework and a GEO playbook for translating luxury's visual grammar into machine-readable authority. For LVMH's Media Data & Performance teams, this is an urgent brief: every piece of owned and earned content is now training data for the AI recommending your products \u2014 or your competitor's.",
+      "source": "Harvard Business Review",
+      "date": "22 June 2026",
+      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-content-strategy-for-ai"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 5,
+      "headline": "Cannes 2026: The ROI Reckoning \u2014 Swisher and Galloway Declare AI's Hype Cycle Dead, Creativity More Valuable Than Ever",
+      "summary": "In a live Pivot podcast taping at ADWEEK House on June 24, Kara Swisher and Scott Galloway delivered the sharpest editorial verdict of Cannes Lions 2026: the AI craze of last year has subsided, replaced by a hard-nosed demand for AI ROI \u2014 and brands still regurgitating AI as a novelty will be punished. Galloway's line \u2014 'AI takes everyone to the middle' \u2014 is the most important statement a luxury media executive will hear this week, because it reframes the differentiation war: when AI commoditises production, human editorial judgment and brand distinctiveness become the last defensible moat. With 500 creators now flooding the Croisette and holding disproportionate margin leverage, the old agency-dominated media model is structurally broken. Luxury brands that haven't built direct creator relationships and AI-proof creative strategies are now visibly exposed.",
+      "source": "Adweek",
+      "date": "24 June 2026",
+      "url": "https://www.adweek.com/media/3-big-takeaways-from-cannes-lions-2026-that-could-make-marketers-pivot/"
+    },
+    {
+      "category": "CREATIVE & CAMPAIGNS",
+      "score": 4,
+      "headline": "Cannes Day 2: Handcrafted Work Sweeps Grand Prix \u2014 The Jury Sends a Direct Message to the AI Industrial Complex",
+      "summary": "On Day 2 of Cannes Lions 2026, the jury awarded Grand Prix across Entertainment, Design, Digital Craft, Film Craft, and Industry Craft categories to work that was demonstrably, pointedly human-made \u2014 Apple TV, Coinbase, De'Longhi, and a double Grand Prix for adidas x Oasis. Jury commentary explicitly framed the wins as a counterpoint to the AI-saturation of the festival, noting that the winning work 'didn't need to be made this way' but was 'gloriously human-made.' For luxury creative directors and their media partners, this is the clearest possible signal: in an environment where AI-generated content is ubiquitous, provenance and craft are becoming competitive creative claims, not just brand values. The implications for luxury campaign strategy \u2014 where heritage and artisanship are the core proposition \u2014 are direct.",
+      "source": "LBBOnline",
+      "date": "23 June 2026",
+      "url": "https://lbbonline.com/news/Cannes-Lions-2026-Grand-Prix-Winners-in-Entertainment-Gaming-Music-Sport-Design-Digital-Craft-Film-Craft-and-Industry-Craft"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "Cannes Lions Formalises the AI Creative Era: New AI Craft Lion and Creative Brand Lion Debut at 73rd Edition",
-      "summary": "Cannes Lions 2026 opened its 73rd edition with two structural reforms that reframe how the industry measures creative excellence in the AI era. The new AI Craft subcategory rewards work where human creativity and AI combine at the craft level \u2014 a direct legitimisation of generative tools in award-winning production. The inaugural Creative Brand Lion shifts focus from campaign outputs to the internal systems, data cultures, and organisational capabilities that make world-class creative repeatable. For luxury brand teams, both categories set a new benchmark: AI fluency is no longer a technology choice but a competitive credential.",
-      "source": "Exchange4media",
-      "date": "23 June 2026",
-      "url": "https://www.exchange4media.com/cannes-lions-news/cannes-lions-2026-opens-with-ai-creators-and-brand-creativity-in-focus-155665.html"
+      "headline": "Adobe Goes Largest-Ever at Cannes, Puts L'Or\u00e9al's AI Personalization Engine in Front of the Palais \u2014 and Every CMO Walking By",
+      "summary": "Adobe confirmed its largest-ever Cannes Lions investment on June 17, doubling down on AI-first creators as headline partner of Lions Creators and staging L'Or\u00e9al's live AI personalization showcase directly in front of the Palais des Festivals. The activation crystallises a new media dynamic: tech platforms are no longer just sponsoring creativity \u2014 they are demonstrating it in real time with luxury and beauty clients as proof points. L'Or\u00e9al's role as the public-facing case study signals that beauty and personal luxury are the beachhead category for AI-powered personalisation at scale. For LVMH media teams evaluating Adobe's marketing stack \u2014 including its AI-powered creative and cloud products \u2014 this is a competitive intelligence moment: a direct rival's data infrastructure is now being showcased to 13,000 industry decision-makers on the Croisette.",
+      "source": "Adweek",
+      "date": "17 June 2026",
+      "url": "https://www.adweek.com/brand-marketing/adobe-makes-its-biggest-cannes-lions-bet-yet-amid-race-to-court-creators/"
     },
     {
-      "category": "COMMERCE & RETAIL",
+      "category": "MAISONS & BRANDS",
       "score": 4,
-      "headline": "Zero-Click Search Reaches 68% of US Google Sessions \u2014 Luxury Brand Discovery Has Structurally Broken",
-      "summary": "New research confirms that 68% of US Google searches now end without a click to any external destination, with AI Overviews in Google's AI Mode producing a zero-click rate of 93%. For luxury brands that have built DTC acquisition funnels on organic search, this is not a trend to monitor \u2014 it is an infrastructure crisis already in motion. AI-referred visitors who do click convert at 4.4x the rate of traditional organic visitors, reframing the performance brief: the new job is not driving traffic but earning citation-level trust in AI-generated answers. Generative Engine Optimisation (GEO) \u2014 optimising for AI answer inclusion rather than keyword ranking \u2014 has gone from fringe discipline to defensive baseline.",
-      "source": "MarketingProfs",
-      "date": "19 June 2026",
-      "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week"
+      "headline": "Kering's Brand Attention Collapse: AI Data Shows 40%+ Search Volume Drop Across Key Houses Since 2022 Peak",
+      "summary": "The Silent Luxury's June 20 analysis of the Alexander McQueen restructuring \u2014 which saw a 60% revenue decline between 2022 and 2025 and 54 craftspeople facing redundancy \u2014 surfaced a damning data point: AI-powered brand attention tracking shows that search volumes for key Kering brands have fallen more than 40% from their 2022 peaks. New CEO Gianfranco D'Attis (former Prada CEO) was appointed June 1 and reports directly to Luca de Meo in what amounts to Kering's most public admission yet that brand-building failure, not macro headwinds alone, explains the group's underperformance. For LVMH executives, this is a competitive intelligence case study in what happens when performance marketing and brand data are not integrated into creative strategy decisions \u2014 and a live test of whether AI-driven brand tracking can surface deterioration early enough to course-correct.",
+      "source": "The Silent Luxury",
+      "date": "20 June 2026",
+      "url": "https://the-silent-luxury.com/alexander-mcqueen-kering-restructuring-2026/"
     }
   ],
   "date_slug": "2026-06-24"
