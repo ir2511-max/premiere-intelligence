@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
 Generates the daily audio from latest_briefing.json.
-Independent of Anthropic — only needs OPENAI_API_KEY + Resend is not used here.
-This mirrors test_email.py exactly, which is known to work.
+Uses Claude to write a conversational podcast script, then OpenAI TTS to voice it.
 """
 import os, json, httpx
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "").strip()
-AUDIO_DIR = "audio"
+OPENAI_API_KEY    = os.environ.get("OPENAI_API_KEY", "").strip()
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+AUDIO_DIR         = "audio"
 
 print(f"Audio key length: {len(OPENAI_API_KEY)}")
 if not OPENAI_API_KEY:
-    print("ERROR: OPENAI_API_KEY missing — cannot generate audio")
+    print("ERROR: OPENAI_API_KEY missing")
     raise SystemExit(1)
 
 with open("latest_briefing.json") as f:
@@ -19,15 +19,58 @@ with open("latest_briefing.json") as f:
 
 date_slug = data["date_slug"]
 
-# Build a clean English script
-parts = [f"Good morning. Today is {data['date']}. Welcome to Premiere Intelligence, your daily luxury-tech briefing.",
-         f"Today's signal: {data['lede']}"]
-for i, s in enumerate(sorted(data["stories"], key=lambda x: -x["score"]), 1):
-    parts.append(f"Story {i}. {s['headline']}. {s['summary']}")
-parts.append("That's your Premiere Intelligence briefing. Have a sharp day.")
-script = " ".join(parts)[:4096]
+# ── Generate conversational script via Claude ─────────────────────────────────
+stories_text = "\n\n".join(
+    f"- {s['headline']} ({s['source']}, {s.get('date','')}): {s['summary']}"
+    for s in sorted(data["stories"], key=lambda x: -x["score"])
+)
 
+prompt = f"""You are the host of Première Intelligence, a sharp daily podcast for luxury media executives. 
+Write a 2-3 minute conversational podcast script based on today's briefing.
+
+Rules:
+- Sound like a confident, warm host talking directly to the listener — not reading a list
+- Use natural transitions: "What's interesting here is...", "Now this one caught my eye...", "The reason this matters for luxury..."
+- Connect stories where relevant
+- No bullet points, no headers — pure flowing speech
+- End with a punchy closing line
+- Write ONLY the spoken words, no stage directions
+
+Today's date: {data['date']}
+Today's signal: {data['lede']}
+
+Stories:
+{stories_text}
+
+Write the script now:"""
+
+if ANTHROPIC_API_KEY:
+    print("Generating conversational script via Claude...")
+    r = httpx.post(
+        "https://api.anthropic.com/v1/messages",
+        headers={"x-api-key": ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+        json={"model": "claude-haiku-4-5", "max_tokens": 1000, "messages": [{"role": "user", "content": prompt}]},
+        timeout=30,
+    )
+    r.raise_for_status()
+    script = r.json()["content"][0]["text"].strip()
+    print(f"Script length: {len(script)} chars")
+else:
+    # Fallback: simple script without Claude
+    print("No Anthropic key — using simple script")
+    parts = [f"Good morning. Today is {data['date']}. Welcome to Première Intelligence.",
+             f"{data['lede']}"]
+    for s in sorted(data["stories"], key=lambda x: -x["score"]):
+        parts.append(f"{s['headline']}. {s['summary']}")
+    parts.append("That's your briefing. Stay sharp.")
+    script = " ".join(parts)
+
+# Truncate to OpenAI's 4096 char limit
+script = script[:4096]
+
+# ── Generate audio via OpenAI TTS ─────────────────────────────────────────────
 os.makedirs(AUDIO_DIR, exist_ok=True)
+print("Calling OpenAI TTS...")
 r = httpx.post(
     "https://api.openai.com/v1/audio/speech",
     headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
@@ -36,7 +79,46 @@ r = httpx.post(
 )
 print(f"OpenAI status: {r.status_code}")
 r.raise_for_status()
-path = f"{AUDIO_DIR}/{date_slug}.mp3"
-with open(path, "wb") as f:
+
+mp3_path = f"{AUDIO_DIR}/{date_slug}.mp3"
+with open(mp3_path, "wb") as f:
     f.write(r.content)
-print(f"✓ Audio saved → {path}")
+print(f"✓ Audio saved → {mp3_path}")
+
+# ── Generate HTML landing page ─────────────────────────────────────────────
+html_path = f"{AUDIO_DIR}/{date_slug}.html"
+html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Première Intelligence — {data['date']}</title>
+  <style>
+    * {{ margin:0; padding:0; box-sizing:border-box; }}
+    body {{ background:#f5e6e0; font-family:'Helvetica Neue',Arial,sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px 20px; }}
+    .card {{ max-width:560px; width:100%; }}
+    .date {{ font-size:9px; letter-spacing:0.18em; text-transform:uppercase; color:#7a6358; margin-bottom:12px; }}
+    .title {{ font-family:Georgia,serif; font-size:52px; font-weight:700; line-height:0.9; color:#1a1410; margin-bottom:6px; }}
+    .tagline {{ font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#7a6358; margin-bottom:20px; padding-bottom:20px; border-bottom:2px solid #1a1410; }}
+    .lede {{ font-family:Georgia,serif; font-style:italic; font-size:15px; line-height:1.6; color:#1a1410; margin-bottom:28px; }}
+    audio {{ width:100%; margin-bottom:8px; }}
+    .credit {{ font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:#c9b5a8; text-align:center; margin-top:32px; }}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <p class="date">{data['date']}</p>
+    <div class="title">PREMIÈRE<br>INTELLIGENCE</div>
+    <p class="tagline">The luxury-tech briefing</p>
+    <p class="lede">{data['lede']}</p>
+    <audio controls autoplay>
+      <source src="{date_slug}.mp3" type="audio/mpeg">
+    </audio>
+    <p class="credit">Première Intelligence &nbsp;·&nbsp; The luxury-tech briefing</p>
+  </div>
+</body>
+</html>"""
+
+with open(html_path, "w") as f:
+    f.write(html)
+print(f"✓ Landing page saved → {html_path}")
