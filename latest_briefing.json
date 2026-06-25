@@ -1,51 +1,51 @@
 {
   "date": "Wednesday, 24 June 2026",
-  "lede": "From Cannes Lions to Harvard Business Review, this week's signal is unambiguous: AI is no longer disrupting luxury and media \u2014 it is restructuring them, and the brands that fail to govern how machines read, price, and recommend them are already losing ground.",
+  "lede": "From LVMH declaring generative engine optimization a strategic priority at VivaTech to AI virtual try-on delivering 10x luxury conversion lifts \u2014 this week's signal is clear: the battle for luxury discovery has moved from Google to ChatGPT.",
   "stories": [
+    {
+      "category": "MAISONS & BRANDS",
+      "score": 5,
+      "headline": "LVMH Crowns Bluefish 'Most Promising' at VivaTech as Louis Vuitton Goes Live Inside ChatGPT \u2014 GEO Is Now a Group Priority",
+      "summary": "At VivaTech's 10th edition, LVMH handed its Most Promising Innovation Award to Bluefish, a GEO startup that measures and optimises brand representation across ChatGPT, Gemini, and Perplexity. LVMH's chief omnichannel officer Gonzague de Pirey stated 'a significant number of customers are now going to LLM first,' framing AI search as an upstream discovery crisis. Simultaneously, Louis Vuitton unveiled a ChatGPT-integrated app for natural-language product discovery, Dior launched a formal GEO workstream with Bluefish, and Sephora confirmed a full ChatGPT integration for recommendation-to-checkout commerce. The group drew a sharp line: generative AI is confined to internal ops and discovery \u2014 never customer-facing creative or advertising.",
+      "source": "WWD",
+      "date": "18 June 2026",
+      "url": "https://wwd.com/business-news/technology/lvmh-innovation-awards-ai-traceability-training-tools-1239013949/"
+    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "LLMs Misunderstand Luxury Brands \u2014 And HBR Has the Research to Prove It",
-      "summary": "Harvard Business Review published INSEAD and Jellyfish research on June 22 revealing that large language models reliably process explicit luxury cues \u2014 brand names, prices \u2014 but consistently misinterpret the implicit signals that actually drive desirability: scarcity, heritage, artistic association, minimalism, and spatial context. As AI agents increasingly mediate consumer choice, this creates a structural visibility and interpretation risk for maisons that have never had to explain themselves to a machine. The paper introduces a 'bot psychology' framework and a GEO playbook for translating luxury's visual grammar into machine-readable authority. For LVMH's Media Data & Performance teams, this is an urgent brief: every piece of owned and earned content is now training data for the AI recommending your products \u2014 or your competitor's.",
-      "source": "Harvard Business Review",
-      "date": "22 June 2026",
-      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-content-strategy-for-ai"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "Cannes 2026: The ROI Reckoning \u2014 Swisher and Galloway Declare AI's Hype Cycle Dead, Creativity More Valuable Than Ever",
-      "summary": "In a live Pivot podcast taping at ADWEEK House on June 24, Kara Swisher and Scott Galloway delivered the sharpest editorial verdict of Cannes Lions 2026: the AI craze of last year has subsided, replaced by a hard-nosed demand for AI ROI \u2014 and brands still regurgitating AI as a novelty will be punished. Galloway's line \u2014 'AI takes everyone to the middle' \u2014 is the most important statement a luxury media executive will hear this week, because it reframes the differentiation war: when AI commoditises production, human editorial judgment and brand distinctiveness become the last defensible moat. With 500 creators now flooding the Croisette and holding disproportionate margin leverage, the old agency-dominated media model is structurally broken. Luxury brands that haven't built direct creator relationships and AI-proof creative strategies are now visibly exposed.",
-      "source": "Adweek",
-      "date": "24 June 2026",
-      "url": "https://www.adweek.com/media/3-big-takeaways-from-cannes-lions-2026-that-could-make-marketers-pivot/"
+      "headline": "DressX Data: AI Virtual Try-On Lifts Luxury Conversion Up to 10x \u2014 The Performance Case Is Now Impossible to Ignore",
+      "summary": "DressX's latest intelligence report, surfaced this week by Business of Fashion, quantifies what luxury e-commerce teams have been debating: shoppers who engage with AI virtual try-on are 50% more likely to purchase overall, while conversion rates among luxury consumers jump up to 10 times higher compared to those who do not interact with the feature. The data lands as LVMH, Dior, and Victoria Beckham are all in active deployment conversations with the platform. With digital try-on moving from novelty to performance lever, luxury CMOs now face a direct ROI argument \u2014 one that is harder to dismiss than any previous tech pitch.",
+      "source": "Business of Fashion",
+      "date": "20 June 2026",
+      "url": "https://www.businessoffashion.com/articles/technology/ai-virtual-try-on-luxury-dressx-report/"
     },
     {
       "category": "CREATIVE & CAMPAIGNS",
       "score": 4,
-      "headline": "Cannes Day 2: Handcrafted Work Sweeps Grand Prix \u2014 The Jury Sends a Direct Message to the AI Industrial Complex",
-      "summary": "On Day 2 of Cannes Lions 2026, the jury awarded Grand Prix across Entertainment, Design, Digital Craft, Film Craft, and Industry Craft categories to work that was demonstrably, pointedly human-made \u2014 Apple TV, Coinbase, De'Longhi, and a double Grand Prix for adidas x Oasis. Jury commentary explicitly framed the wins as a counterpoint to the AI-saturation of the festival, noting that the winning work 'didn't need to be made this way' but was 'gloriously human-made.' For luxury creative directors and their media partners, this is the clearest possible signal: in an environment where AI-generated content is ubiquitous, provenance and craft are becoming competitive creative claims, not just brand values. The implications for luxury campaign strategy \u2014 where heritage and artisanship are the core proposition \u2014 are direct.",
-      "source": "LBBOnline",
+      "headline": "Cannes Lions 2026 Debuts the Creative Brand Lion \u2014 AB InBev Wins the Inaugural Grand Prix for Systematising Creativity at Scale",
+      "summary": "The 73rd Cannes Lions opened Day 1 by awarding its brand-new Creative Brand Lion Grand Prix to AB InBev's 'Creativity at Scale,' recognising not a campaign but the internal systems, cultures, and capabilities that make award-level creative work structurally repeatable across a global portfolio. The category signals a formal industry shift: awards are now being given for creative infrastructure, not just outputs \u2014 a frame directly applicable to luxury conglomerates managing 70+ maisons. Day 1 also flagged 'AI-enabled utility' as a recurring jury theme, while The Ordinary's Health & Wellness Grand Prix demonstrated the power of science-backed creative tearing down beauty industry obfuscation.",
+      "source": "Reel360",
       "date": "23 June 2026",
-      "url": "https://lbbonline.com/news/Cannes-Lions-2026-Grand-Prix-Winners-in-Entertainment-Gaming-Music-Sport-Design-Digital-Craft-Film-Craft-and-Industry-Craft"
+      "url": "https://reel360.com/article/cannes-lions-reveals-first-2026-grand-prix-winners/"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "Adobe Goes Largest-Ever at Cannes, Puts L'Or\u00e9al's AI Personalization Engine in Front of the Palais \u2014 and Every CMO Walking By",
-      "summary": "Adobe confirmed its largest-ever Cannes Lions investment on June 17, doubling down on AI-first creators as headline partner of Lions Creators and staging L'Or\u00e9al's live AI personalization showcase directly in front of the Palais des Festivals. The activation crystallises a new media dynamic: tech platforms are no longer just sponsoring creativity \u2014 they are demonstrating it in real time with luxury and beauty clients as proof points. L'Or\u00e9al's role as the public-facing case study signals that beauty and personal luxury are the beachhead category for AI-powered personalisation at scale. For LVMH media teams evaluating Adobe's marketing stack \u2014 including its AI-powered creative and cloud products \u2014 this is a competitive intelligence moment: a direct rival's data infrastructure is now being showcased to 13,000 industry decision-makers on the Croisette.",
-      "source": "Adweek",
-      "date": "17 June 2026",
-      "url": "https://www.adweek.com/brand-marketing/adobe-makes-its-biggest-cannes-lions-bet-yet-amid-race-to-court-creators/"
+      "headline": "Cannes Lions Day 3: Media, Direct, PR and Social Creator Lions Awarded \u2014 Vaseline Leads Asia as Platform-Native Creativity Dominates",
+      "summary": "Day 3 of Cannes Lions 2026 delivered Grand Prix across the Media, Direct, PR, and Social & Creator Lions \u2014 the categories most directly relevant to how luxury brands allocate paid and earned media investment. Juries rewarded platform-native work built for cultural specificity and measurable participation, not broadcast interruption. The Social & Creator category, now a major strategic lens for luxury houses navigating creator-led brand storytelling, produced standout winners that blended earned and owned media seamlessly. For luxury media teams, the signal is consistent across all three days: measurable cultural impact and systemic creative infrastructure are the new benchmarks.",
+      "source": "adobo Magazine",
+      "date": "24 June 2026",
+      "url": "https://www.adobomagazine.com/advertising-awards/cannes-lions-2026-media-direct-pr-and-social-creator-lions-winners-1/"
     },
     {
-      "category": "MAISONS & BRANDS",
+      "category": "COMMERCE & RETAIL",
       "score": 4,
-      "headline": "Kering's Brand Attention Collapse: AI Data Shows 40%+ Search Volume Drop Across Key Houses Since 2022 Peak",
-      "summary": "The Silent Luxury's June 20 analysis of the Alexander McQueen restructuring \u2014 which saw a 60% revenue decline between 2022 and 2025 and 54 craftspeople facing redundancy \u2014 surfaced a damning data point: AI-powered brand attention tracking shows that search volumes for key Kering brands have fallen more than 40% from their 2022 peaks. New CEO Gianfranco D'Attis (former Prada CEO) was appointed June 1 and reports directly to Luca de Meo in what amounts to Kering's most public admission yet that brand-building failure, not macro headwinds alone, explains the group's underperformance. For LVMH executives, this is a competitive intelligence case study in what happens when performance marketing and brand data are not integrated into creative strategy decisions \u2014 and a live test of whether AI-driven brand tracking can surface deterioration early enough to course-correct.",
-      "source": "The Silent Luxury",
-      "date": "20 June 2026",
-      "url": "https://the-silent-luxury.com/alexander-mcqueen-kering-restructuring-2026/"
+      "headline": "VivaTech 2026: Sephora Embeds Full Purchase Journey in ChatGPT; Dior Builds Agentic In-Store AI Advisor \u2014 Conversational Commerce Arrives for Luxury",
+      "summary": "Detailed demonstrations at VivaTech 2026 revealed the operational depth of LVMH's conversational AI push. Sephora's ChatGPT integration \u2014 live in the US and Canada \u2014 allows users to receive recommendations, send photos, and complete purchases without leaving the conversation window. Dior is separately developing an AI agent that not only recommends product but prepares a personalised in-store visit briefing. C\u00e9line's sales advisors now use an AI assistant built on LVMH's internal Maya model to handle customer requests in real time, including photo-based product identification. LVMH's stated objective remains steering LLM-discovered clients back into physical stores \u2014 conversational AI as a funnel to the boutique, not a replacement for it.",
+      "source": "FashionUnited",
+      "date": "22 June 2026",
+      "url": "https://fashionunited.uk/news/fairs/vivatech-2026-how-generative-ai-is-used-by-fashion-professionals/2026062288782"
     }
   ],
   "date_slug": "2026-06-24"
