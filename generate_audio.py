@@ -25,24 +25,28 @@ stories_text = "\n\n".join(
     for s in sorted(data["stories"], key=lambda x: -x["score"])
 )
 
-prompt = f"""You are the host of Première Intelligence, a sharp daily podcast for luxury media executives. 
-Write a 2-3 minute conversational podcast script based on today's briefing.
+prompt = f"""You are writing a spoken podcast script for a TTS voice. Write EXACTLY as someone would naturally SPEAK — not as someone would write.
 
-Rules:
-- Sound like a confident, warm host talking directly to the listener — not reading a list
-- Use natural transitions: "What's interesting here is...", "Now this one caught my eye...", "The reason this matters for luxury..."
-- Connect stories where relevant
-- No bullet points, no headers — pure flowing speech
-- End with a punchy closing line
-- Write ONLY the spoken words, no stage directions
+Specific techniques you MUST use:
+- Very short sentences. Like this. Two or three words sometimes.
+- Rhetorical questions: "So what does this actually mean for luxury brands?"
+- Pause markers using ellipses: "And here's the thing... this changes everything."
+- Direct address: "If you're managing media budgets right now, pay attention to this one."
+- Reactions and opinions: "Honestly, this caught me off guard." or "This is the one I keep thinking about."
+- Vary sentence length dramatically — mix punchy short ones with longer flowing ones
+- Natural connectors: "But here's what's interesting.", "Now, separately...", "Which brings me to..."
+- NO formal language. NO jargon without explanation. NO lists.
 
-Today's date: {data['date']}
-Today's signal: {data['lede']}
+Format: Pure spoken words only. No stage directions. No headers. Just speech.
+Length: About 2 minutes when spoken aloud (roughly 300 words).
 
-Stories:
+Today: {data['date']}
+Opening signal: {data['lede']}
+
+Stories to cover:
 {stories_text}
 
-Write the script now:"""
+Write the script now, starting with a warm good morning greeting:"""
 
 if ANTHROPIC_API_KEY:
     print("Generating conversational script via Claude...")
@@ -74,7 +78,7 @@ print("Calling OpenAI TTS...")
 r = httpx.post(
     "https://api.openai.com/v1/audio/speech",
     headers={"Authorization": f"Bearer {OPENAI_API_KEY}", "Content-Type": "application/json"},
-    json={"model": "tts-1", "input": script, "voice": "nova"},
+    json={"model": "tts-1", "input": script, "voice": "fable"},
     timeout=60,
 )
 print(f"OpenAI status: {r.status_code}")
