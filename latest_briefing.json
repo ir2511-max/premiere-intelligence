@@ -1,52 +1,52 @@
 {
-  "date": "Thursday, 25 June 2026",
-  "lede": "Cannes Lions 2026 crystallises a seismic shift in media power: OpenAI plants its flag as a third advertising gatekeeper, Meta rolls out a fully AI-generated creative stack, and new data confirms that luxury brands can no longer ignore AI-native discovery \u2014 or the zero-click world eating their attribution.",
+  "date": "Friday, 26 June 2026",
+  "lede": "As Cannes Lions closes its curtain on the AI era's defining creative week, Bain's bombshell luxury market data confirms what LVMH strategists have long suspected: AI-mediated funnels are now a structural force reshaping how luxury consumers discover, compare, and buy.",
   "stories": [
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "OpenAI Declares Itself an Advertising Business at Cannes Lions 2026",
-      "summary": "At its first-ever Cannes Lions appearance on June 22, OpenAI CRO Denise Dresser told assembled brands and agencies the company is 'clearly in the advertising business now' \u2014 reframing the pitch as a move from the 'attention economy to the intelligence economy.' With ~20% of ChatGPT queries carrying commercial intent, OpenAI is projecting $2.5B in ad revenue for 2026 and an audacious $100B by 2030. For luxury media planners, the implication is stark: a third gatekeeper has arrived, and the conversational, high-intent environment of ChatGPT represents a fundamentally different ad surface to anything in current media plans.",
-      "source": "Digital Applied",
-      "date": "23 June 2026",
-      "url": "https://www.digitalapplied.com/blog/openai-cannes-lions-2026-advertising-business-debut"
-    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Meta Unveils End-to-End AI Creative Ad Ecosystem at Cannes Lions",
-      "summary": "At Cannes Lions 2026, Meta introduced a full-suite AI creative solution inside Ads Manager \u2014 brand-aware generative tools that learn a brand's identity from existing ads and produce, test, and launch new campaigns without manual production. Meta also debuted AI-enabled WhatsApp 'complete the look' commerce experiences and consolidated its Creator Marketplace into a unified Creator Marketing Hub. The company claims every dollar spent on Meta now generates $4.13 in revenue \u2014 up 25% since 2022 \u2014 attributing the lift directly to its AI ad stack. For luxury performance teams, this is the most consequential platform update of the year.",
-      "source": "Campaign US",
-      "date": "24 June 2026",
-      "url": "https://www.campaignlive.com/article/meta-launches-complete-ai-creative-ad-ecosystem/1962693"
+      "headline": "Bain-Altagamma: Half of All Luxury Consumers Now Use AI in Their Purchase Journey \u2014 Brands Not Building AI-Native Relevance Risk Being Left Behind",
+      "summary": "The spring update of the Bain-Altagamma Luxury Goods Worldwide Market Study, released June 25, names AI-disrupted go-to-customer funnels as one of four structural forces reshaping the market. Half of luxury consumers already use AI to discover, compare, and validate purchases, with two-thirds using it for product comparison. Bain explicitly warns that brands failing to build AI-native relevance risk irrelevance as discovery migrates to AI-mediated channels. The personal luxury goods market is forecast to grow 2\u20134% in 2026 to \u20ac365\u2013373 billion, but the distribution of that growth will increasingly be determined by AI visibility, not store count or price.",
+      "source": "Bain & Company",
+      "date": "25 June 2026",
+      "url": "https://www.bain.com/about/media-center/press-releases/2026/global-luxury-stabilizes-amid-compounding-disruptions-as-brands-race-to-amplify-meaning-and-rebuild-relevance/"
     },
     {
-      "category": "COMMERCE & RETAIL",
+      "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "AI Virtual Try-On Drives 10x Conversion Uplift for Luxury Shoppers, DressX Report Finds",
-      "summary": "A new DressX intelligence report, analysed by Business of Fashion, delivers the most compelling conversion data the luxury e-commerce space has seen: shoppers who engage with AI-powered virtual try-on are 50% more likely to purchase overall, with conversion rates among luxury consumers jumping up to 10 times higher. The data lands as digital fashion platforms mature beyond novelty into measurable ROI tools. For LVMH maisons operating direct-to-consumer channels, the question is no longer whether to deploy AI try-on, but how fast the rollout can move without compromising brand aesthetics.",
-      "source": "Business of Fashion",
-      "date": "20 June 2026",
-      "url": "https://www.businessoffashion.com/articles/technology/ai-virtual-try-on-luxury-dressx-report/"
+      "headline": "Moncler Wins Inaugural Cannes Lions Luxury & Lifestyle Grand Prix \u2014 Setting the Global Benchmark for Luxury Creative",
+      "summary": "Cannes Lions awarded its first-ever Luxury & Lifestyle Lions Grand Prix to Moncler's 'Warmer Together' campaign this week, created by Wesayhi. The jury president declared that the work 'stripped luxury storytelling down to its most powerful truth: human connection' \u2014 a pointed verdict at a moment when AI-generated content threatens to commoditise brand expression. The new Lion category, introduced specifically to provide a global benchmark for luxury brands, signals that the industry's creative establishment is now institutionalising luxury as a distinct competitive discipline within advertising. For maisons evaluating where to invest creative budgets, this is the new jury standard to brief against.",
+      "source": "Branding in Asia",
+      "date": "25 June 2026",
+      "url": "https://www.brandinginasia.com/cannes-lions-2026-day-four-grand-prix-apac-winners-and-ogilvys-regional-honor/"
     },
     {
       "category": "CREATIVE & CAMPAIGNS",
       "score": 4,
-      "headline": "Est\u00e9e Lauder and Meta Use AI to Decode Brand Iconicity at Cannes Lions",
-      "summary": "At Cannes Lions 2026, Est\u00e9e Lauder Companies and Meta's creative AI partner Matter presented a live case study in AI-powered brand archaeology: feeding eight decades of creative archive into Matter's New Spark model to identify which structural patterns produce products that endure. The analysis surfaced that MAC Ruby Woo's cultural durability \u2014 80% community-made content versus brand-made \u2014 reflects a model of longevity built on sensory memory, not visual recognition. For luxury creative and media executives, this signals a new category of strategic AI use: not generative output, but retrospective pattern intelligence applied to brand building.",
-      "source": "BestMediaInfo",
-      "date": "24 June 2026",
-      "url": "https://bestmediainfo.com/mediainfo/advertising/what-makes-a-product-iconic-est%C3%A9e-lauder-and-meta-use-ai-to-find-out-at-cannes-lions-2026-12067344"
+      "headline": "Cannes Lions 2026 Debuts AI Craft Subcategory \u2014 Juries Now Asking Whether AI Changed the Outcome, Not Just Whether It Was Used",
+      "summary": "This year's Cannes Lions marked a decisive shift in how the creative industry evaluates AI: the new AI Craft subcategory in Film Craft Lions requires entries to demonstrate that AI materially changed the work, not merely that it was deployed. In 2025 juries asked if AI was used at all; in 2026 they are asking if it made a difference \u2014 a calibration that will set creative briefing standards industry-wide for the next 12 months. The festival also saw WPP vacate its traditional beach presence, with independent performance agency PMG stepping in with an AI and Tech Sandbox \u2014 a visible power shift in who now owns the AI conversation on the Croisette. For luxury media executives, the AI Craft jury's decisions will directly shape how agencies pitch AI-augmented creative to maisons.",
+      "source": "Design Rush",
+      "date": "23 June 2026",
+      "url": "https://news.designrush.com/cannes-lions-2026-campaigns-brands-agencies"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 4,
+      "headline": "Tiffany & Co. x Netflix 'Frankenstein' Wins Cannes Lions Gold \u2014 Luxury Brand-Entertainment Convergence Lands With Juries",
+      "summary": "An in-house collaboration between Tiffany & Co. and Netflix's Brand Creative Studio won a Gold Lion in the new Luxury category at Cannes Lions 2026, confirming that brand-entertainment partnerships are resonating with luxury juries. The work \u2014 built around Netflix's Frankenstein IP \u2014 signals that LVMH's maisons should be stress-testing their own entertainment IP strategies: streaming platforms are now legitimate co-creative partners, not just distribution channels. For media and performance teams, the win also underscores that luxury creative excellence is increasingly judged on cultural integration and entertainment value, not product imagery alone.",
+      "source": "Campaign US",
+      "date": "25 June 2026",
+      "url": "https://www.campaignlive.com/article/cannes-lions-2026-vml-new-york-leads-us-winners-festivals-fourth-day/1962871"
     },
     {
       "category": "DATA & PERFORMANCE",
       "score": 4,
-      "headline": "68% of Google Searches Now End Without a Click as Zero-Click Era Reaches Tipping Point",
-      "summary": "New June 2026 research from SparkToro finds that 68% of US Google searches end without a click to any external website \u2014 a structural attribution crisis for luxury brands whose performance marketing still relies on traffic-based measurement. AI Overviews now appear in 89% of brand search results, and a separate MarketingProfs analysis confirms that AI-referred visitors convert at higher rates and engage more deeply than traditional click-throughs. For LVMH's Media Data & Performance teams, this data demands an urgent rethink of measurement frameworks: brand visibility is now decoupled from traffic, and earned AI citations are the new media currency.",
-      "source": "MarketingProfs",
-      "date": "19 June 2026",
-      "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week"
+      "headline": "OpenAI Moves to Automate Ad Creative \u2014 First-Party Audience Upload and AI Creative Generation Now Formalised in Policy",
+      "summary": "On June 17, OpenAI published updated Ad Tools Terms introducing two capabilities that separate a test from a permanent advertising business: Audience Tools for first-party customer data upload, and Creative Tools for AI-powered generation, modification, localisation, and translation of ad creative. Digiday reported the terms the same day, noting that OpenAI is going beyond selling inventory to automating mass creative production \u2014 while explicitly placing accuracy and compliance responsibility on the advertiser. The policy infrastructure arrives as ChatGPT processes 2.5 billion daily prompts, with roughly 20% carrying direct commercial intent. Luxury brands with strict brand-safety and tone-of-voice requirements should scrutinise the data-reuse clause: uploaded Audience Data can be used for OpenAI internal product improvement, not only ad delivery.",
+      "source": "Digiday",
+      "date": "17 June 2026",
+      "url": "https://digiday.com/marketing/openai-moves-to-automate-ad-creative/"
     }
   ],
-  "date_slug": "2026-06-25"
+  "date_slug": "2026-06-26"
 }
