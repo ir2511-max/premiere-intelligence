@@ -1,52 +1,52 @@
 {
-  "date": "Friday, 26 June 2026",
-  "lede": "As Cannes Lions closes its curtain on the AI era's defining creative week, Bain's bombshell luxury market data confirms what LVMH strategists have long suspected: AI-mediated funnels are now a structural force reshaping how luxury consumers discover, compare, and buy.",
+  "date": "Monday, 29 June 2026",
+  "lede": "As the post-Cannes dust settles, five signals define the week: luxury's AI visibility crisis lands in HBR, WPP rewires premium video buying with autonomous agents, DISQO invents the first measurement tool for LLM-driven discovery, Forrester crowns Google the agency AI ecosystem of record, and Digiday maps the in-house insurgency forcing holdcos to deploy agents or die.",
   "stories": [
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 5,
-      "headline": "Bain-Altagamma: Half of All Luxury Consumers Now Use AI in Their Purchase Journey \u2014 Brands Not Building AI-Native Relevance Risk Being Left Behind",
-      "summary": "The spring update of the Bain-Altagamma Luxury Goods Worldwide Market Study, released June 25, names AI-disrupted go-to-customer funnels as one of four structural forces reshaping the market. Half of luxury consumers already use AI to discover, compare, and validate purchases, with two-thirds using it for product comparison. Bain explicitly warns that brands failing to build AI-native relevance risk irrelevance as discovery migrates to AI-mediated channels. The personal luxury goods market is forecast to grow 2\u20134% in 2026 to \u20ac365\u2013373 billion, but the distribution of that growth will increasingly be determined by AI visibility, not store count or price.",
-      "source": "Bain & Company",
-      "date": "25 June 2026",
-      "url": "https://www.bain.com/about/media-center/press-releases/2026/global-luxury-stabilizes-amid-compounding-disruptions-as-brands-race-to-amplify-meaning-and-rebuild-relevance/"
-    },
     {
       "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "Moncler Wins Inaugural Cannes Lions Luxury & Lifestyle Grand Prix \u2014 Setting the Global Benchmark for Luxury Creative",
-      "summary": "Cannes Lions awarded its first-ever Luxury & Lifestyle Lions Grand Prix to Moncler's 'Warmer Together' campaign this week, created by Wesayhi. The jury president declared that the work 'stripped luxury storytelling down to its most powerful truth: human connection' \u2014 a pointed verdict at a moment when AI-generated content threatens to commoditise brand expression. The new Lion category, introduced specifically to provide a global benchmark for luxury brands, signals that the industry's creative establishment is now institutionalising luxury as a distinct competitive discipline within advertising. For maisons evaluating where to invest creative budgets, this is the new jury standard to brief against.",
-      "source": "Branding in Asia",
-      "date": "25 June 2026",
-      "url": "https://www.brandinginasia.com/cannes-lions-2026-day-four-grand-prix-apac-winners-and-ogilvys-regional-honor/"
+      "headline": "HBR Research: LLMs Systematically Misread Luxury Brand Signals \u2014 Heritage, Scarcity and Minimalism Are Invisible to AI",
+      "summary": "A peer-reviewed study published in Harvard Business Review on 22 June confirms what luxury CMOs have feared: AI agents and LLMs reliably process explicit cues \u2014 brand names, price points, overt 'luxury' labelling \u2014 but consistently fail to interpret the implicit desirability signals that make a maison desirable, including scarcity, heritage, artistic association and product silhouette. The research, co-authored by INSEAD's David Dubois and Jellyfish strategy leads, warns that standard generative engine optimisation (GEO) playbooks built for mainstream brands will actively backfire for luxury. The authors prescribe a luxury-specific GEO framework: audit model-specific brand valuations, encode machine-legible luxury cues across owned and earned content, and monitor 'share of model' across LLM platforms. For a Media Data & Performance team managing discovery for 75+ maisons, this is the most operationally urgent research published this month.",
+      "source": "Harvard Business Review",
+      "date": "22 June 2026",
+      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai"
     },
     {
-      "category": "CREATIVE & CAMPAIGNS",
+      "category": "MEDIA & PLATFORMS",
+      "score": 5,
+      "headline": "WPP Media Launches AI Buyer Agent for Premium Video \u2014 Calls It 'Bigger Than Programmatic'",
+      "summary": "WPP Media announced its Agentic Standards Initiative for Video Buying on 18 June, unveiling a Buyer Agent for Video built inside WPP Open \u2014 its agentic marketing platform \u2014 and framing the move as the most consequential shift in media buying since the birth of programmatic two decades ago. The initiative co-opts Disney Advertising, Fox, NBCUniversal, Netflix, Paramount, Comcast/FreeWheel, IAB Tech Lab and Prebid.org to co-develop shared technical, workflow and governance standards governing how buyer and seller AI agents communicate, validate, transact and escalate decisions. Initial focus is linear TV, CTV and premium video \u2014 precisely the high-CPM inventory where luxury brands concentrate brand-building spend. WPP CEO Brian Lesser's ambition is explicit: move from alpha testing to large-scale TV and video investment within six to nine months, with industry standards published in early 2027.",
+      "source": "MediaPost / WPP Media",
+      "date": "18 June 2026",
+      "url": "https://www.mediapost.com/publications/article/415895/wpp-media-unveils-prototype-for-new-buyer-agent.html"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 5,
+      "headline": "DISQO Launches AI Search Lift \u2014 The First Incrementality Measurement Tool Built for LLM and AI-Powered Discovery",
+      "summary": "Launched on 17 June, DISQO's AI Search Lift is the industry's first outcomes measurement product designed to quantify whether advertising drives incremental brand interactions inside large language models and AI-powered search environments. Using a consumer-consented panel and an exposed-versus-control methodology, the product closes what DISQO's CEO calls a structural 'signal loss' gap: as consumers increasingly discover and evaluate brands inside ChatGPT, Gemini and Perplexity rather than on Google Search, traditional attribution stacks go blind. Early beta data across five categories show that higher-consideration verticals \u2014 notably automotive, insurance and travel \u2014 record the deepest brand engagement inside LLMs, a finding that maps directly onto luxury's own high-consideration purchase dynamics. For a luxury performance team managing multi-million euro media budgets, AI Search Lift offers the first credible answer to the question: is our media investment influencing how AI recommends our maisons?",
+      "source": "Adweek / DISQO",
+      "date": "17 June 2026",
+      "url": "https://www.adweek.com/adweek-wire/disqo-launches-the-first-product-to-measure-the-incremental-effect-of-advertising-on-llms/"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
       "score": 4,
-      "headline": "Cannes Lions 2026 Debuts AI Craft Subcategory \u2014 Juries Now Asking Whether AI Changed the Outcome, Not Just Whether It Was Used",
-      "summary": "This year's Cannes Lions marked a decisive shift in how the creative industry evaluates AI: the new AI Craft subcategory in Film Craft Lions requires entries to demonstrate that AI materially changed the work, not merely that it was deployed. In 2025 juries asked if AI was used at all; in 2026 they are asking if it made a difference \u2014 a calibration that will set creative briefing standards industry-wide for the next 12 months. The festival also saw WPP vacate its traditional beach presence, with independent performance agency PMG stepping in with an AI and Tech Sandbox \u2014 a visible power shift in who now owns the AI conversation on the Croisette. For luxury media executives, the AI Craft jury's decisions will directly shape how agencies pitch AI-augmented creative to maisons.",
-      "source": "Design Rush",
+      "headline": "Forrester: Google Dethrones OpenAI as Agencies' Preferred AI Partner \u2014 The Winner Is the Ecosystem, Not the Model",
+      "summary": "New joint Forrester and 4As research published on 23 June reveals Google has overtaken Adobe, Anthropic, Microsoft and OpenAI to become US marketing agencies' preferred AI partner for the first time since 2024. The decisive factor is not model performance but ecosystem breadth: agencies are no longer buying AI tools, they are building marketing operating systems, and Google's ability to unify data, creative, media and commerce in a single orchestration layer is proving decisive. Forrester notes that OpenAI \u2014 despite its innovation leadership and advertising ambitions \u2014 risks being abstracted behind Google and other partner platforms unless it resolves its ad monetisation strategy. The report, 'The State of AI Inside US Marketing Agencies, 2026,' has direct implications for how luxury groups evaluate and consolidate their agency rosters in an AI-first media environment.",
+      "source": "Forrester",
       "date": "23 June 2026",
-      "url": "https://news.designrush.com/cannes-lions-2026-campaigns-brands-agencies"
+      "url": "https://www.forrester.com/blogs/google-dethrones-openai-as-agencies-preferred-ai-partner/"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "Tiffany & Co. x Netflix 'Frankenstein' Wins Cannes Lions Gold \u2014 Luxury Brand-Entertainment Convergence Lands With Juries",
-      "summary": "An in-house collaboration between Tiffany & Co. and Netflix's Brand Creative Studio won a Gold Lion in the new Luxury category at Cannes Lions 2026, confirming that brand-entertainment partnerships are resonating with luxury juries. The work \u2014 built around Netflix's Frankenstein IP \u2014 signals that LVMH's maisons should be stress-testing their own entertainment IP strategies: streaming platforms are now legitimate co-creative partners, not just distribution channels. For media and performance teams, the win also underscores that luxury creative excellence is increasingly judged on cultural integration and entertainment value, not product imagery alone.",
-      "source": "Campaign US",
-      "date": "25 June 2026",
-      "url": "https://www.campaignlive.com/article/cannes-lions-2026-vml-new-york-leads-us-winners-festivals-fourth-day/1962871"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 4,
-      "headline": "OpenAI Moves to Automate Ad Creative \u2014 First-Party Audience Upload and AI Creative Generation Now Formalised in Policy",
-      "summary": "On June 17, OpenAI published updated Ad Tools Terms introducing two capabilities that separate a test from a permanent advertising business: Audience Tools for first-party customer data upload, and Creative Tools for AI-powered generation, modification, localisation, and translation of ad creative. Digiday reported the terms the same day, noting that OpenAI is going beyond selling inventory to automating mass creative production \u2014 while explicitly placing accuracy and compliance responsibility on the advertiser. The policy infrastructure arrives as ChatGPT processes 2.5 billion daily prompts, with roughly 20% carrying direct commercial intent. Luxury brands with strict brand-safety and tone-of-voice requirements should scrutinise the data-reuse clause: uploaded Audience Data can be used for OpenAI internal product improvement, not only ad delivery.",
+      "headline": "Digiday: Agencies Race to Deploy AI Agents as Brands Threaten to In-House the Same Capability",
+      "summary": "Published 24 June, Digiday maps the accelerating arms race between agency holdcos and advertisers over agentic AI media buying \u2014 a dynamic with direct consequences for luxury groups evaluating whether to internalise programmatic and performance capabilities. WPP Media is testing a premium video buyer agent; Dentsu has struck a partnership with Newton Research to bolster AI analytics and media planning inside Dentsu.connect, with US media-buying agent pilots already underway with clients. Brands including Hyundai have already built proprietary AI-powered media buying systems that have cut costs and improved campaign performance \u2014 the in-housing threat is no longer theoretical. Agencies' counter-argument: their competitive moat lies not in exclusive AI access but in combining proprietary expertise, cross-client learning and governance workflows that individual brand teams cannot replicate at speed.",
       "source": "Digiday",
-      "date": "17 June 2026",
-      "url": "https://digiday.com/marketing/openai-moves-to-automate-ad-creative/"
+      "date": "24 June 2026",
+      "url": "https://digiday.com/media-buying/agencies-look-to-ai-agents-for-edge-but-must-fend-off-brands-looking-to-in-house-with-the-same-tech/"
     }
   ],
-  "date_slug": "2026-06-26"
+  "date_slug": "2026-06-29"
 }
