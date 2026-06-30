@@ -1,52 +1,52 @@
 {
-  "date": "Monday, 29 June 2026",
-  "lede": "As the post-Cannes dust settles, five signals define the week: luxury's AI visibility crisis lands in HBR, WPP rewires premium video buying with autonomous agents, DISQO invents the first measurement tool for LLM-driven discovery, Forrester crowns Google the agency AI ecosystem of record, and Digiday maps the in-house insurgency forcing holdcos to deploy agents or die.",
+  "date": "Tuesday, 30 June 2026",
+  "lede": "Agentic commerce goes live at scale, media verification gets a cognitive upgrade, and AI search personalisation is quietly making brand discovery harder \u2014 a week of infrastructure moves that will reshape how luxury reaches its next buyer.",
   "stories": [
     {
-      "category": "MAISONS & BRANDS",
+      "category": "COMMERCE & RETAIL",
       "score": 5,
-      "headline": "HBR Research: LLMs Systematically Misread Luxury Brand Signals \u2014 Heritage, Scarcity and Minimalism Are Invisible to AI",
-      "summary": "A peer-reviewed study published in Harvard Business Review on 22 June confirms what luxury CMOs have feared: AI agents and LLMs reliably process explicit cues \u2014 brand names, price points, overt 'luxury' labelling \u2014 but consistently fail to interpret the implicit desirability signals that make a maison desirable, including scarcity, heritage, artistic association and product silhouette. The research, co-authored by INSEAD's David Dubois and Jellyfish strategy leads, warns that standard generative engine optimisation (GEO) playbooks built for mainstream brands will actively backfire for luxury. The authors prescribe a luxury-specific GEO framework: audit model-specific brand valuations, encode machine-legible luxury cues across owned and earned content, and monitor 'share of model' across LLM platforms. For a Media Data & Performance team managing discovery for 75+ maisons, this is the most operationally urgent research published this month.",
-      "source": "Harvard Business Review",
-      "date": "22 June 2026",
-      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "WPP Media Launches AI Buyer Agent for Premium Video \u2014 Calls It 'Bigger Than Programmatic'",
-      "summary": "WPP Media announced its Agentic Standards Initiative for Video Buying on 18 June, unveiling a Buyer Agent for Video built inside WPP Open \u2014 its agentic marketing platform \u2014 and framing the move as the most consequential shift in media buying since the birth of programmatic two decades ago. The initiative co-opts Disney Advertising, Fox, NBCUniversal, Netflix, Paramount, Comcast/FreeWheel, IAB Tech Lab and Prebid.org to co-develop shared technical, workflow and governance standards governing how buyer and seller AI agents communicate, validate, transact and escalate decisions. Initial focus is linear TV, CTV and premium video \u2014 precisely the high-CPM inventory where luxury brands concentrate brand-building spend. WPP CEO Brian Lesser's ambition is explicit: move from alpha testing to large-scale TV and video investment within six to nine months, with industry standards published in early 2027.",
-      "source": "MediaPost / WPP Media",
-      "date": "18 June 2026",
-      "url": "https://www.mediapost.com/publications/article/415895/wpp-media-unveils-prototype-for-new-buyer-agent.html"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 5,
-      "headline": "DISQO Launches AI Search Lift \u2014 The First Incrementality Measurement Tool Built for LLM and AI-Powered Discovery",
-      "summary": "Launched on 17 June, DISQO's AI Search Lift is the industry's first outcomes measurement product designed to quantify whether advertising drives incremental brand interactions inside large language models and AI-powered search environments. Using a consumer-consented panel and an exposed-versus-control methodology, the product closes what DISQO's CEO calls a structural 'signal loss' gap: as consumers increasingly discover and evaluate brands inside ChatGPT, Gemini and Perplexity rather than on Google Search, traditional attribution stacks go blind. Early beta data across five categories show that higher-consideration verticals \u2014 notably automotive, insurance and travel \u2014 record the deepest brand engagement inside LLMs, a finding that maps directly onto luxury's own high-consideration purchase dynamics. For a luxury performance team managing multi-million euro media budgets, AI Search Lift offers the first credible answer to the question: is our media investment influencing how AI recommends our maisons?",
-      "source": "Adweek / DISQO",
-      "date": "17 June 2026",
-      "url": "https://www.adweek.com/adweek-wire/disqo-launches-the-first-product-to-measure-the-incremental-effect-of-advertising-on-llms/"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 4,
-      "headline": "Forrester: Google Dethrones OpenAI as Agencies' Preferred AI Partner \u2014 The Winner Is the Ecosystem, Not the Model",
-      "summary": "New joint Forrester and 4As research published on 23 June reveals Google has overtaken Adobe, Anthropic, Microsoft and OpenAI to become US marketing agencies' preferred AI partner for the first time since 2024. The decisive factor is not model performance but ecosystem breadth: agencies are no longer buying AI tools, they are building marketing operating systems, and Google's ability to unify data, creative, media and commerce in a single orchestration layer is proving decisive. Forrester notes that OpenAI \u2014 despite its innovation leadership and advertising ambitions \u2014 risks being abstracted behind Google and other partner platforms unless it resolves its ad monetisation strategy. The report, 'The State of AI Inside US Marketing Agencies, 2026,' has direct implications for how luxury groups evaluate and consolidate their agency rosters in an AI-first media environment.",
-      "source": "Forrester",
-      "date": "23 June 2026",
-      "url": "https://www.forrester.com/blogs/google-dethrones-openai-as-agencies-preferred-ai-partner/"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 4,
-      "headline": "Digiday: Agencies Race to Deploy AI Agents as Brands Threaten to In-House the Same Capability",
-      "summary": "Published 24 June, Digiday maps the accelerating arms race between agency holdcos and advertisers over agentic AI media buying \u2014 a dynamic with direct consequences for luxury groups evaluating whether to internalise programmatic and performance capabilities. WPP Media is testing a premium video buyer agent; Dentsu has struck a partnership with Newton Research to bolster AI analytics and media planning inside Dentsu.connect, with US media-buying agent pilots already underway with clients. Brands including Hyundai have already built proprietary AI-powered media buying systems that have cut costs and improved campaign performance \u2014 the in-housing threat is no longer theoretical. Agencies' counter-argument: their competitive moat lies not in exclusive AI access but in combining proprietary expertise, cross-client learning and governance workflows that individual brand teams cannot replicate at speed.",
-      "source": "Digiday",
+      "headline": "Salesforce Drops Its Biggest Agentforce Commerce Release Yet \u2014 Shopper Agents Now Live on ChatGPT and Gemini",
+      "summary": "Salesforce has made its latest Agentforce Commerce build generally available, deploying Shopper, Buyer, and Merchant Agents with native integrations into ChatGPT, Google AI Mode, and the Gemini app. The data behind the launch is striking: AI influenced 20% of global online sales worth $262 billion last holiday season, AI-referred traffic converts at eight times the rate of social, and retailers running their own shopper agents grew sales 59% faster than those without. For luxury maisons, the implications are structural \u2014 agentic discovery is now a live consumer channel, not a pilot, and brands without a trained, brand-safe Shopper Agent are ceding the consideration moment to whoever is most machine-readable. Salesforce's answer to the brand-ownership question is explicit: keep the transaction and the customer data on brand-owned surfaces, with the agent as the front door.",
+      "source": "Salesforce Newsroom",
       "date": "24 June 2026",
-      "url": "https://digiday.com/media-buying/agencies-look-to-ai-agents-for-edge-but-must-fend-off-brands-looking-to-in-house-with-the-same-tech/"
+      "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 5,
+      "headline": "Smartly Launches Synapse \u2014 An AI Orchestration and Memory Layer Across $7B in Ad Spend",
+      "summary": "Smartly introduced Smartly Synapse on the opening day of Cannes Lions, positioning it as the intelligence and memory layer behind every AI agent on its platform, which manages over $7 billion in global ad spend across 800+ brands. The architecture is designed to solve a core multi-agent problem: context loss \u2014 by synthesising campaign history, market trends, and business context into a continuous performance loop that improves with every campaign run. Luxury media buyers running complex cross-channel programmes will recognise the pain point directly; Synapse is effectively a campaign-level institutional memory that prevents agent silos from undermining performance at scale. The Cannes timing was no accident: Smartly simultaneously announced a Horizon Media partnership connecting Blu audience intelligence to campaign execution via API.",
+      "source": "Business Wire",
+      "date": "22 June 2026",
+      "url": "https://www.businesswire.com/news/home/20260622234186/en/Smartly-Introduces-Smartly-Synapse-the-Intelligent-AI-Orchestration-Layer-Powering-Its-Advertising-Platform"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 5,
+      "headline": "DoubleVerify Launches DV Neura \u2014 A Cognitive AI Engine That Classifies 300x More Content and Enables Autonomous Campaign Execution",
+      "summary": "DoubleVerify introduced DV Neura on 17 June, a cognitive AI architecture embedded across its entire DV MAP platform that has already delivered a nearly 300x increase in content classification output \u2014 a direct response to the explosion of AI-generated media inventory. The launch includes a live Insight Agent accessible via Anthropic Claude using the MCP open standard, with Google Gemini and Microsoft Copilot integrations to follow, and a forthcoming Activation Agent in Q3 that will autonomously execute approved campaign changes within advertiser-defined guardrails. For luxury brand safety teams, the governance framing is the signal: DV Neura has already monitored or blocked more than 500 million low-quality AI-generated impressions this year, and the platform is explicitly positioning transparency and human oversight as competitive differentiators in agentic advertising.",
+      "source": "DoubleVerify Investor Relations",
+      "date": "17 June 2026",
+      "url": "https://ir.doubleverify.com/news-events/press-releases/press-releases-details/2026/DoubleVerify-Introduces-DV-Neura-the-Dynamic-AI-Engine-Powering-the-Future-of-Media-Quality-and-Effectiveness/default.aspx"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 4,
+      "headline": "NIQ Launches Cadence \u2014 A Compound AI Operating System That Replaces Fragmented Marketing Reports With a Single Decision Engine",
+      "summary": "NielsenIQ introduced NIQ Cadence on 17 June, describing it as a compound AI operating system built to unify marketing performance measurement, budget optimisation, and real-time decision-making in one continuous environment. The system runs on a network of 19 specialised agents coordinated by NIQ Optiq, replacing the manual 'stitch-together' workflow that most marketing teams still rely on. Currently in beta with NIQ's marketing mix clients through the remainder of 2026, the platform is directly relevant for luxury media executives managing multi-market, multi-channel investment decisions where the lag between signal and action costs margin. The compound AI framing \u2014 multi-agent systems rather than single-model analytics \u2014 signals where measurement infrastructure is heading industry-wide.",
+      "source": "NIQ Newsroom",
+      "date": "17 June 2026",
+      "url": "https://nielseniq.com/global/en/news-center/2026/niq-introduces-niq-cadence-a-compound-ai-operating-system-for-marketing-effectiveness/"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 4,
+      "headline": "Google's Personalised AI Search Is Making Brand Discovery Harder for Everyone Who Isn't Already Known",
+      "summary": "The 26 June MarketingProfs AI roundup crystallises a structural visibility threat that luxury brands cannot ignore: Google's Preferred Sources, Search Profiles, and AI Mode personalisation features are creating search experiences that increasingly favour publishers and brands the user already trusts, making it materially harder for brands to earn new consideration. Agencies expect content-focused strategies \u2014 not paid AI placements \u2014 to remain the dominant playbook until AI advertising products offer clearer ROI metrics, meaning owned-media authority is now the primary currency for AI-era brand visibility. For luxury houses whose acquisition strategy depends on aspirational discovery among new affluent consumers, the message is stark: if your brand is not embedded in the sources AI systems already trust, you are invisible at the moment of intent.",
+      "source": "MarketingProfs",
+      "date": "26 June 2026",
+      "url": "https://www.marketingprofs.com/opinions/2026/55130/ai-update-june-26-2026-ai-news-and-views-from-the-past-week"
     }
   ],
-  "date_slug": "2026-06-29"
+  "date_slug": "2026-06-30"
 }
