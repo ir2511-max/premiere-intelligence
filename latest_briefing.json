@@ -1,43 +1,52 @@
 {
-  "date": "Thursday, 2 July 2026",
-  "lede": "The week's defining signal: luxury consumers are already inside AI search \u2014 and brands that haven't cracked GEO are being outranked by specialists a tenth of their size.",
+  "date": "Friday, 3 July 2026",
+  "lede": "Luxury brands face an urgent discovery gap as shoppers now lead deployment: 82% of top-spenders use AI for purchases, yet only 21% of brands have customer-facing AI live\u2014and 90% of generative-engine citations for luxury queries point outside brand websites.",
   "stories": [
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Bain & Comit\u00e9 Colbert: 82% of Top Luxury Spenders Use AI in Their Purchase Journey \u2014 GEO Is Now the Battleground",
-      "summary": "The fifth annual Bain/Comit\u00e9 Colbert Luxury & Technology report drops a structural alarm: luxury consumers are adopting AI for discovery, comparison and purchase at a pace that leaves maisons trailing. 82% of very-heavy spenders used AI in Q1 2026, yet fewer than 20% of luxury executives report significant AI impact internally. The sharpest finding for media teams: 70% of AI searches don't mention a brand name, and 90% of LLM signals come from offsite sources \u2014 customer reviews, editorial, blogs \u2014 not brand.com. Bain's Nathalie Remy frames GEO as the defining media battle: 'Being big, powerful, and wealthy is no longer enough to emerge in AI search.'",
-      "source": "WWD",
-      "date": "2 July 2026",
-      "url": "https://wwd.com/business-news/technology/luxury-shoppers-adopting-ai-faster-than-brands-1239049435/"
+      "headline": "Bain & Comit\u00e9 Colbert: 82% of Luxury Spenders Now Use AI in Purchase Journey\u2014But Only 21% of Brands Have Deployed Customer-Facing Solutions",
+      "summary": "<cite index=\"21-3,21-8\">Bain & Company and Comit\u00e9 Colbert's 5th annual Luxury and Technology report, released June 30, 2026, found 82% of top-tier luxury spenders used an AI tool during their most recent purchase, versus just 28% of the lowest-spending segment.</cite> <cite index=\"21-9,21-10\">AI adoption remains concentrated in back-office functions at 31% while customer-facing deployment lags at just 21%, with 90% of URLs cited by AI engines for luxury queries pointing to sites outside the brands themselves.</cite> <cite index=\"24-3\">22% of luxury houses rank AI among their top three corporate priorities for the next three years, compared with only 5% in 2024.</cite>",
+      "source": "Bain & Company / Comit\u00e9 Colbert",
+      "date": "30 June 2026",
+      "url": "https://www.bain.com/insights/winning-over-the-customer-in-the-age-of-ai-a-new-horizon-for-luxury/"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 5,
+      "headline": "David Yurman Partners with Tangiblee: Luxury E-Commerce's Answer to the Trust Gap in AI-Generated Imagery",
+      "summary": "<cite index=\"58-6\">Luxury jewelry brand David Yurman announced a partnership with Tangiblee on June 9, 2026, to enhance its e-commerce journey with true-to-scale product visualization, Virtual Try-On, and stacking experiences.</cite> <cite index=\"58-12\">Kim Audan, SVP of E-commerce at David Yurman, confirmed that clients who engage with these interactive experiences convert at a higher rate than those who do not.</cite> <cite index=\"59-13,59-15\">90% of consumers now demand transparency about AI-generated imagery, and as consumers become increasingly AI-literate, they penalize brands that prioritize cheap, synthetic visuals over authentic product reality.</cite>",
+      "source": "Agile Brand Guide / Tangiblee",
+      "date": "9 June 2026",
+      "url": "https://agilebrandguide.com/marketing-technology-ai-news-june-10-2026/"
     },
     {
       "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "First AI Luxury 25 Index: Herm\u00e8s Scores 98.6 \u2014 Brand Coherence Is Now a Measurable Performance Asset",
-      "summary": "5W AI Communications and Haute Living released the first-ever ranking of luxury houses by AI-engine clarity, scoring 25 maisons across ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews. Herm\u00e8s leads at 98.6 \u2014 its single unbroken narrative, zero licensing sprawl and no sub-brand noise mean every engine returns the same identity. The structural implication for conglomerates is pointed: LVMH and Kering houses that have cycled through creative directors or operate across fragmented sub-brand identities are structurally more exposed to the ambiguity the index penalises. The methodology rewards the same thing heritage luxury was always built on \u2014 consistency over time \u2014 but now that consistency has a score.",
-      "source": "The Impression",
-      "date": "25 June 2026",
-      "url": "https://theimpression.com/hermes-leads-new-ai-search-index-as-brand-coherence-becomes-a-measurable-asset/"
+      "headline": "LVMH's 'Quiet Tech' Strategy: AI Agents to Superpower Client Advisors Without Replacing Human Touch",
+      "summary": "<cite index=\"54-1,54-2\">Agentic automation could create an 'intelligent layer to superpower our client advisor,' according to Louis Vuitton's global senior vice-president for client development, with the focus on anticipating, understanding, and responding to client intent while building trust and legitimacy powered by AI.</cite> <cite index=\"52-4\">LVMH's philosophy, which it refers to internally as 'quiet tech'\u2014a deliberate echo of the quiet luxury trend\u2014keeps AI invisible to the customer while transforming operations from demand forecasting to supply chain to clienteling.</cite> <cite index=\"54-3,54-4\">LVMH executives emphasize that each Maison must remain authentically its own, noting that gimmicky side topics have historically failed to scale.</cite>",
+      "source": "NRF / LVMH",
+      "date": "Circa June 2026",
+      "url": "https://nrf.com/blog/lvmh-balances-luxury-innovation-in-the-digital-age"
+    },
+    {
+      "category": "POLICY & RISK",
+      "score": 4,
+      "headline": "EU AI Act Article 50 Deadline Looms August 2: Luxury Brands Must Prepare for Mandatory AI-Generated Content Labeling and Disclosure",
+      "summary": "<cite index=\"39-10,39-11\">The EU AI Act's Article 50 transparency obligations\u2014including chatbot disclosure, marking of AI-generated content, and deepfake labeling\u2014are set to apply from August 2, 2026, though as of June 2026, generative outputs will need to be machine-readable as AI-generated and the Code of Practice on AI-content transparency was still in final draft.</cite> <cite index=\"39-8,39-9\">The EU Digital Services Act requires major platforms to flag and promptly remove illegal content and conduct annual risk assessments, with non-compliance fines reaching up to 6% of global annual turnover\u2014a penalty cap large enough to carry board-level financial weight.</cite>",
+      "source": "Digital Applied",
+      "date": "18 June 2026",
+      "url": "https://www.digitalapplied.com/blog/ai-content-moderation-2026-llm-trust-safety-guide"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "Every Major Ad Holding Company Is Now Racing to Rebuild Itself as an AI Operating System",
-      "summary": "Storyboard18's definitive analysis of the 2026 holdco landscape confirms the industry has passed the point of 'AI as feature' \u2014 Publicis, WPP, Omnicom, Havas and Dentsu are each restructuring their core operating model around AI infrastructure, proprietary data, and identity resolution. Publicis leads with its $2.2B LiveRamp acquisition layered onto Epsilon and Marcel. Omnicom is integrating Acxiom's Real ID and Flywheel into its Omni platform post-IPG merger. WPP's Elevate28 plan targets \u00a3500m in savings by collapsing its holding structure entirely. The implication for luxury media buyers: your agency partner's AI stack is now a material procurement variable \u2014 not a pitch-deck claim.",
-      "source": "Storyboard18",
-      "date": "29 June 2026",
-      "url": "https://www.storyboard18.com/how-it-works/wpp-publicis-omnicom-havas-dentsu-why-every-advertising-holding-company-is-rebuilding-itself-102452.htm"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 5,
-      "headline": "Bain-Comit\u00e9 Colbert Primary Data Drop: AI Priority Jumps From 5% to 22% at Top Luxury Houses in Two Years \u2014 But Only 9% Have Deployed at Scale",
-      "summary": "The primary press release from the Bain/Comit\u00e9 Colbert 5th annual Luxury & Technology report gives the raw data behind this week's biggest luxury AI story. AI has jumped from 5% to 22% as a top-3 corporate priority at luxury houses in just two years \u2014 but the execution gap is stark: only 9% of luxury houses have deployed AI for client advisor assistance at scale with measurable impact, and large-scale deployment remains concentrated in back-office support functions (6% in 2024 to 31% in 2026). The report formally identifies GEO as a strategic category for the industry for the first time, noting that luxury maisons are structurally disadvantaged against specialist brands in LLM retrieval.",
-      "source": "PR Newswire",
-      "date": "30 June 2026",
-      "url": "https://www.prnewswire.com/news-releases/ai-emerges-as-a-strategic-priority-for-luxury-as-accelerating-consumer-use-challenges-industry-to-reinvent-customer-discovery-and-experiencebain--company-and-comite-colbert-302813503.html"
+      "headline": "Generative Engine Visibility Becomes New Battleground: Specialist Luxury Brands Rank Higher in AI Search Than Diversified Conglomerates",
+      "summary": "<cite index=\"50-2,50-3\">For large, diversified brands, AI search results are more complicated because search engines prioritize consistency, and as of June 30, 2026, the specialist brand comes across as highly credible.</cite> <cite index=\"50-4,50-5,50-6\">Brands must work on their ecosystem by defining their brand's territory and semantic scope, developing narrative, and moderating customer comments to develop content readable by agent-based search engines.</cite> <cite index=\"50-7\">Many Asian brands have already grasped the opportunity through effective SEO practices and multilingual versioning, managing to rank highly in European search results.</cite>",
+      "source": "Fashion Network USA",
+      "date": "2 July 2026",
+      "url": "https://us.fashionnetwork.com/news/In-the-luxury-sector-customers-have-already-embraced-ai-for-their-searches-brands-must-adapt,1848657.html"
     }
   ],
-  "date_slug": "2026-07-02"
+  "date_slug": "2026-07-03"
 }
