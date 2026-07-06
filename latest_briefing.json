@@ -1,52 +1,52 @@
 {
-  "date": "Friday, 3 July 2026",
-  "lede": "Luxury brands face an urgent discovery gap as shoppers now lead deployment: 82% of top-spenders use AI for purchases, yet only 21% of brands have customer-facing AI live\u2014and 90% of generative-engine citations for luxury queries point outside brand websites.",
+  "date": "Monday, 6 July 2026",
+  "lede": "Luxury consumers are racing ahead of brands on AI adoption\u201482% of top spenders use AI for purchases while only 21% of brands have deployed customer-facing solutions, leaving a strategic visibility gap in generative engines that smaller, more coherent brands are already exploiting.",
   "stories": [
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Bain & Comit\u00e9 Colbert: 82% of Luxury Spenders Now Use AI in Purchase Journey\u2014But Only 21% of Brands Have Deployed Customer-Facing Solutions",
-      "summary": "<cite index=\"21-3,21-8\">Bain & Company and Comit\u00e9 Colbert's 5th annual Luxury and Technology report, released June 30, 2026, found 82% of top-tier luxury spenders used an AI tool during their most recent purchase, versus just 28% of the lowest-spending segment.</cite> <cite index=\"21-9,21-10\">AI adoption remains concentrated in back-office functions at 31% while customer-facing deployment lags at just 21%, with 90% of URLs cited by AI engines for luxury queries pointing to sites outside the brands themselves.</cite> <cite index=\"24-3\">22% of luxury houses rank AI among their top three corporate priorities for the next three years, compared with only 5% in 2024.</cite>",
-      "source": "Bain & Company / Comit\u00e9 Colbert",
+      "headline": "Bain & Comit\u00e9 Colbert: AI Priority Jumps 22% Among Luxury Houses as Consumer Usage Outpaces Brand Deployment",
+      "summary": "The 5th annual Luxury & Technology report reveals a critical sequencing problem: 82% of top-tier luxury consumers used AI during their last purchase, vs. only 21% of brands deploying customer-facing AI solutions. While 22% of luxury houses now rank AI among their top-3 corporate priorities (up from 5% in 2024), deployment remains concentrated in back-office functions (31%) rather than the customer-facing layer shoppers experience. The report identifies four underdeployed opportunities: conversational commerce, AI-driven personalization, in-store advisor copilots, and next-generation CRM\u2014with only 9% of houses deploying AI advisor assistance at scale.",
+      "source": "Bain & Company / Comit\u00e9 Colbert via PRNewswire",
       "date": "30 June 2026",
-      "url": "https://www.bain.com/insights/winning-over-the-customer-in-the-age-of-ai-a-new-horizon-for-luxury/"
-    },
-    {
-      "category": "COMMERCE & RETAIL",
-      "score": 5,
-      "headline": "David Yurman Partners with Tangiblee: Luxury E-Commerce's Answer to the Trust Gap in AI-Generated Imagery",
-      "summary": "<cite index=\"58-6\">Luxury jewelry brand David Yurman announced a partnership with Tangiblee on June 9, 2026, to enhance its e-commerce journey with true-to-scale product visualization, Virtual Try-On, and stacking experiences.</cite> <cite index=\"58-12\">Kim Audan, SVP of E-commerce at David Yurman, confirmed that clients who engage with these interactive experiences convert at a higher rate than those who do not.</cite> <cite index=\"59-13,59-15\">90% of consumers now demand transparency about AI-generated imagery, and as consumers become increasingly AI-literate, they penalize brands that prioritize cheap, synthetic visuals over authentic product reality.</cite>",
-      "source": "Agile Brand Guide / Tangiblee",
-      "date": "9 June 2026",
-      "url": "https://agilebrandguide.com/marketing-technology-ai-news-june-10-2026/"
+      "url": "https://www.prnewswire.com/news-releases/ai-emerges-as-a-strategic-priority-for-luxury-as-accelerating-consumer-use-challenges-industry-to-reinvent-customer-discovery-and-experiencebain--company-and-comite-colbert-302813503.html"
     },
     {
       "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "LVMH's 'Quiet Tech' Strategy: AI Agents to Superpower Client Advisors Without Replacing Human Touch",
-      "summary": "<cite index=\"54-1,54-2\">Agentic automation could create an 'intelligent layer to superpower our client advisor,' according to Louis Vuitton's global senior vice-president for client development, with the focus on anticipating, understanding, and responding to client intent while building trust and legitimacy powered by AI.</cite> <cite index=\"52-4\">LVMH's philosophy, which it refers to internally as 'quiet tech'\u2014a deliberate echo of the quiet luxury trend\u2014keeps AI invisible to the customer while transforming operations from demand forecasting to supply chain to clienteling.</cite> <cite index=\"54-3,54-4\">LVMH executives emphasize that each Maison must remain authentically its own, noting that gimmicky side topics have historically failed to scale.</cite>",
-      "source": "NRF / LVMH",
-      "date": "Circa June 2026",
-      "url": "https://nrf.com/blog/lvmh-balances-luxury-innovation-in-the-digital-age"
+      "headline": "Herm\u00e8s Scores 98.6 on First AI Luxury Index\u2014Brand Coherence Now Measurable Asset as Smaller Maisons Outperform Conglomerates",
+      "summary": "<cite index=\"58-2,58-3\">The AI Luxury 25, produced by 5W AI Communications in partnership with Haute Living, places Herm\u00e8s at the top with 98.6, followed by Rolex, Patek Philippe, and a tie between Cartier and Chanel in fourth, scoring 25 houses across five platforms including ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews.</cite> <cite index=\"58-5\">Herm\u00e8s topped the index on the basis of a single, unbroken narrative, with no sub-brand noise or licensing sprawl to create ambiguity across platforms.</cite> <cite index=\"27-22,27-23,27-24\">Among the 30 most visible luxury brands on LLMs, only 23% are large corporations, while 70% of large houses captured a visibility share below their revenue share, whereas most midsized maisons over-indexed, and all small maisons outperformed their market weight in visibility by three to eight times.</cite>",
+      "source": "5W AI Communications / Haute Living via PRNewswire",
+      "date": "9 June 2026",
+      "url": "https://www.prnewswire.com/news-releases/ai-engines-trust-hermes-rolex-chanel-and-ferrari-most--5w-and-haute-living-release-the-ai-luxury-25-302795848.html"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 5,
+      "headline": "McKinsey: Agentic Commerce Will Force Luxury Brands to Cede Control of Customer Intent\u2014Decision-Making Shifting Upstream to AI Platforms",
+      "summary": "<cite index=\"75-1\">With luxury consumers rapidly embracing AI, the strategic question for merchants is no longer whether agents will mediate the journey, but who controls how brands are perceived.</cite> <cite index=\"75-2\">McKinsey's research on agentic commerce suggests that AI agents could mediate $3 trillion to $5 trillion of global consumer commerce by 2030.</cite> <cite index=\"75-24\">Most maisons are not yet building fully agentic journeys; instead, they are piloting early interpretation and personalization layers\u2014testing how AI can augment discovery, curation, and clienteling without relinquishing control of brand meaning.</cite> The report argues that intent capture is increasingly happening off-premises, with luxury shoppers splitting preferences almost evenly across traditional search engines, AI tools such as Gemini or ChatGPT, and brand apps.",
+      "source": "McKinsey & Company",
+      "date": "29 May 2026",
+      "url": "https://www.mckinsey.com/industries/retail/our-insights/when-ai-meets-desire-innovating-human-centered-luxury-experiences-in-the-agentic-age"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 4,
+      "headline": "90% of AI Luxury Recommendations Route to Third-Party Sites, Not Brand Domains\u2014Generative Engine Optimization Now Non-Negotiable for Visibility",
+      "summary": "<cite index=\"20-10\">Nearly all surveyed shoppers (97%) intend to use AI again for their next luxury purchase, and 90% of URLs cited by AI search engines for luxury queries point to sites outside the brands themselves, a widening discovery gap for the industry.</cite> <cite index=\"52-20,52-21,52-22\">According to Bain & Company, nearly 70 percent of luxury-related queries to generative AI do not mention any brand at all\u2014users ask which bag to buy or what watch to give as a gift without mentioning a specific name, and 90 percent of the links cited by the models direct to third-party sites rather than official brand websites.</cite> This shift represents a fundamental change in how luxury brands earn visibility, moving power away from paid search and brand-owned channels toward GEO (generative engine optimization).",
+      "source": "WWD / FashionUnited via research from Bain & Company",
+      "date": "4 July 2026",
+      "url": "https://us.fashionnetwork.com/news/In-the-luxury-sector-customers-have-already-embraced-ai-for-their-searches-brands-must-adapt,1848657.html"
     },
     {
       "category": "POLICY & RISK",
       "score": 4,
-      "headline": "EU AI Act Article 50 Deadline Looms August 2: Luxury Brands Must Prepare for Mandatory AI-Generated Content Labeling and Disclosure",
-      "summary": "<cite index=\"39-10,39-11\">The EU AI Act's Article 50 transparency obligations\u2014including chatbot disclosure, marking of AI-generated content, and deepfake labeling\u2014are set to apply from August 2, 2026, though as of June 2026, generative outputs will need to be machine-readable as AI-generated and the Code of Practice on AI-content transparency was still in final draft.</cite> <cite index=\"39-8,39-9\">The EU Digital Services Act requires major platforms to flag and promptly remove illegal content and conduct annual risk assessments, with non-compliance fines reaching up to 6% of global annual turnover\u2014a penalty cap large enough to carry board-level financial weight.</cite>",
-      "source": "Digital Applied",
-      "date": "18 June 2026",
-      "url": "https://www.digitalapplied.com/blog/ai-content-moderation-2026-llm-trust-safety-guide"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 4,
-      "headline": "Generative Engine Visibility Becomes New Battleground: Specialist Luxury Brands Rank Higher in AI Search Than Diversified Conglomerates",
-      "summary": "<cite index=\"50-2,50-3\">For large, diversified brands, AI search results are more complicated because search engines prioritize consistency, and as of June 30, 2026, the specialist brand comes across as highly credible.</cite> <cite index=\"50-4,50-5,50-6\">Brands must work on their ecosystem by defining their brand's territory and semantic scope, developing narrative, and moderating customer comments to develop content readable by agent-based search engines.</cite> <cite index=\"50-7\">Many Asian brands have already grasped the opportunity through effective SEO practices and multilingual versioning, managing to rank highly in European search results.</cite>",
-      "source": "Fashion Network USA",
-      "date": "2 July 2026",
-      "url": "https://us.fashionnetwork.com/news/In-the-luxury-sector-customers-have-already-embraced-ai-for-their-searches-brands-must-adapt,1848657.html"
+      "headline": "EU AI Act Transparency Rules Go Live August 2, 2026\u2014Luxury Brands Must Prepare Mandatory AI-Generated Content Labeling and Disclosure Framework",
+      "summary": "<cite index=\"37-9,37-10,37-11\">Providers of generative AI have to ensure that AI-generated content is identifiable, and certain AI-generated content should be clearly and visibly labelled, namely deep fakes and text published with the purpose to inform the public on matters of public interest, with the transparency rules of the AI Act coming into effect in August 2026.</cite> <cite index=\"39-32\">Deployer transparency under Article 50 stays at 2 August 2026, and provider marking of AI-generated content lands at 2 December 2026.</cite> <cite index=\"41-7,41-12,41-13\">The Act reaches both software providers and retail brands deploying AI across design, merchandising, sizing, marketing, and HR, and as enforcement unfolds between 2025 and 2027, fashion companies must map AI use-cases, document data provenance, and embed responsible AI into everyday operations.</cite>",
+      "source": "EU Digital Strategy / Fibre2Fashion",
+      "date": "30 June 2026",
+      "url": "https://www.fibre2fashion.com/industry-article/10992/eu-ai-act-and-fashion-a-practical-map-of-tools-risks-and-timelines"
     }
   ],
-  "date_slug": "2026-07-03"
+  "date_slug": "2026-07-06"
 }
