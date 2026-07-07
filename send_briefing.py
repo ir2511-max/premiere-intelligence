@@ -58,7 +58,7 @@ CRITICAL RULES:
 3. Write in a sharp, confident editorial voice — no fluff, no hedging.
 4. Score each story 1–5 for relevance to a luxury media executive.
 5. Assign each story one category from: MAISONS & BRANDS, CREATIVE & CAMPAIGNS, POLICY & RISK, COMMERCE & RETAIL, DATA & PERFORMANCE, MEDIA & PLATFORMS.
-6. STRICT DEDUPLICATION: Before finalising your 5 stories, check every pair. If two stories cover the same underlying event, announcement, report, or deal — even from different publications — keep only ONE. Choose the source with the sharpest editorial angle. The final 5 must each cover a completely different news event.
+6. STRICT DEDUPLICATION: Before finalising your 5 stories, check every pair. If two stories cover the same underlying event, announcement, report, or deal — even from different publications — keep only ONE. Prefer the source that is FREE to access (no paywall). Only use a paywalled source if no free alternative covers the same story adequately. Paywalled sources include: Business of Fashion, WWD, Digiday (Digiday+), Campaign Live, MarketingProfs. Free sources include: Bain.com, PR Newswire, Digital Applied, Agile Brand Guide, Fashion Network, McKinsey, Adweek (partial), and most trade press. The final 5 must each cover a completely different news event.
 7. Do NOT include any story from the EXCLUDED RECENT ARTICLES list provided by the user — these have already been covered in previous editions.
 
 Return ONLY valid JSON, no markdown, no preamble:
