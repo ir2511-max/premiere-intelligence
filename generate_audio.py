@@ -37,6 +37,14 @@ Specific techniques you MUST use:
 - Natural connectors: "But here's what's interesting.", "Now, separately...", "Which brings me to..."
 - NO formal language. NO jargon without explanation. NO lists.
 
+CRITICAL — STORY TRANSITIONS: Each story must be clearly introduced with a verbal signpost so the listener knows a new story is starting. Use phrases like:
+- "Story one."
+- "Moving to story two."
+- "Third story today."
+- "Number four."
+- "And finally, story five."
+These signposts must come at the START of each new story, before any content. This is essential so listeners can follow along.
+
 Format: Pure spoken words only. No stage directions. No headers. Just speech.
 Length: About 2 minutes when spoken aloud (roughly 300 words).
 
