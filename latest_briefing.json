@@ -1,52 +1,52 @@
 {
-  "date": "Tuesday, 7 July 2026",
-  "lede": "Luxury shoppers are embracing AI for discovery and comparison at triple the speed brands are deploying customer-facing AI\u2014forcing a reckoning on generative engine optimization as the new visibility battleground.",
+  "date": "Wednesday, 8 July 2026",
+  "lede": "Luxury brands face a compounding crisis: affluent shoppers have made AI their discovery engine, but 70% of large luxury houses are under-indexed in AI responses, triggering a strategic reckoning around generative-engine visibility and product-data infrastructure.",
   "stories": [
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Bain & Comit\u00e9 Colbert: 82% of Top Luxury Spenders Now Use AI in Purchase Journey\u2014But Only 21% of Brands Have Deployed Customer-Facing Solutions",
-      "summary": "New research from Bain & Company and Comit\u00e9 Colbert reveals a critical gap: while affluent consumers\u201482% of very heavy spenders\u2014are using AI for luxury discovery, comparison and purchase decisions, maisons remain cautious, with only 21% deploying customer-facing AI solutions. The study finds AI as a strategic priority jumped from 5% to 22% among luxury executives in two years, yet most implementations focus on back-office efficiency rather than customer engagement. Generative engine optimization emerges as the key battleground for luxury brands trying to win back control of discovery.",
-      "source": "Bain & Company / Comit\u00e9 Colbert",
-      "date": "2 July 2026",
-      "url": "https://www.jckonline.com/editorial-article/ai-is-reshaping-luxury-shopping-faster-than-brands-are-adapting-bain-report-finds/"
+      "headline": "Lengow: Feed Management Now Central to Luxury GEO Strategy\u201490% of AI Citations Route Outside Brand Domains",
+      "summary": "Lengow's analysis exposes the structural disadvantage luxury brands face in generative-engine visibility: third-party content now carries more weight than official brand websites in AI responses, forcing e-commerce and product teams to treat feed management as a core visibility strategy rather than a technical backend task. Fewer than half of luxury groups track their GEO performance, and only 10% consider themselves strong. The battleground has shifted from domain authority to data quality and consistency across distribution channels.",
+      "source": "Lengow Blog",
+      "date": "8 July 2026",
+      "url": "https://blog.lengow.com/ai-and-luxury-customers-are-one-step-ahead-of-brands/"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 5,
-      "headline": "Herm\u00e8s Tops New AI Search Visibility Rankings\u2014Brand Coherence and Message Consistency Now Drive Citations in Generative Engines",
-      "summary": "In a landmark 2026 index ranking luxury brands by how they appear in AI-generated answers across ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews, Herm\u00e8s leads with 98.6 score, followed by Rolex, Patek Philippe, and Cartier/Chanel tied for fourth. The research by 5W AI Communications and Haute Living reveals that AI engines reward brands with long-term consistency and clear positioning\u2014penalizing frequent creative director changes and sub-brand confusion. Over one-third of luxury consumers now use AI instead of Google to start shopping, making AI visibility measurable and material to brand value.",
-      "source": "WWD / 5W AI Communications",
-      "date": "6 July 2026",
-      "url": "https://wwd.com/sourcing-journal/industry-news/hermes-tops-list-of-luxury-brands-in-new-ai-search-era-1239022641/"
+      "headline": "Meta Tightens AI Disclosure Requirements Across All Advertising\u2014Auto-Detection Now Active, Rejection Rates Climbing",
+      "summary": "Meta's enforcement of mandatory AI-generated content disclosure in Ads Manager has become the third-largest reason for ad rejections in 2026 (14% of all rejections), signaling that regulatory pressure has moved from guidance to platform-level enforcement. Luxury brands using AI-generated visuals, product renders, or synthetic backgrounds must now self-certify or face auto-labeling and campaign disruption. The distinction between disclosure-required (main visual subjects) and exempt (minor edits) is becoming a critical compliance skill for luxury marketing teams.",
+      "source": "AuditSocials / LLC Geek",
+      "date": "30 March 2026",
+      "url": "https://www.llcgeek.com/business-news/meta-mandatory-ai-disclosure-advertisers"
     },
     {
-      "category": "COMMERCE & RETAIL",
-      "score": 4,
-      "headline": "Luxury Market Enters Stabilization Phase\u2014Quality, Coherence and AI-Enabled Precision Now Define Competitive Advantage Over Volume",
-      "summary": "Luxury market in 2026 is maturing toward selective consumption rather than hypergrowth: spending projected flat at \u20ac1,440-\u20ac1,470 billion versus \u20ac1,443 billion in 2025. Bain & Altagamma analysis shows consumers are becoming pickier about what they buy, demanding visible upgrades in quality, creativity and service to justify premium pricing. AI's role shifts from efficiency play to strategic precision tool\u2014demand forecasting, inventory management, and AI-powered clienteling now separate winners from laggards. Brands without credible craftsmanship and human service storytelling will face margin compression.",
-      "source": "Luxury Digest / Bain & Altagamma",
-      "date": "7 July 2026",
-      "url": "https://luxedigest.org/luxury-news-daily/luxury-market-2026-why-stabilization-is-reshaping-growth-across-the-industry/"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
+      "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "Practical Ecommerce: CiteLens, Contentful Palmata, and New GEO Tools Launch July 2026\u2014Luxury Brands Can Now Track AI Visibility and Measure 'Share of Mention' Across All Major Engines",
-      "summary": "Three major platforms launched in early July to address the luxury brand's new visibility crisis: CiteLens (GEO platform tracking brand citations in ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews), Contentful Palmata (measuring how AI answer engines describe a brand and recommending content improvements), and Rokt mParticle Performance Engine (leveraging first-party data for agentic optimization). For luxury brands, these tools make generative engine optimization measurable\u2014moving from vague \"we're not visible\" to precise share-of-voice benchmarking and competitor mapping. Visibility audits and strategic implementations now table-stakes for discovery in an AI-mediated world.",
-      "source": "Practical Ecommerce",
-      "date": "1 July 2026",
-      "url": "https://www.practicalecommerce.com/new-ecommerce-tools-july-1-2026"
+      "headline": "5W AI Luxury 25 Index: Herm\u00e8s Dominates AI Search Visibility at 98.6\u2014Brand Consistency Now Measures Competitiveness",
+      "summary": "The inaugural AI Luxury 25 index reveals that brand coherence\u2014not scale\u2014drives visibility in AI-generated answers. Herm\u00e8s, Rolex, and Patek Philippe top rankings due to messaging consistency across 188 years, closed catalog discipline, and zero creative-director churn. Critically, 70% of large houses earning over \u20ac5B fail to capture visibility proportional to market share, while smaller specialist brands over-index by 3-8x. The finding redefines luxury brand equity: in the AI era, consistency is the new luxury asset.",
+      "source": "5W AI Communications / WWD",
+      "date": "2 July 2026",
+      "url": "https://wwd.com/sourcing-journal/industry-news/hermes-tops-list-of-luxury-brands-in-new-ai-search-era-1239022641/"
     },
     {
       "category": "CREATIVE & CAMPAIGNS",
       "score": 4,
-      "headline": "Prada's AI-Generated Campaign Sparks Backlash\u2014Luxury Audiences Signal Red Line on When AI Feels Inauthentic, Forcing Recalibration on Human Craftsmanship Messaging",
-      "summary": "Prada's controversial campaign featuring AI-generated artist Jordan Wolfson imagery polarized luxury audiences, with online sentiment strongly pushing back against the perception that AI compromises artisanal value. Research confirms that disclosed AI-generated luxury ads lose favorability unless visuals are demonstrably more creative than traditional methods. For luxury brands, the signal is clear: AI must amplify human genius, not replace it. Disclosure becomes critical, and creative differentiation must justify the technology choice or risk eroding the heritage and craftsmanship narratives that justify premium pricing.",
-      "source": "Business of Fashion",
-      "date": "June 2026 (referenced in July coverage)",
-      "url": "https://www.businessoffashion.com/topics/technology/artificial-intelligence/"
+      "headline": "HBR: LLMs Systematically Misread Luxury Semantics\u2014Scarcity, Heritage, Minimalism Are Invisible to AI Interpreters",
+      "summary": "Harvard Business Review research exposes a critical gap in how AI agents interpret luxury brand signals. While models reliably process explicit cues (brand names, prices), they frequently misinterpret implicit signals that resonate with humans: scarcity, heritage, artistic association, minimalism, and spatial context. This misalignment creates downstream effects in how brands are surfaced to customers. Leaders must now rigorously test AI perceptions across product, price, promotion, and placement\u2014and deliberately encode machine-legible luxury cues across owned, earned, and third-party content.",
+      "source": "Harvard Business Review",
+      "date": "22 June 2026",
+      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai"
+    },
+    {
+      "category": "POLICY & RISK",
+      "score": 4,
+      "headline": "EU AI Act Article 50 Enforcement Begins August 2: Luxury Brands Must Embed Machine-Readable & User-Facing Disclosure in All AI-Generated Creative",
+      "summary": "The European Union's AI Act transparency obligations move from regulatory aspiration to enforced requirement in 25 days. Article 50 mandates that any AI-generated or AI-manipulated image distributed to EU users carries both machine-readable markers (C2PA Content Credentials) and clear user-facing labels. For luxury brands operating across geographies, this creates immediate compliance friction: campaigns already live in EU markets now require retroactive audit and potential takedown. The August 2 deadline is already a board-level issue for compliance and marketing teams.",
+      "source": "Digital Applied / European Commission",
+      "date": "3 July 2026",
+      "url": "https://www.digitalapplied.com/blog/ai-content-moderation-2026-llm-trust-safety-guide"
     }
   ],
-  "date_slug": "2026-07-07"
+  "date_slug": "2026-07-08"
 }
