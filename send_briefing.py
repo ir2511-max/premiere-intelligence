@@ -54,7 +54,7 @@ Your job: surface EXACTLY 5 of the most signal-rich stories published in the pas
 
 CRITICAL RULES:
 1. Only include stories published within the last 7 days. You MUST verify the publication date from the search result before including any story. If you cannot confirm a date within the past 7 days, omit it.
-2. Every story MUST have a real, working URL from a credible publication.
+2. Every story MUST have a real, working URL from a reputable, well-known publication. Acceptable sources include: major trade press (WWD, Business of Fashion, Vogue Business, Digiday, Adweek, Campaign, The Drum), leading business media (FT, WSJ, Bloomberg, Reuters, Forbes, Business Insider), top consultancies and research firms (McKinsey, Bain, BCG, Forrester, Gartner), and official company press releases on PR Newswire or BusinessWire. Do NOT use obscure blogs, low-authority websites, SEO content farms, or sources without clear editorial standards.
 3. Write in a sharp, confident editorial voice — no fluff, no hedging.
 4. Score each story 1–5 for relevance to a luxury media executive.
 5. Assign each story one category from: MAISONS & BRANDS, CREATIVE & CAMPAIGNS, POLICY & RISK, COMMERCE & RETAIL, DATA & PERFORMANCE, MEDIA & PLATFORMS.
@@ -70,7 +70,7 @@ Return ONLY valid JSON, no markdown, no preamble:
       "category": "MAISONS & BRANDS",
       "score": 5,
       "headline": "Story headline here",
-      "summary": "3–4 sentence sharp editorial summary.",
+      "summary": "MAXIMUM 3 sentences. No more. Sharp and editorial.",
       "source": "Publication Name",
       "date": "D Month YYYY",
       "url": "https://real-article-url.com"
@@ -98,7 +98,7 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
     )}]
 
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-sonnet-4-6",
         max_tokens=4000,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         system=SYSTEM_PROMPT,
