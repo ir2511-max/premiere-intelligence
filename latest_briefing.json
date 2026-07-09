@@ -1,52 +1,52 @@
 {
-  "date": "Wednesday, 8 July 2026",
-  "lede": "Luxury brands face a compounding crisis: affluent shoppers have made AI their discovery engine, but 70% of large luxury houses are under-indexed in AI responses, triggering a strategic reckoning around generative-engine visibility and product-data infrastructure.",
+  "date": "Thursday, 9 July 2026",
+  "lede": "Guideline launches verified AI platform ad measurement; Bain-Comit\u00e9 Colbert reveals luxury deployment stalled at scale; luxury brands master GEO while consumers lead adoption.",
   "stories": [
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Lengow: Feed Management Now Central to Luxury GEO Strategy\u201490% of AI Citations Route Outside Brand Domains",
-      "summary": "Lengow's analysis exposes the structural disadvantage luxury brands face in generative-engine visibility: third-party content now carries more weight than official brand websites in AI responses, forcing e-commerce and product teams to treat feed management as a core visibility strategy rather than a technical backend task. Fewer than half of luxury groups track their GEO performance, and only 10% consider themselves strong. The battleground has shifted from domain authority to data quality and consistency across distribution channels.",
-      "source": "Lengow Blog",
-      "date": "8 July 2026",
-      "url": "https://blog.lengow.com/ai-and-luxury-customers-are-one-step-ahead-of-brands/"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "Meta Tightens AI Disclosure Requirements Across All Advertising\u2014Auto-Detection Now Active, Rejection Rates Climbing",
-      "summary": "Meta's enforcement of mandatory AI-generated content disclosure in Ads Manager has become the third-largest reason for ad rejections in 2026 (14% of all rejections), signaling that regulatory pressure has moved from guidance to platform-level enforcement. Luxury brands using AI-generated visuals, product renders, or synthetic backgrounds must now self-certify or face auto-labeling and campaign disruption. The distinction between disclosure-required (main visual subjects) and exempt (minor edits) is becoming a critical compliance skill for luxury marketing teams.",
-      "source": "AuditSocials / LLC Geek",
-      "date": "30 March 2026",
-      "url": "https://www.llcgeek.com/business-news/meta-mandatory-ai-disclosure-advertisers"
+      "headline": "Guideline Launches Verified Ad Intelligence Across AI Platforms\u2014Ground-Truth Spend Data Now Available for ChatGPT, Perplexity, and Emerging AI Ad Channels",
+      "summary": "<cite index=\"52-2\">Guideline announced its Ad Intelligence data now captures verified, transaction-level advertising activity across AI platforms, giving the market its first independent view into how advertising is actually performing on these rapidly emerging channels.</cite> <cite index=\"52-5,52-6\">Guideline's proprietary dataset\u2014representing approximately $200 billion in annual media investment across 65 countries\u2014captures verified, transaction-level ad spend across the full advertising ecosystem, and because Guideline's data is sourced directly from transactions rather than surveys, modeled estimates, or platform disclosures, it provides a ground-truth view that no platform-reported dataset can replicate.</cite> <cite index=\"52-8\">OpenAI began testing ads in ChatGPT in February 2026, with media reports indicating the pilot generated more than $100 million in annualized revenue within its first two months, and projected revenues of $2.5 billion in 2026 growing to $11 billion in 2027.</cite> For media executives, this closes the measurement gap for the fastest-growing ad channel and enables competitive benchmarking across AI platforms.",
+      "source": "PR Newswire",
+      "date": "7 July 2026",
+      "url": "https://www.prnewswire.com/news-releases/guideline-launches-verified-ad-intelligence-across-ai-platforms-302816438.html"
     },
     {
       "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "5W AI Luxury 25 Index: Herm\u00e8s Dominates AI Search Visibility at 98.6\u2014Brand Consistency Now Measures Competitiveness",
-      "summary": "The inaugural AI Luxury 25 index reveals that brand coherence\u2014not scale\u2014drives visibility in AI-generated answers. Herm\u00e8s, Rolex, and Patek Philippe top rankings due to messaging consistency across 188 years, closed catalog discipline, and zero creative-director churn. Critically, 70% of large houses earning over \u20ac5B fail to capture visibility proportional to market share, while smaller specialist brands over-index by 3-8x. The finding redefines luxury brand equity: in the AI era, consistency is the new luxury asset.",
-      "source": "5W AI Communications / WWD",
-      "date": "2 July 2026",
-      "url": "https://wwd.com/sourcing-journal/industry-news/hermes-tops-list-of-luxury-brands-in-new-ai-search-era-1239022641/"
+      "headline": "Bain & Comit\u00e9 Colbert: Only 9% of Luxury Houses Have Deployed AI at Scale\u201482% of Customers Use AI in Purchase Journey, Forcing Urgent Recalibration",
+      "summary": "<cite index=\"45-2\">Luxury houses have accelerated AI deployment with adoption up five-fold in support functions and nearly doubled in operational functions; adoption in customer-facing functions grows much more slowly.</cite> <cite index=\"45-3\">Artificial intelligence has established itself as a key strategic priority for the global luxury sector, and is increasingly used for luxury purchases by its consumers.</cite> <cite index=\"42-15,42-16\">Roughly 60% of luxury companies have yet to realize significant impact from any AI deployment. Even in areas where AI is more advanced\u2014such as knowledge management, IT, and procurement functions\u2014only 13% to 15% of respondents say these deployments have generated significant business impact.</cite> The critical gap: <cite index=\"42-18\">64% of Chinese buyers and 54% of US buyers said they used AI during their last luxury purchase, although that number was only 27% in France.</cite>",
+      "source": "Bain & Company",
+      "date": "3 July 2026",
+      "url": "https://www.bain.com/insights/winning-over-the-customer-in-the-age-of-ai-a-new-horizon-for-luxury/"
     },
     {
       "category": "CREATIVE & CAMPAIGNS",
       "score": 4,
-      "headline": "HBR: LLMs Systematically Misread Luxury Semantics\u2014Scarcity, Heritage, Minimalism Are Invisible to AI Interpreters",
-      "summary": "Harvard Business Review research exposes a critical gap in how AI agents interpret luxury brand signals. While models reliably process explicit cues (brand names, prices), they frequently misinterpret implicit signals that resonate with humans: scarcity, heritage, artistic association, minimalism, and spatial context. This misalignment creates downstream effects in how brands are surfaced to customers. Leaders must now rigorously test AI perceptions across product, price, promotion, and placement\u2014and deliberately encode machine-legible luxury cues across owned, earned, and third-party content.",
-      "source": "Harvard Business Review",
-      "date": "22 June 2026",
-      "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai"
+      "headline": "Prada's Disputed AI Campaign Signals Emerging Consumer Red Line on When AI Feels Inauthentic to Luxury Audiences",
+      "summary": "<cite index=\"69-3,69-4,69-5\">A new fashion campaign for Prada's Spring/Summer 2026 line has stirred up some AI controversy. Crafted by artist Jordan Wolfson, the still images and videos feature actors Nicholas Hoult, Damson Idris, Carey Mulligan, and Levon Hawke, all Prada ambassadors. The images and videos, all featuring large nightmarish birds next to the actors, have drawn criticism from Prada fans on Instagram, YouTube, and X.com for being AI-generated.</cite> <cite index=\"72-11,72-12\">What this unconfirmed AI outrage from Prada watchers is telling us is that it may now be necessary for brands to openly state that a visual was not AI-generated if other methods were used. And if AI was used, then consumers clearly want to know about it.</cite> This represents a strategic inflection point: luxury audiences now view undisclosed AI as a trust liability rather than a creative asset.",
+      "source": "Business of Fashion / MARS Magazine",
+      "date": "25-27 March 2026 (reported through 7 July)",
+      "url": "https://www.businessoffashion.com/briefings/technology/is-ai-antithetical-to-luxury/"
     },
     {
-      "category": "POLICY & RISK",
+      "category": "COMMERCE & RETAIL",
       "score": 4,
-      "headline": "EU AI Act Article 50 Enforcement Begins August 2: Luxury Brands Must Embed Machine-Readable & User-Facing Disclosure in All AI-Generated Creative",
-      "summary": "The European Union's AI Act transparency obligations move from regulatory aspiration to enforced requirement in 25 days. Article 50 mandates that any AI-generated or AI-manipulated image distributed to EU users carries both machine-readable markers (C2PA Content Credentials) and clear user-facing labels. For luxury brands operating across geographies, this creates immediate compliance friction: campaigns already live in EU markets now require retroactive audit and potential takedown. The August 2 deadline is already a board-level issue for compliance and marketing teams.",
-      "source": "Digital Applied / European Commission",
-      "date": "3 July 2026",
-      "url": "https://www.digitalapplied.com/blog/ai-content-moderation-2026-llm-trust-safety-guide"
+      "headline": "Walmart Connect's AI Creative Generation Cuts Production Time 80%\u2014Retail Media Shifts from Content Automation to Campaign Management and Measurement",
+      "summary": "<cite index=\"79-1\">Walmart Connect's Automated Creative Generation reduced production time by 80%, and according to Rockbot, AI-driven targeting delivers 6x more ROI than traditional targeting methods.</cite> <cite index=\"79-7\">The retail media trends shaping 2026 and 2027 cluster around four shifts: AI-run campaign operations, in-store media going mainstream, network consolidation at the top, and the convergence of retail media into commerce media.</cite> <cite index=\"79-11\">In June 2026, CVS Media Exchange launched CorIQ, an AI-driven closed-loop measurement platform, and Albertsons Media Collective introduced onsite incrementality measurement, both signals that AI is moving from creative into measurement.</cite> For luxury brands operating retail media partnerships, the performance delta is now operational maturity, not budget size.",
+      "source": "Osmos.ai",
+      "date": "1 July 2026 (updated)",
+      "url": "https://www.osmos.ai/blog/retail-media-evolution-the-complete-guide"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 4,
+      "headline": "AI Advertising Market Accelerates to $14.12 Billion in 2026\u2014Programmatic, Privacy-Compliant Solutions, and Omnichannel Strategies Drive Growth Amid Regulatory Tightening",
+      "summary": "<cite index=\"11-1\">The artificial intelligence in advertising market is experiencing significant growth, with projections indicating a rise from $11.17 billion in 2025 to $14.12 billion in 2026, reflecting a compound annual growth rate of 26.4%.</cite> <cite index=\"11-4\">This growth is driven by increased digital advertising spend, social media expansion, consumer data availability, automated ad buying, and a focus on marketing ROI optimization.</cite> <cite index=\"11-5\">By 2030, the market is expected to reach $36.34 billion, with a CAGR of 26.7%, fueled by privacy-compliant advertising solutions, AI-driven creative optimization, omnichannel strategies, marketing automation investments, and demand for real-time campaign intelligence.</cite> The acceleration outpaces luxury brand readiness, widening the performance gap between early adopters and laggards.",
+      "source": "Research and Markets / Globe Newswire",
+      "date": "6 July 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/07/06/3322346/0/en/AI-in-Advertising-Market-Set-to-Skyrocket-From-11-17-Billion-in-2025-to-36-34-Billion-by-2030.html"
     }
   ],
-  "date_slug": "2026-07-08"
+  "date_slug": "2026-07-09"
 }
