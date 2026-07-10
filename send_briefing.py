@@ -108,13 +108,19 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
     text = "".join(b.text for b in response.content if hasattr(b, "text") and b.type == "text")
     print(f"Response stop_reason: {response.stop_reason}, text length: {len(text)}")
     import re as _re
-    json_match = _re.search(r"```json\s*(.*?)\s*```", text, _re.DOTALL)
+    # Try markdown code block first
+    json_match = _re.search(r"```(?:json)?\s*(.*?)\s*```", text, _re.DOTALL)
     if json_match:
         clean = json_match.group(1).strip()
     else:
         start = text.find("{")
         end = text.rfind("}")
         clean = text[start:end+1] if start != -1 and end != -1 else text.strip()
+    if not clean:
+        raise ValueError(f"Empty response. stop_reason={response.stop_reason}")
+    # Fix common JSON issues: trailing commas
+    clean = _re.sub(r",\s*}", "}", clean)
+    clean = _re.sub(r",\s*]", "]", clean)
     return json.loads(clean)
 
 # ── AUDIO ─────────────────────────────────────────────────────────────────────
