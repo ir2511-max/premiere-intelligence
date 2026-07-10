@@ -1,65 +1,5 @@
 [
   {
-    "url": "https://www.digitalapplied.com/blog/openai-cannes-lions-2026-advertising-business-debut",
-    "headline": "OpenAI Declares Itself an Advertising Business at Cannes Lions 2026",
-    "sent_at": "2026-06-25T07:31:22.152994-04:00",
-    "date": "Thursday, 25 June 2026"
-  },
-  {
-    "url": "https://www.campaignlive.com/article/meta-launches-complete-ai-creative-ad-ecosystem/1962693",
-    "headline": "Meta Unveils End-to-End AI Creative Ad Ecosystem at Cannes Lions",
-    "sent_at": "2026-06-25T07:31:22.153016-04:00",
-    "date": "Thursday, 25 June 2026"
-  },
-  {
-    "url": "https://www.businessoffashion.com/articles/technology/ai-virtual-try-on-luxury-dressx-report/",
-    "headline": "AI Virtual Try-On Drives 10x Conversion Uplift for Luxury Shoppers, DressX Report Finds",
-    "sent_at": "2026-06-25T07:31:22.153020-04:00",
-    "date": "Thursday, 25 June 2026"
-  },
-  {
-    "url": "https://bestmediainfo.com/mediainfo/advertising/what-makes-a-product-iconic-est%C3%A9e-lauder-and-meta-use-ai-to-find-out-at-cannes-lions-2026-12067344",
-    "headline": "Est\u00e9e Lauder and Meta Use AI to Decode Brand Iconicity at Cannes Lions",
-    "sent_at": "2026-06-25T07:31:22.153023-04:00",
-    "date": "Thursday, 25 June 2026"
-  },
-  {
-    "url": "https://www.marketingprofs.com/opinions/2026/55065/ai-update-june-19-2026-ai-news-and-views-from-the-past-week",
-    "headline": "68% of Google Searches Now End Without a Click as Zero-Click Era Reaches Tipping Point",
-    "sent_at": "2026-06-25T07:31:22.153025-04:00",
-    "date": "Thursday, 25 June 2026"
-  },
-  {
-    "url": "https://www.bain.com/about/media-center/press-releases/2026/global-luxury-stabilizes-amid-compounding-disruptions-as-brands-race-to-amplify-meaning-and-rebuild-relevance/",
-    "headline": "Bain-Altagamma: Half of All Luxury Consumers Now Use AI in Their Purchase Journey \u2014 Brands Not Building AI-Native Relevance Risk Being Left Behind",
-    "sent_at": "2026-06-26T07:32:08.434439-04:00",
-    "date": "Friday, 26 June 2026"
-  },
-  {
-    "url": "https://www.brandinginasia.com/cannes-lions-2026-day-four-grand-prix-apac-winners-and-ogilvys-regional-honor/",
-    "headline": "Moncler Wins Inaugural Cannes Lions Luxury & Lifestyle Grand Prix \u2014 Setting the Global Benchmark for Luxury Creative",
-    "sent_at": "2026-06-26T07:32:08.434454-04:00",
-    "date": "Friday, 26 June 2026"
-  },
-  {
-    "url": "https://news.designrush.com/cannes-lions-2026-campaigns-brands-agencies",
-    "headline": "Cannes Lions 2026 Debuts AI Craft Subcategory \u2014 Juries Now Asking Whether AI Changed the Outcome, Not Just Whether It Was Used",
-    "sent_at": "2026-06-26T07:32:08.434459-04:00",
-    "date": "Friday, 26 June 2026"
-  },
-  {
-    "url": "https://www.campaignlive.com/article/cannes-lions-2026-vml-new-york-leads-us-winners-festivals-fourth-day/1962871",
-    "headline": "Tiffany & Co. x Netflix 'Frankenstein' Wins Cannes Lions Gold \u2014 Luxury Brand-Entertainment Convergence Lands With Juries",
-    "sent_at": "2026-06-26T07:32:08.434462-04:00",
-    "date": "Friday, 26 June 2026"
-  },
-  {
-    "url": "https://digiday.com/marketing/openai-moves-to-automate-ad-creative/",
-    "headline": "OpenAI Moves to Automate Ad Creative \u2014 First-Party Audience Upload and AI Creative Generation Now Formalised in Policy",
-    "sent_at": "2026-06-26T07:32:08.434465-04:00",
-    "date": "Friday, 26 June 2026"
-  },
-  {
     "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai",
     "headline": "HBR Research: LLMs Systematically Misread Luxury Brand Signals \u2014 Heritage, Scarcity and Minimalism Are Invisible to AI",
     "sent_at": "2026-06-29T07:31:25.249404-04:00",
@@ -322,5 +262,35 @@
     "headline": "AI Advertising Market Accelerates to $14.12 Billion in 2026\u2014Programmatic, Privacy-Compliant Solutions, and Omnichannel Strategies Drive Growth Amid Regulatory Tightening",
     "sent_at": "2026-07-09T07:31:11.517553-04:00",
     "date": "Thursday, 09 July 2026"
+  },
+  {
+    "url": "https://www.bcg.com/publications/2026/luxury-healthier-foundations-and-genai",
+    "headline": "BCG \u00d7 Altagamma: 87% of Luxury Consumers Use AI Weekly \u2014 But 57% of Houses Are Still AI Laggards",
+    "sent_at": "2026-07-10T09:14:44.554212-04:00",
+    "date": "Friday, 10 July 2026"
+  },
+  {
+    "url": "https://www.exchangewire.com/blog/2026/07/08/adform-reinforces-commitment-to-open-standards-for-agentic-advertising/",
+    "headline": "Adform Joins IAB Tech Lab to Operationalise AAMP 2.0 \u2014 The Open Infrastructure Layer for Agentic Advertising Is Taking Shape",
+    "sent_at": "2026-07-10T09:14:44.554232-04:00",
+    "date": "Friday, 10 July 2026"
+  },
+  {
+    "url": "https://wwd.com/business-news/business-features/luxury-consumers-prioritize-product-ai-price-value-ratio-1239056055/",
+    "headline": "57% of Luxury Companies Are AI Laggards as Consumer Adoption Races Ahead \u2014 BCG's Maturity Verdict Is a Wake-Up Call",
+    "sent_at": "2026-07-10T09:14:44.554237-04:00",
+    "date": "Friday, 10 July 2026"
+  },
+  {
+    "url": "https://www.businessoffashion.com/topics/technology/artificial-intelligence/",
+    "headline": "Pixel Moda Produces 14 Million AI-Assisted Pictures and Videos a Year for 900+ Luxury Brands \u2014 Industrial-Scale Creative Is Now the Norm",
+    "sent_at": "2026-07-10T09:14:44.554240-04:00",
+    "date": "Friday, 10 July 2026"
+  },
+  {
+    "url": "https://www.bain.com/about/media-center/press-releases/2026/global-luxury-stabilizes-amid-compounding-disruptions-as-brands-race-to-amplify-meaning-and-rebuild-relevance/",
+    "headline": "Luxury Market Enters New Growth Cycle \u2014 AI Disruption of Purchase Funnels Identified as One of Four Structural Forces Reshaping the Sector",
+    "sent_at": "2026-07-10T09:14:44.554244-04:00",
+    "date": "Friday, 10 July 2026"
   }
 ]
