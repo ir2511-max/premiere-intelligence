@@ -1,35 +1,5 @@
 [
   {
-    "url": "https://hbr.org/2026/06/llms-misunderstand-luxury-brands-heres-how-to-optimize-your-marketing-strategy-for-ai",
-    "headline": "HBR Research: LLMs Systematically Misread Luxury Brand Signals \u2014 Heritage, Scarcity and Minimalism Are Invisible to AI",
-    "sent_at": "2026-06-29T07:31:25.249404-04:00",
-    "date": "Monday, 29 June 2026"
-  },
-  {
-    "url": "https://www.mediapost.com/publications/article/415895/wpp-media-unveils-prototype-for-new-buyer-agent.html",
-    "headline": "WPP Media Launches AI Buyer Agent for Premium Video \u2014 Calls It 'Bigger Than Programmatic'",
-    "sent_at": "2026-06-29T07:31:25.249465-04:00",
-    "date": "Monday, 29 June 2026"
-  },
-  {
-    "url": "https://www.adweek.com/adweek-wire/disqo-launches-the-first-product-to-measure-the-incremental-effect-of-advertising-on-llms/",
-    "headline": "DISQO Launches AI Search Lift \u2014 The First Incrementality Measurement Tool Built for LLM and AI-Powered Discovery",
-    "sent_at": "2026-06-29T07:31:25.249470-04:00",
-    "date": "Monday, 29 June 2026"
-  },
-  {
-    "url": "https://www.forrester.com/blogs/google-dethrones-openai-as-agencies-preferred-ai-partner/",
-    "headline": "Forrester: Google Dethrones OpenAI as Agencies' Preferred AI Partner \u2014 The Winner Is the Ecosystem, Not the Model",
-    "sent_at": "2026-06-29T07:31:25.249474-04:00",
-    "date": "Monday, 29 June 2026"
-  },
-  {
-    "url": "https://digiday.com/media-buying/agencies-look-to-ai-agents-for-edge-but-must-fend-off-brands-looking-to-in-house-with-the-same-tech/",
-    "headline": "Digiday: Agencies Race to Deploy AI Agents as Brands Threaten to In-House the Same Capability",
-    "sent_at": "2026-06-29T07:31:25.249476-04:00",
-    "date": "Monday, 29 June 2026"
-  },
-  {
     "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/",
     "headline": "Salesforce Drops Its Biggest Agentforce Commerce Release Yet \u2014 Shopper Agents Now Live on ChatGPT and Gemini",
     "sent_at": "2026-06-30T07:31:28.924131-04:00",
@@ -292,5 +262,29 @@
     "headline": "Luxury Market Enters New Growth Cycle \u2014 AI Disruption of Purchase Funnels Identified as One of Four Structural Forces Reshaping the Sector",
     "sent_at": "2026-07-10T09:14:44.554244-04:00",
     "date": "Friday, 10 July 2026"
+  },
+  {
+    "url": "https://www.bnnbloomberg.ca/business/2026/07/08/from-space-rocks-to-smartwatches-ai-millionaires-rewrite-the-luxury-playbook/",
+    "headline": "AI Millionaires Are Rewriting Luxury's Customer Map \u2014 And Brands Are Not Ready for Their Taste",
+    "sent_at": "2026-07-13T08:19:33.433888-04:00",
+    "date": "Monday, 13 July 2026"
+  },
+  {
+    "url": "https://wwd.com/sourcing-journal/industry-news/brands-seekers-luxury-fashion-artificial-intelligence-1239063495/",
+    "headline": "Brands Seekers Deploys AI Personal Stylist Across 350+ Luxury Labels in 38 Languages",
+    "sent_at": "2026-07-13T08:19:33.433906-04:00",
+    "date": "Monday, 13 July 2026"
+  },
+  {
+    "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "headline": "MarTech Weekly: AdRoll MCP Server, SurfaceGX Share-of-Voice in LLMs, and Framer 3.0 Signal the Composable AI Ad Stack Is Here",
+    "sent_at": "2026-07-13T08:19:33.433910-04:00",
+    "date": "Monday, 13 July 2026"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/06/22/3315024/0/en/DoubleVerify-Expands-DV-Authentic-AdVantage-to-Meta-and-TikTok-an-AI-Powered-Solution-to-Optimize-Media-Quality-and-Performance.html",
+    "headline": "DoubleVerify Extends AI-Powered Brand Safety and Optimisation Into Meta and TikTok's Walled Gardens",
+    "sent_at": "2026-07-13T08:19:33.433913-04:00",
+    "date": "Monday, 13 July 2026"
   }
 ]

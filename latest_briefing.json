@@ -1,52 +1,43 @@
 {
-  "date": "Friday, 10 July 2026",
-  "lede": "Two landmark consumer studies drop within 48 hours \u2014 BCG/Altagamma and the luxury market's AI maturity gap \u2014 while agentic ad infrastructure gets its open-standards backbone, and a fashion AI content platform signals the industrialisation of luxury creative production.",
+  "date": "Monday, 13 July 2026",
+  "lede": "AI-minted tech millionaires are rewriting luxury's customer map \u2014 while a new Gulf retailer deploys a 38-language AI stylist, measurement infrastructure races to keep pace with the collapse of traditional signal sources, and the creative-data stack rebuilds itself as a composable AI layer.",
   "stories": [
+    {
+      "category": "MAISONS & BRANDS",
+      "score": 5,
+      "headline": "AI Millionaires Are Rewriting Luxury's Customer Map \u2014 And Brands Are Not Ready for Their Taste",
+      "summary": "Reuters reports that an estimated 440,000 new U.S. millionaires \u2014 minted by AI company IPOs and equity gains \u2014 are luxury's most hotly debated growth thesis. The catch: BCG finds they spend one-third less on apparel and leather goods than generationally wealthy consumers, gravitating instead toward durables, wellness hardware, and experience. For maisons banking on North American strength to offset China weakness, the cultural gap between heritage luxury codes and Silicon Valley taste is now a strategy problem.",
+      "source": "BNN Bloomberg / Reuters",
+      "date": "8 July 2026",
+      "url": "https://www.bnnbloomberg.ca/business/2026/07/08/from-space-rocks-to-smartwatches-ai-millionaires-rewrite-the-luxury-playbook/"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 4,
+      "headline": "Brands Seekers Deploys AI Personal Stylist Across 350+ Luxury Labels in 38 Languages",
+      "summary": "Bahrain-based global luxury retailer Brands Seekers has launched the Luxury Fashion Concierge AI Personal Stylist, serving shoppable, personalised recommendations across Balenciaga, Armani, Lacoste and 350+ brands in 38 languages across 150+ countries. The system analyses occasion, budget, preferred designers, dress code, colour, season and shopping goals \u2014 signalling that AI-native luxury retail is no longer confined to Western incumbents. It is the clearest emerging-market play yet on AI-powered luxury discovery at scale.",
+      "source": "WWD",
+      "date": "10 July 2026",
+      "url": "https://wwd.com/sourcing-journal/industry-news/brands-seekers-luxury-fashion-artificial-intelligence-1239063495/"
+    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "BCG \u00d7 Altagamma: 87% of Luxury Consumers Use AI Weekly \u2014 But 57% of Houses Are Still AI Laggards",
-      "summary": "The 12th edition of BCG and Altagamma's True-Luxury Global Consumer Insights \u2014 drawing on 10,000+ respondents across 11 markets \u2014 finds that 87% of luxury consumers now use AI or GenAI tools weekly and 79% deploy LLMs specifically for luxury research, comparing leather goods, watches, and hospitality. Despite this, BCG separately estimates that 57% of luxury companies remain at emerging or stagnating levels of AI maturity. The report projects 2\u20135% market growth for FY26, accelerating to 4\u20137% by 2029, with AI-enabled personalisation and retention of top-tier clients identified as the key value levers.",
-      "source": "BCG",
-      "date": "8 July 2026",
-      "url": "https://www.bcg.com/publications/2026/luxury-healthier-foundations-and-genai"
+      "headline": "MarTech Weekly: AdRoll MCP Server, SurfaceGX Share-of-Voice in LLMs, and Framer 3.0 Signal the Composable AI Ad Stack Is Here",
+      "summary": "This week's AI-powered martech roundup confirms the advertising infrastructure stack is fragmenting and re-composing around Model Context Protocol: AdRoll launched an MCP server piping ad data directly into ChatGPT and Claude; SurfaceGX added competitive share-of-voice reporting inside conversational search; and Framer shipped v3.0 with an in-canvas AI agent for web build. For luxury media buyers, the implication is structural \u2014 brand presence in LLM answers is now a technical infrastructure question, not just a content brief.",
+      "source": "MarTech",
+      "date": "9 July 2026",
+      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
     },
     {
       "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "Adform Joins IAB Tech Lab to Operationalise AAMP 2.0 \u2014 The Open Infrastructure Layer for Agentic Advertising Is Taking Shape",
-      "summary": "Adform announced on 8 July its deepened collaboration with IAB Tech Lab to operationalise AAMP 2.0 (Agentic Advertising Management Protocols), the emerging open-standards framework that extends OpenRTB, AdCOM, and VAST into autonomous, machine-speed ad transactions. Adform has already opened 800+ capabilities in its FLOW platform via Model Context Protocol, enabling external AI agents to plan, buy, and optimise across the full advertising lifecycle. The announcement raises a direct board-level question for luxury media buyers: will your agency's agentic infrastructure be interoperable with the emerging standard, or will proprietary fragmentation erode the transparency luxury brands now demand?",
-      "source": "ExchangeWire",
-      "date": "8 July 2026",
-      "url": "https://www.exchangewire.com/blog/2026/07/08/adform-reinforces-commitment-to-open-standards-for-agentic-advertising/"
-    },
-    {
-      "category": "MAISONS & BRANDS",
       "score": 4,
-      "headline": "57% of Luxury Companies Are AI Laggards as Consumer Adoption Races Ahead \u2014 BCG's Maturity Verdict Is a Wake-Up Call",
-      "summary": "Luxury consumers are now more AI-fluent than the brands selling to them: 79% use LLMs to research luxury purchases, and AI tools are now trusted by 29% of respondents \u2014 almost on par with word of mouth, and more than twice as trusted as social media or influencers. BCG's companion analysis of 1,000 companies confirms 57% of luxury sector firms sit at 'emerging or stagnating' AI maturity levels. The implication for LVMH's data and media teams is direct: AI is not the future discovery channel \u2014 it is today's, and the competitive gap will compound.",
-      "source": "WWD",
-      "date": "7 July 2026",
-      "url": "https://wwd.com/business-news/business-features/luxury-consumers-prioritize-product-ai-price-value-ratio-1239056055/"
-    },
-    {
-      "category": "CREATIVE & CAMPAIGNS",
-      "score": 4,
-      "headline": "Pixel Moda Produces 14 Million AI-Assisted Pictures and Videos a Year for 900+ Luxury Brands \u2014 Industrial-Scale Creative Is Now the Norm",
-      "summary": "Business of Fashion spotlights Pixel Moda, the global e-commerce media producer that generates 14 million pictures and videos annually for over 900 luxury brands, retailers, and multi-brand platforms using a blend of AI-generated and AI-assisted production. The platform supported Etro's AI-driven content overhaul \u2014 presented at BoF VOICES in December 2025 \u2014 which resulted in a 46% growth in e-commerce revenue over twelve months while preserving brand identity. The case makes the strongest available argument that AI creative scale is now a direct revenue driver, not just a cost line.",
-      "source": "Business of Fashion",
-      "date": "7 July 2026",
-      "url": "https://www.businessoffashion.com/topics/technology/artificial-intelligence/"
-    },
-    {
-      "category": "DATA & PERFORMANCE",
-      "score": 4,
-      "headline": "Luxury Market Enters New Growth Cycle \u2014 AI Disruption of Purchase Funnels Identified as One of Four Structural Forces Reshaping the Sector",
-      "summary": "Bain's spring update of its Luxury Goods Worldwide Market Study \u2014 released today via its Media Center \u2014 frames 2026 as a stabilisation year (\u20ac1,440\u2013\u20ac1,470B total luxury spending, 0\u20132% growth at constant rates) shaped by four interconnected forces, explicitly naming AI's rapid reshuffling of go-to-customer funnels as a structural shift alongside experience-over-ownership trends and geographic rebalancing. The Americas are leading personal luxury recovery, driven by new-money US consumers from the AI and tech sectors. For LVMH's media and data teams, the report provides the macroeconomic framework justifying accelerated GEO and agentic commerce investment in H2.",
-      "source": "Bain & Company",
-      "date": "7 July 2026",
-      "url": "https://www.bain.com/about/media-center/press-releases/2026/global-luxury-stabilizes-amid-compounding-disruptions-as-brands-race-to-amplify-meaning-and-rebuild-relevance/"
+      "headline": "DoubleVerify Extends AI-Powered Brand Safety and Optimisation Into Meta and TikTok's Walled Gardens",
+      "summary": "DoubleVerify expanded DV Authentic AdVantage to Meta and TikTok on June 22, packaging pre-bid brand suitability controls, DV Scibids AI bidding, and independent measurement into a single product inside the walled gardens \u2014 where most luxury social spend lives. Early TikTok pilots showed 98% higher unique reach, 50% efficiency gains, and a 59% reduction in brand suitability incidents. For luxury brands managing adjacency risk at scale, this collapses three previously siloed vendor conversations into one unified performance loop.",
+      "source": "GlobeNewswire / DoubleVerify",
+      "date": "22 June 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/06/22/3315024/0/en/DoubleVerify-Expands-DV-Authentic-AdVantage-to-Meta-and-TikTok-an-AI-Powered-Solution-to-Optimize-Media-Quality-and-Performance.html"
     }
   ],
-  "date_slug": "2026-07-10"
+  "date_slug": "2026-07-13"
 }
