@@ -1,43 +1,52 @@
 {
-  "date": "Monday, 13 July 2026",
-  "lede": "AI-minted tech millionaires are rewriting luxury's customer map \u2014 while a new Gulf retailer deploys a 38-language AI stylist, measurement infrastructure races to keep pace with the collapse of traditional signal sources, and the creative-data stack rebuilds itself as a composable AI layer.",
+  "date": "Tuesday, 14 July 2026",
+  "lede": "AI is rewriting luxury's discovery layer \u2014 from algorithms replacing clienteling to ChatGPT unlocking first-party audience targeting \u2014 while the BoF/McKinsey luxury client report confirms the channel shift is permanent and irreversible.",
   "stories": [
     {
       "category": "MAISONS & BRANDS",
       "score": 5,
-      "headline": "AI Millionaires Are Rewriting Luxury's Customer Map \u2014 And Brands Are Not Ready for Their Taste",
-      "summary": "Reuters reports that an estimated 440,000 new U.S. millionaires \u2014 minted by AI company IPOs and equity gains \u2014 are luxury's most hotly debated growth thesis. The catch: BCG finds they spend one-third less on apparel and leather goods than generationally wealthy consumers, gravitating instead toward durables, wellness hardware, and experience. For maisons banking on North American strength to offset China weakness, the cultural gap between heritage luxury codes and Silicon Valley taste is now a strategy problem.",
-      "source": "BNN Bloomberg / Reuters",
-      "date": "8 July 2026",
-      "url": "https://www.bnnbloomberg.ca/business/2026/07/08/from-space-rocks-to-smartwatches-ai-millionaires-rewrite-the-luxury-playbook/"
-    },
-    {
-      "category": "COMMERCE & RETAIL",
-      "score": 4,
-      "headline": "Brands Seekers Deploys AI Personal Stylist Across 350+ Luxury Labels in 38 Languages",
-      "summary": "Bahrain-based global luxury retailer Brands Seekers has launched the Luxury Fashion Concierge AI Personal Stylist, serving shoppable, personalised recommendations across Balenciaga, Armani, Lacoste and 350+ brands in 38 languages across 150+ countries. The system analyses occasion, budget, preferred designers, dress code, colour, season and shopping goals \u2014 signalling that AI-native luxury retail is no longer confined to Western incumbents. It is the clearest emerging-market play yet on AI-powered luxury discovery at scale.",
-      "source": "WWD",
-      "date": "10 July 2026",
-      "url": "https://wwd.com/sourcing-journal/industry-news/brands-seekers-luxury-fashion-artificial-intelligence-1239063495/"
+      "headline": "BoF \u00d7 McKinsey: AI Algorithms Are Now Reshaping How Luxury Clients Discover, Compare and Decide \u2014 Brands Are Losing Control of the Relationship",
+      "summary": "Drawing on 2,000+ client surveys across the US and China, the BoF Insights/McKinsey 'Face to Face With Luxury Clients' report finds AI assistants are redefining the luxury shopping relationship \u2014 making behaviour more fluid, fragmented, and harder to influence through traditional brand channels. Luxury growth returns at 4\u20136% annually through 2030, but the brands that win will be those that learn to compete in AI-mediated discovery environments, not just boutiques. The report's AI findings land as a follow-on masterclass is scheduled for July 21 with BoF's Imran Amed and McKinsey's Gemma D'Auria.",
+      "source": "McKinsey & Company / Business of Fashion",
+      "date": "13 July 2026",
+      "url": "https://www.mckinsey.com/de/~/media/mckinsey/locations/europe%20and%20middle%20east/deutschland/news/presse/2026/2026-07-06%20state%20of%20luxury/the-state-of-fashion-face-to-face-with-luxury-clients.pdf"
     },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "MarTech Weekly: AdRoll MCP Server, SurfaceGX Share-of-Voice in LLMs, and Framer 3.0 Signal the Composable AI Ad Stack Is Here",
-      "summary": "This week's AI-powered martech roundup confirms the advertising infrastructure stack is fragmenting and re-composing around Model Context Protocol: AdRoll launched an MCP server piping ad data directly into ChatGPT and Claude; SurfaceGX added competitive share-of-voice reporting inside conversational search; and Framer shipped v3.0 with an in-canvas AI agent for web build. For luxury media buyers, the implication is structural \u2014 brand presence in LLM answers is now a technical infrastructure question, not just a content brief.",
-      "source": "MarTech",
-      "date": "9 July 2026",
-      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
+      "headline": "ChatGPT Ads Unlock Audience Targeting and Custom Lists \u2014 OpenAI's Platform Is Now Structurally Closer to Google and Meta for Serious Advertisers",
+      "summary": "OpenAI's ChatGPT advertising platform added audience targeting and custom first-party lists this week \u2014 moves that bring it closer to the targeting sophistication of Google and Meta. Advertisers can now upload customer email or phone lists under an 'Audiences' tag, while a separate update allows ChatGPT to generate AI-native ad creative for review and approval. The pace of feature rollout is accelerating faster than most media buyers can track, but platform glitches remain \u2014 including AI-mode citations routing clicks to competitor sites.",
+      "source": "MediaPost",
+      "date": "7 July 2026",
+      "url": "https://www.mediapost.com/publications/article/416345/chatgpt-keeps-rolling-out-major-ad-targeting-upda.html"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 4,
+      "headline": "AI Millionaires Are Rewriting Luxury's Customer Map \u2014 And Maisons Are Not Built for Their Taste",
+      "summary": "A Reuters investigation (published July 8) reveals that a new cohort of AI-wealth millionaires \u2014 SpaceX shareholders, OpenAI early employees \u2014 is emerging as luxury's fastest-growing buyer segment in North America, but their preferences skew toward experiences, tech-integrated products, and smartwatches over traditional fashion and leather goods. LVMH, Richemont, Herm\u00e8s and Kering all showed the Americas as their fastest-growing region in Q1 2026, driven partly by this wealth wave. The challenge: these buyers don't conform to heritage clienteling scripts, demanding a wholesale rethink of luxury's CRM and discovery models.",
+      "source": "Reuters",
+      "date": "8 July 2026",
+      "url": "https://money.usnews.com/investing/news/articles/2026-07-08/from-space-rocks-to-smartwatches-ai-millionaires-rewrite-the-luxury-playbook"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "DoubleVerify Extends AI-Powered Brand Safety and Optimisation Into Meta and TikTok's Walled Gardens",
-      "summary": "DoubleVerify expanded DV Authentic AdVantage to Meta and TikTok on June 22, packaging pre-bid brand suitability controls, DV Scibids AI bidding, and independent measurement into a single product inside the walled gardens \u2014 where most luxury social spend lives. Early TikTok pilots showed 98% higher unique reach, 50% efficiency gains, and a 59% reduction in brand suitability incidents. For luxury brands managing adjacency risk at scale, this collapses three previously siloed vendor conversations into one unified performance loop.",
-      "source": "GlobeNewswire / DoubleVerify",
-      "date": "22 June 2026",
-      "url": "https://www.globenewswire.com/news-release/2026/06/22/3315024/0/en/DoubleVerify-Expands-DV-Authentic-AdVantage-to-Meta-and-TikTok-an-AI-Powered-Solution-to-Optimize-Media-Quality-and-Performance.html"
+      "headline": "OpenAI Eyes $1 Trillion IPO Valuation With Advertising as a Core Revenue Pillar \u2014 Luxury Brands Are Already the Premium Target Audience",
+      "summary": "Forbes confirmed this week that OpenAI is targeting a Q4 2026 public debut at up to $1 trillion valuation, with advertising revenue \u2014 launched in January 2026 on free and Go-tier ChatGPT accounts \u2014 now a structural revenue pillar alongside subscriptions and API licensing. ChatGPT's 900 million weekly active users represent a premium intent-rich audience that luxury brands cannot afford to ignore, but reporting remains extremely limited with no demographic breakdown, audience insight or placement data. The IPO roadshow will force OpenAI to clarify the advertising product roadmap publicly for the first time.",
+      "source": "Forbes",
+      "date": "8 July 2026",
+      "url": "https://www.forbes.com/sites/investor-hub/article/openai-ipo-things-to-know/"
+    },
+    {
+      "category": "DATA & PERFORMANCE",
+      "score": 4,
+      "headline": "Richemont Opens Luxury's H1 Reporting Season \u2014 Jewellery Dominates as Hard Luxury's Data-Driven Discipline Sets the Standard",
+      "summary": "Richemont is first out of the blocks in luxury's H1 2026 earnings cycle, setting the tone for results from LVMH and Kering later this month, according to BoF (July 12). The Swiss group's FY26 results \u2014 \u20ac22.4bn in sales, up 11% at constant rates \u2014 were underpinned by Jewellery Maisons outperforming across all regions, with the Americas and Middle East compensating for softer Asia-Pacific momentum. The results signal that data-disciplined, AI-assisted demand forecasting (Richemont's hallmark) is now a measurable competitive moat in hard luxury.",
+      "source": "Business of Fashion",
+      "date": "12 July 2026",
+      "url": "https://www.businessoffashion.com/briefings/luxury/richemont-opens-luxurys-next-big-reporting-season/"
     }
   ],
-  "date_slug": "2026-07-13"
+  "date_slug": "2026-07-14"
 }
