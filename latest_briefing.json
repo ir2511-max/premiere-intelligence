@@ -1,52 +1,52 @@
 {
-  "date": "Tuesday, 14 July 2026",
-  "lede": "AI is rewriting luxury's discovery layer \u2014 from algorithms replacing clienteling to ChatGPT unlocking first-party audience targeting \u2014 while the BoF/McKinsey luxury client report confirms the channel shift is permanent and irreversible.",
+  "date": "Wednesday, 15 July 2026",
+  "lede": "Adobe breaks from walled-garden dependence with first-party AI bidding; L'Or\u00e9al locks in Gucci Beauty for 50 years; and the AI ad stack reshapes measurement, orchestration and brand safety in a single week.",
   "stories": [
-    {
-      "category": "MAISONS & BRANDS",
-      "score": 5,
-      "headline": "BoF \u00d7 McKinsey: AI Algorithms Are Now Reshaping How Luxury Clients Discover, Compare and Decide \u2014 Brands Are Losing Control of the Relationship",
-      "summary": "Drawing on 2,000+ client surveys across the US and China, the BoF Insights/McKinsey 'Face to Face With Luxury Clients' report finds AI assistants are redefining the luxury shopping relationship \u2014 making behaviour more fluid, fragmented, and harder to influence through traditional brand channels. Luxury growth returns at 4\u20136% annually through 2030, but the brands that win will be those that learn to compete in AI-mediated discovery environments, not just boutiques. The report's AI findings land as a follow-on masterclass is scheduled for July 21 with BoF's Imran Amed and McKinsey's Gemma D'Auria.",
-      "source": "McKinsey & Company / Business of Fashion",
-      "date": "13 July 2026",
-      "url": "https://www.mckinsey.com/de/~/media/mckinsey/locations/europe%20and%20middle%20east/deutschland/news/presse/2026/2026-07-06%20state%20of%20luxury/the-state-of-fashion-face-to-face-with-luxury-clients.pdf"
-    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "ChatGPT Ads Unlock Audience Targeting and Custom Lists \u2014 OpenAI's Platform Is Now Structurally Closer to Google and Meta for Serious Advertisers",
-      "summary": "OpenAI's ChatGPT advertising platform added audience targeting and custom first-party lists this week \u2014 moves that bring it closer to the targeting sophistication of Google and Meta. Advertisers can now upload customer email or phone lists under an 'Audiences' tag, while a separate update allows ChatGPT to generate AI-native ad creative for review and approval. The pace of feature rollout is accelerating faster than most media buyers can track, but platform glitches remain \u2014 including AI-mode citations routing clicks to competitor sites.",
-      "source": "MediaPost",
-      "date": "7 July 2026",
-      "url": "https://www.mediapost.com/publications/article/416345/chatgpt-keeps-rolling-out-major-ad-targeting-upda.html"
+      "headline": "Adobe Advertising Launches Custom Algorithms \u2014 First DSP to Train Campaign Bidding Directly on a Brand's Own First-Party Data",
+      "summary": "Adobe Advertising has released its Custom Algorithms product, allowing brands to train AI bidding models on raw Adobe Analytics data rather than filtered API signals \u2014 bypassing walled-garden data entirely. Unlike Google's PMax or Meta's Advantage+, the model belongs to the advertiser, not the platform. For luxury media teams running DTC or clienteling programmes inside Adobe's stack, this is a direct path to optimising programmatic spend on the client signals that actually matter.",
+      "source": "AdExchanger",
+      "date": "8 July 2026",
+      "url": "https://www.adexchanger.com/marketers/adobe-advertising-just-launched-its-own-custom-algorithms-product/"
     },
     {
-      "category": "COMMERCE & RETAIL",
+      "category": "MAISONS & BRANDS",
       "score": 4,
-      "headline": "AI Millionaires Are Rewriting Luxury's Customer Map \u2014 And Maisons Are Not Built for Their Taste",
-      "summary": "A Reuters investigation (published July 8) reveals that a new cohort of AI-wealth millionaires \u2014 SpaceX shareholders, OpenAI early employees \u2014 is emerging as luxury's fastest-growing buyer segment in North America, but their preferences skew toward experiences, tech-integrated products, and smartwatches over traditional fashion and leather goods. LVMH, Richemont, Herm\u00e8s and Kering all showed the Americas as their fastest-growing region in Q1 2026, driven partly by this wealth wave. The challenge: these buyers don't conform to heritage clienteling scripts, demanding a wholesale rethink of luxury's CRM and discovery models.",
-      "source": "Reuters",
-      "date": "8 July 2026",
-      "url": "https://money.usnews.com/investing/news/articles/2026-07-08/from-space-rocks-to-smartwatches-ai-millionaires-rewrite-the-luxury-playbook"
+      "headline": "L'Or\u00e9al Locks In Gucci Beauty for 50 Years \u2014 Kering's Data and Distribution Now Flow Through the World's Largest Beauty Group",
+      "summary": "L'Or\u00e9al has signed a 50-year exclusive worldwide licence with Kering to develop and distribute fragrances and beauty products for the Gucci brand, effective July 1, 2027 \u2014 one year ahead of Coty's original expiry. The deal, which follows L'Or\u00e9al's \u20ac4bn acquisition of Kering Beaut\u00e9, hands Gucci's beauty data infrastructure and consumer touchpoints to a group with 8,000 digital, tech and data talents and a stated AI partnership with NVIDIA and OpenAI. This is a media and data event as much as a commercial one: Gucci Beauty's omnichannel audience now enters L'Or\u00e9al's AI-driven personalisation ecosystem.",
+      "source": "L'Or\u00e9al",
+      "date": "7 July 2026",
+      "url": "https://www.loreal.com/en/press-release/group/l-oreal-enters-a-50-year-exclusive-worldwide-beauty-licence-with-kering--for-the-gucci-brand/"
     },
     {
       "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "OpenAI Eyes $1 Trillion IPO Valuation With Advertising as a Core Revenue Pillar \u2014 Luxury Brands Are Already the Premium Target Audience",
-      "summary": "Forbes confirmed this week that OpenAI is targeting a Q4 2026 public debut at up to $1 trillion valuation, with advertising revenue \u2014 launched in January 2026 on free and Go-tier ChatGPT accounts \u2014 now a structural revenue pillar alongside subscriptions and API licensing. ChatGPT's 900 million weekly active users represent a premium intent-rich audience that luxury brands cannot afford to ignore, but reporting remains extremely limited with no demographic breakdown, audience insight or placement data. The IPO roadshow will force OpenAI to clarify the advertising product roadmap publicly for the first time.",
-      "source": "Forbes",
-      "date": "8 July 2026",
-      "url": "https://www.forbes.com/sites/investor-hub/article/openai-ipo-things-to-know/"
+      "headline": "Smartly Synapse, Citelens and Attentive Brand Voice 2.0 Signal the AI Ad Stack Is Becoming Self-Orchestrating",
+      "summary": "The latest MarTech weekly confirms the AI advertising stack is consolidating around orchestration and GEO: Smartly launched Synapse, coordinating specialist agents across media planning, creative and budget allocation from a single architecture; Citelens debuted brand citation tracking across ChatGPT, Claude and Perplexity; and Attentive's Brand Voice 2.0 enforces tone consistency across SMS, email and RCS at scale. For luxury performance teams, the signal is unambiguous \u2014 the campaign management layer is being automated, and brand consistency across AI surfaces is now an operational requirement, not a branding aspiration.",
+      "source": "MarTech",
+      "date": "9 July 2026",
+      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
     },
     {
-      "category": "DATA & PERFORMANCE",
+      "category": "POLICY & RISK",
       "score": 4,
-      "headline": "Richemont Opens Luxury's H1 Reporting Season \u2014 Jewellery Dominates as Hard Luxury's Data-Driven Discipline Sets the Standard",
-      "summary": "Richemont is first out of the blocks in luxury's H1 2026 earnings cycle, setting the tone for results from LVMH and Kering later this month, according to BoF (July 12). The Swiss group's FY26 results \u2014 \u20ac22.4bn in sales, up 11% at constant rates \u2014 were underpinned by Jewellery Maisons outperforming across all regions, with the Americas and Middle East compensating for softer Asia-Pacific momentum. The results signal that data-disciplined, AI-assisted demand forecasting (Richemont's hallmark) is now a measurable competitive moat in hard luxury.",
-      "source": "Business of Fashion",
-      "date": "12 July 2026",
-      "url": "https://www.businessoffashion.com/briefings/luxury/richemont-opens-luxurys-next-big-reporting-season/"
+      "headline": "IAS CEO Lidiane Jones Faces the Defining Question of Brand Safety in 2026: What Does 'Media Quality' Mean When AI Makes the Content and Places the Ads?",
+      "summary": "Integral Ad Science's new CEO Lidiane Jones takes the helm as AI-generated content and AI-placed ads render traditional brand safety categories structurally inadequate. AdExchanger frames the challenge starkly: the tools built to protect brands from unsafe adjacencies were designed for human-curated media, not LLM-generated pages. For luxury media executives, this is a live risk: premium brand perception depends on contextual control that the current ad-tech stack was not built to guarantee at AI scale.",
+      "source": "AdExchanger",
+      "date": "9 July 2026",
+      "url": "https://www.adexchanger.com/latest/"
+    },
+    {
+      "category": "COMMERCE & RETAIL",
+      "score": 4,
+      "headline": "Salesforce Agentforce Commerce Goes GA with ChatGPT in July 2026 \u2014 AI-Referred Traffic Now Converts at 8x the Rate of Social",
+      "summary": "Salesforce's Agentforce Commerce has reached general availability with native ChatGPT integration this month, with Google's AI Mode and Gemini app integrations arriving this summer \u2014 enabling brands to sell directly inside AI conversations while remaining merchant of record. Salesforce data shows AI-referred traffic converting at eight times the rate of social, and retailers running their own shopper agents grew sales 59% faster than those on the sidelines. Luxury brands that have not yet structured product catalogues for agentic protocols face an accelerating conversion penalty.",
+      "source": "Salesforce",
+      "date": "9 July 2026",
+      "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/"
     }
   ],
-  "date_slug": "2026-07-14"
+  "date_slug": "2026-07-15"
 }

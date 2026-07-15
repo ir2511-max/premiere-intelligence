@@ -1,35 +1,5 @@
 [
   {
-    "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/",
-    "headline": "Salesforce Drops Its Biggest Agentforce Commerce Release Yet \u2014 Shopper Agents Now Live on ChatGPT and Gemini",
-    "sent_at": "2026-06-30T07:31:28.924131-04:00",
-    "date": "Tuesday, 30 June 2026"
-  },
-  {
-    "url": "https://www.businesswire.com/news/home/20260622234186/en/Smartly-Introduces-Smartly-Synapse-the-Intelligent-AI-Orchestration-Layer-Powering-Its-Advertising-Platform",
-    "headline": "Smartly Launches Synapse \u2014 An AI Orchestration and Memory Layer Across $7B in Ad Spend",
-    "sent_at": "2026-06-30T07:31:28.924150-04:00",
-    "date": "Tuesday, 30 June 2026"
-  },
-  {
-    "url": "https://ir.doubleverify.com/news-events/press-releases/press-releases-details/2026/DoubleVerify-Introduces-DV-Neura-the-Dynamic-AI-Engine-Powering-the-Future-of-Media-Quality-and-Effectiveness/default.aspx",
-    "headline": "DoubleVerify Launches DV Neura \u2014 A Cognitive AI Engine That Classifies 300x More Content and Enables Autonomous Campaign Execution",
-    "sent_at": "2026-06-30T07:31:28.924154-04:00",
-    "date": "Tuesday, 30 June 2026"
-  },
-  {
-    "url": "https://nielseniq.com/global/en/news-center/2026/niq-introduces-niq-cadence-a-compound-ai-operating-system-for-marketing-effectiveness/",
-    "headline": "NIQ Launches Cadence \u2014 A Compound AI Operating System That Replaces Fragmented Marketing Reports With a Single Decision Engine",
-    "sent_at": "2026-06-30T07:31:28.924157-04:00",
-    "date": "Tuesday, 30 June 2026"
-  },
-  {
-    "url": "https://www.marketingprofs.com/opinions/2026/55130/ai-update-june-26-2026-ai-news-and-views-from-the-past-week",
-    "headline": "Google's Personalised AI Search Is Making Brand Discovery Harder for Everyone Who Isn't Already Known",
-    "sent_at": "2026-06-30T07:31:28.924159-04:00",
-    "date": "Tuesday, 30 June 2026"
-  },
-  {
     "url": "https://www.sportsvideo.org/2026/06/25/warner-bros-discovery-and-aws-announce-ai-powered-advertising-technology-platform/",
     "headline": "Warner Bros. Discovery Rebuilds Its Entire Ad Stack Around Agentic AI on AWS \u2014 Planning, Buying, and Measurement Now Autonomous",
     "sent_at": "2026-07-01T07:32:26.441750-04:00",
@@ -316,5 +286,35 @@
     "headline": "Richemont Opens Luxury's H1 Reporting Season \u2014 Jewellery Dominates as Hard Luxury's Data-Driven Discipline Sets the Standard",
     "sent_at": "2026-07-14T07:32:40.932860-04:00",
     "date": "Tuesday, 14 July 2026"
+  },
+  {
+    "url": "https://www.adexchanger.com/marketers/adobe-advertising-just-launched-its-own-custom-algorithms-product/",
+    "headline": "Adobe Advertising Launches Custom Algorithms \u2014 First DSP to Train Campaign Bidding Directly on a Brand's Own First-Party Data",
+    "sent_at": "2026-07-15T07:32:22.093058-04:00",
+    "date": "Wednesday, 15 July 2026"
+  },
+  {
+    "url": "https://www.loreal.com/en/press-release/group/l-oreal-enters-a-50-year-exclusive-worldwide-beauty-licence-with-kering--for-the-gucci-brand/",
+    "headline": "L'Or\u00e9al Locks In Gucci Beauty for 50 Years \u2014 Kering's Data and Distribution Now Flow Through the World's Largest Beauty Group",
+    "sent_at": "2026-07-15T07:32:22.093075-04:00",
+    "date": "Wednesday, 15 July 2026"
+  },
+  {
+    "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "headline": "Smartly Synapse, Citelens and Attentive Brand Voice 2.0 Signal the AI Ad Stack Is Becoming Self-Orchestrating",
+    "sent_at": "2026-07-15T07:32:22.093080-04:00",
+    "date": "Wednesday, 15 July 2026"
+  },
+  {
+    "url": "https://www.adexchanger.com/latest/",
+    "headline": "IAS CEO Lidiane Jones Faces the Defining Question of Brand Safety in 2026: What Does 'Media Quality' Mean When AI Makes the Content and Places the Ads?",
+    "sent_at": "2026-07-15T07:32:22.093083-04:00",
+    "date": "Wednesday, 15 July 2026"
+  },
+  {
+    "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/",
+    "headline": "Salesforce Agentforce Commerce Goes GA with ChatGPT in July 2026 \u2014 AI-Referred Traffic Now Converts at 8x the Rate of Social",
+    "sent_at": "2026-07-15T07:32:22.093086-04:00",
+    "date": "Wednesday, 15 July 2026"
   }
 ]
