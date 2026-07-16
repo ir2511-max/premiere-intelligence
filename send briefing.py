@@ -99,8 +99,8 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=8000,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
+        max_tokens=16000,
+        tools=[{"type": "web_search_20260318", "name": "web_search"}],
         system=SYSTEM_PROMPT,
         messages=messages
     )
@@ -275,7 +275,18 @@ def main():
     recent_articles = load_history()
     print(f"Loaded {len(recent_articles)} recent articles to exclude.")
 
-    data = fetch_briefing(today_str, recent_articles)
+    # Retry once if JSON parsing fails
+    data = None
+    for attempt in range(2):
+        try:
+            data = fetch_briefing(today_str, recent_articles)
+            break
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt == 1:
+                raise
+            print("Retrying...")
+    
     if not data.get("stories"):
         print("No stories found today — skipping.")
         return
