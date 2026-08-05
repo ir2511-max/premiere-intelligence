@@ -1,52 +1,52 @@
 {
-  "date": "Wednesday, 15 July 2026",
-  "lede": "Adobe breaks from walled-garden dependence with first-party AI bidding; L'Or\u00e9al locks in Gucci Beauty for 50 years; and the AI ad stack reshapes measurement, orchestration and brand safety in a single week.",
+  "date": "Wednesday, 5 August 2026",
+  "lede": "A trifecta of structural shifts landed simultaneously this week: EU AI Act enforcement hit luxury advertisers, Meta monetised its AI agent infrastructure, and the luxury majors' H1 numbers revealed a category fault-line \u2014 all while real-time media ROI measurement made a landmark leap.",
   "stories": [
+    {
+      "category": "POLICY & RISK",
+      "score": 5,
+      "headline": "EU AI Act Article 50 Is Now Live \u2014 Every AI-Generated Ad Creative Reaching Europe Must Be Labelled",
+      "summary": "From 2 August 2026, the EU AI Act's Article 50 transparency obligations are fully enforceable, requiring any organisation deploying AI-generated images, video, audio or text in EU-facing campaigns to disclose their synthetic nature or face fines up to \u20ac15 million or 3% of global annual turnover. The European Commission published its final implementation guidelines on 20 July, broadening the definition of 'deep fake' well beyond US norms and explicitly pulling brand chatbots, generative ad creative and product imagery into scope. For luxury houses running AI-assisted seasonal campaigns across European markets \u2014 and US-headquartered holding companies whose content reaches EU audiences \u2014 this is an immediate compliance event, not a roadmap item.",
+      "source": "Mondaq",
+      "date": "3 August 2026",
+      "url": "https://www.mondaq.com/advertising-marketing-branding/1825496/eu-ai-act-guidance-expands-ai-disclosure-rules-for-advertisers-and-pr-teams"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 5,
+      "headline": "Meta Enters Cloud, Monetises AI Business Agents \u2014 and Positions Itself as the AI Infrastructure Layer for Luxury Commerce",
+      "summary": "On 2 August 2026, Meta confirmed it will sell excess AI computing capacity to enterprise clients \u2014 putting it in direct competition with AWS, Azure and Google Cloud \u2014 while simultaneously switching its WhatsApp and Instagram Business Agent to token-based billing at $2/million tokens, ending a free window that ran through July. The agent autonomously handles product questions, recommendations, appointment booking and transaction completion across Meta's billion-plus daily business threads. For luxury brands already piloting conversational commerce on WhatsApp, the pricing shift is both a cost signal and a strategic forcing function: Meta's agent infrastructure is no longer experimental, it is a commercial product.",
+      "source": "Agile Brand Guide / CNBC",
+      "date": "3 August 2026",
+      "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-3-2026/"
+    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "Adobe Advertising Launches Custom Algorithms \u2014 First DSP to Train Campaign Bidding Directly on a Brand's Own First-Party Data",
-      "summary": "Adobe Advertising has released its Custom Algorithms product, allowing brands to train AI bidding models on raw Adobe Analytics data rather than filtered API signals \u2014 bypassing walled-garden data entirely. Unlike Google's PMax or Meta's Advantage+, the model belongs to the advertiser, not the platform. For luxury media teams running DTC or clienteling programmes inside Adobe's stack, this is a direct path to optimising programmatic spend on the client signals that actually matter.",
-      "source": "AdExchanger",
-      "date": "8 July 2026",
-      "url": "https://www.adexchanger.com/marketers/adobe-advertising-just-launched-its-own-custom-algorithms-product/"
+      "headline": "StackAdapt Links Live Campaigns to $4 Trillion in Card-Transaction Data \u2014 Killing the Post-Campaign ROI Study",
+      "summary": "On 30 July 2026, StackAdapt launched its Economic Impact Report, a self-serve in-platform measurement product that connects media exposure in real time to over $4 trillion in consumer card-transaction data from Affinity Solutions \u2014 covering 150 million cards, 100 million consumers and 86 billion transactions. The tool moves economic impact analysis from post-campaign research into the active media-buying workflow, allowing in-flight optimisation against actual spend rather than proxy metrics like clicks or engagement. For performance teams at luxury conglomerates measuring the true revenue lift of brand and retail campaigns, this is the first deterministic, always-on alternative to bespoke econometric studies.",
+      "source": "Business Wire",
+      "date": "30 July 2026",
+      "url": "https://finance.yahoo.com/media-advertising/articles/stackadapt-introduces-platform-economic-impact-150000090.html"
     },
     {
       "category": "MAISONS & BRANDS",
       "score": 4,
-      "headline": "L'Or\u00e9al Locks In Gucci Beauty for 50 Years \u2014 Kering's Data and Distribution Now Flow Through the World's Largest Beauty Group",
-      "summary": "L'Or\u00e9al has signed a 50-year exclusive worldwide licence with Kering to develop and distribute fragrances and beauty products for the Gucci brand, effective July 1, 2027 \u2014 one year ahead of Coty's original expiry. The deal, which follows L'Or\u00e9al's \u20ac4bn acquisition of Kering Beaut\u00e9, hands Gucci's beauty data infrastructure and consumer touchpoints to a group with 8,000 digital, tech and data talents and a stated AI partnership with NVIDIA and OpenAI. This is a media and data event as much as a commercial one: Gucci Beauty's omnichannel audience now enters L'Or\u00e9al's AI-driven personalisation ecosystem.",
-      "source": "L'Or\u00e9al",
-      "date": "7 July 2026",
-      "url": "https://www.loreal.com/en/press-release/group/l-oreal-enters-a-50-year-exclusive-worldwide-beauty-licence-with-kering--for-the-gucci-brand/"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 4,
-      "headline": "Smartly Synapse, Citelens and Attentive Brand Voice 2.0 Signal the AI Ad Stack Is Becoming Self-Orchestrating",
-      "summary": "The latest MarTech weekly confirms the AI advertising stack is consolidating around orchestration and GEO: Smartly launched Synapse, coordinating specialist agents across media planning, creative and budget allocation from a single architecture; Citelens debuted brand citation tracking across ChatGPT, Claude and Perplexity; and Attentive's Brand Voice 2.0 enforces tone consistency across SMS, email and RCS at scale. For luxury performance teams, the signal is unambiguous \u2014 the campaign management layer is being automated, and brand consistency across AI surfaces is now an operational requirement, not a branding aspiration.",
-      "source": "MarTech",
-      "date": "9 July 2026",
-      "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/"
-    },
-    {
-      "category": "POLICY & RISK",
-      "score": 4,
-      "headline": "IAS CEO Lidiane Jones Faces the Defining Question of Brand Safety in 2026: What Does 'Media Quality' Mean When AI Makes the Content and Places the Ads?",
-      "summary": "Integral Ad Science's new CEO Lidiane Jones takes the helm as AI-generated content and AI-placed ads render traditional brand safety categories structurally inadequate. AdExchanger frames the challenge starkly: the tools built to protect brands from unsafe adjacencies were designed for human-curated media, not LLM-generated pages. For luxury media executives, this is a live risk: premium brand perception depends on contextual control that the current ad-tech stack was not built to guarantee at AI scale.",
-      "source": "AdExchanger",
-      "date": "9 July 2026",
-      "url": "https://www.adexchanger.com/latest/"
+      "headline": "Luxury's Recovery Has a Value-for-Money Problem: LVMH, Kering and Herm\u00e8s H1 Results Reveal a Category Fault-Line",
+      "summary": "The week's luxury earnings \u2014 LVMH reporting \u20ac38.6bn H1 revenue at 2% organic growth, Kering returning to growth for the first time in 12 quarters, Herm\u00e8s posting a characteristically calm quarter \u2014 did not convince senior Bernstein analyst Luca Solca that a broad recovery has arrived. His read: value for money explains the divergence, with jewellery and hard luxury accelerating (LVMH Watches & Jewelry +11% in Q2; Kering Jewelry +18%) while handbag-led fashion-and-leather merely stabilises. For media and data teams, the implication is a reallocation signal: campaign investment will need to follow product desirability, not legacy division weighting.",
+      "source": "Glossy",
+      "date": "31 July 2026",
+      "url": "https://www.glossy.co/fashion/luxury/luxury-value-for-money-lvmh-kering-hermes/"
     },
     {
       "category": "COMMERCE & RETAIL",
       "score": 4,
-      "headline": "Salesforce Agentforce Commerce Goes GA with ChatGPT in July 2026 \u2014 AI-Referred Traffic Now Converts at 8x the Rate of Social",
-      "summary": "Salesforce's Agentforce Commerce has reached general availability with native ChatGPT integration this month, with Google's AI Mode and Gemini app integrations arriving this summer \u2014 enabling brands to sell directly inside AI conversations while remaining merchant of record. Salesforce data shows AI-referred traffic converting at eight times the rate of social, and retailers running their own shopper agents grew sales 59% faster than those on the sidelines. Luxury brands that have not yet structured product catalogues for agentic protocols face an accelerating conversion penalty.",
-      "source": "Salesforce",
-      "date": "9 July 2026",
-      "url": "https://www.salesforce.com/news/stories/agentforce-commerce-announcement/"
+      "headline": "Kering Breaks a 12-Quarter Losing Streak \u2014 and CEO Luca de Meo's Turnaround Playbook Is Now Under the Microscope",
+      "summary": "Kering's official H1 2026 results, released 28 July via GlobeNewswire, confirmed H1 revenue of \u20ac7.22bn (up 1% comparable), with Q2 marking the group's first return to growth in three years and shares jumping 13.8% on the day. CEO Luca de Meo attributed recovery to brand playbook execution, 84 net store closures, \u20ac4.7bn in net debt reduction and Gucci retail performance improving seven sequential points. The divergence within the group \u2014 Kering Jewelry up 18% in Q2 while Gucci's mainland China performance remains below regional averages \u2014 gives luxury media planners a precise geo-and-category targeting brief for H2.",
+      "source": "GlobeNewswire",
+      "date": "28 July 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/07/28/3334524/0/en/kering-2026-first-half-results-back-to-growth-performance-improvement-strategy-execution-on-track.html"
     }
   ],
-  "date_slug": "2026-07-15"
+  "date_slug": "2026-08-05"
 }
