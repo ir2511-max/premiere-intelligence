@@ -1,52 +1,52 @@
 {
-  "date": "Wednesday, 5 August 2026",
-  "lede": "A trifecta of structural shifts landed simultaneously this week: EU AI Act enforcement hit luxury advertisers, Meta monetised its AI agent infrastructure, and the luxury majors' H1 numbers revealed a category fault-line \u2014 all while real-time media ROI measurement made a landmark leap.",
+  "date": "Thursday, 6 August 2026",
+  "lede": "Agentic commerce forces luxury's strategic reckoning with AI-mediated desire, while the ad industry's new power rankings reward the platforms that can close the gap between creative scale and brand control.",
   "stories": [
-    {
-      "category": "POLICY & RISK",
-      "score": 5,
-      "headline": "EU AI Act Article 50 Is Now Live \u2014 Every AI-Generated Ad Creative Reaching Europe Must Be Labelled",
-      "summary": "From 2 August 2026, the EU AI Act's Article 50 transparency obligations are fully enforceable, requiring any organisation deploying AI-generated images, video, audio or text in EU-facing campaigns to disclose their synthetic nature or face fines up to \u20ac15 million or 3% of global annual turnover. The European Commission published its final implementation guidelines on 20 July, broadening the definition of 'deep fake' well beyond US norms and explicitly pulling brand chatbots, generative ad creative and product imagery into scope. For luxury houses running AI-assisted seasonal campaigns across European markets \u2014 and US-headquartered holding companies whose content reaches EU audiences \u2014 this is an immediate compliance event, not a roadmap item.",
-      "source": "Mondaq",
-      "date": "3 August 2026",
-      "url": "https://www.mondaq.com/advertising-marketing-branding/1825496/eu-ai-act-guidance-expands-ai-disclosure-rules-for-advertisers-and-pr-teams"
-    },
-    {
-      "category": "MEDIA & PLATFORMS",
-      "score": 5,
-      "headline": "Meta Enters Cloud, Monetises AI Business Agents \u2014 and Positions Itself as the AI Infrastructure Layer for Luxury Commerce",
-      "summary": "On 2 August 2026, Meta confirmed it will sell excess AI computing capacity to enterprise clients \u2014 putting it in direct competition with AWS, Azure and Google Cloud \u2014 while simultaneously switching its WhatsApp and Instagram Business Agent to token-based billing at $2/million tokens, ending a free window that ran through July. The agent autonomously handles product questions, recommendations, appointment booking and transaction completion across Meta's billion-plus daily business threads. For luxury brands already piloting conversational commerce on WhatsApp, the pricing shift is both a cost signal and a strategic forcing function: Meta's agent infrastructure is no longer experimental, it is a commercial product.",
-      "source": "Agile Brand Guide / CNBC",
-      "date": "3 August 2026",
-      "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-august-3-2026/"
-    },
     {
       "category": "DATA & PERFORMANCE",
       "score": 5,
-      "headline": "StackAdapt Links Live Campaigns to $4 Trillion in Card-Transaction Data \u2014 Killing the Post-Campaign ROI Study",
-      "summary": "On 30 July 2026, StackAdapt launched its Economic Impact Report, a self-serve in-platform measurement product that connects media exposure in real time to over $4 trillion in consumer card-transaction data from Affinity Solutions \u2014 covering 150 million cards, 100 million consumers and 86 billion transactions. The tool moves economic impact analysis from post-campaign research into the active media-buying workflow, allowing in-flight optimisation against actual spend rather than proxy metrics like clicks or engagement. For performance teams at luxury conglomerates measuring the true revenue lift of brand and retail campaigns, this is the first deterministic, always-on alternative to bespoke econometric studies.",
-      "source": "Business Wire",
-      "date": "30 July 2026",
-      "url": "https://finance.yahoo.com/media-advertising/articles/stackadapt-introduces-platform-economic-impact-150000090.html"
+      "headline": "Adweek's 2026 Tech Stack Awards Crown the AI Creative and Agentic Platforms Reshaping Performance Marketing \u2014 With Luxury Already Feeling the Lift",
+      "summary": "Adweek's August 4 Tech Stack Awards named Smartly the Creative Tech winner, citing Farfetch's 70% order increase after deploying AI-augmented lifestyle imagery \u2014 the most concrete luxury e-commerce proof point in a major ad-industry award to date. Attentive took Agentic AI Platform of the Year, and TripleLift won Sell-Side Programmatic, together signalling that the winning martech stack is converging around identity, agentic orchestration, and AI-native creative production. For luxury media executives, the Farfetch data point is the one to screenshot: AI-generated imagery is no longer an experiment \u2014 it is a conversion lever with a documented ROI.",
+      "source": "Adweek",
+      "date": "4 August 2026",
+      "url": "https://www.adweek.com/brand-marketing/2026-tech-stack-awards-ai-data-marketing-technology/"
     },
     {
-      "category": "MAISONS & BRANDS",
+      "category": "COMMERCE & RETAIL",
+      "score": 5,
+      "headline": "Agentic Commerce Is Retail's Next Frontier \u2014 But Luxury Is the Segment Most Likely to Resist the Bot",
+      "summary": "A Retail Technology Innovation Hub commentary published August 3 argued that while agentic AI is structurally rewriting how consumers shop, luxury is the category least likely to cede the final decision to an agent \u2014 with Walmart's own Director of Customer Data pointing to an in-person, analogue counter-trend for high-spend purchases. The piece maps the divergence clearly: commodity and considered purchases go agentic fast, while luxury doubles down on experiential, human-centred touchpoints. The strategic implication for LVMH is pointed: winning in an agentic world means owning the data signals that inform the agent's recommendation, not the checkout itself.",
+      "source": "Retail Technology Innovation Hub",
+      "date": "3 August 2026",
+      "url": "https://retailtechinnovationhub.com/home/2026/8/2/agentic-commerce-is-the-next-frontier-of-retail-but-many-retailers-are-struggling-to-keep-up"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
       "score": 4,
-      "headline": "Luxury's Recovery Has a Value-for-Money Problem: LVMH, Kering and Herm\u00e8s H1 Results Reveal a Category Fault-Line",
-      "summary": "The week's luxury earnings \u2014 LVMH reporting \u20ac38.6bn H1 revenue at 2% organic growth, Kering returning to growth for the first time in 12 quarters, Herm\u00e8s posting a characteristically calm quarter \u2014 did not convince senior Bernstein analyst Luca Solca that a broad recovery has arrived. His read: value for money explains the divergence, with jewellery and hard luxury accelerating (LVMH Watches & Jewelry +11% in Q2; Kering Jewelry +18%) while handbag-led fashion-and-leather merely stabilises. For media and data teams, the implication is a reallocation signal: campaign investment will need to follow product desirability, not legacy division weighting.",
-      "source": "Glossy",
-      "date": "31 July 2026",
-      "url": "https://www.glossy.co/fashion/luxury/luxury-value-for-money-lvmh-kering-hermes/"
+      "headline": "TripleLift Wins Adweek's Sell-Side Programmatic Award by Treating Creative, Curation, Audience and Measurement as One System \u2014 Not Four",
+      "summary": "Named August 4, TripleLift's Tech Stack win is notable less for the trophy and more for what it signals about where programmatic value is migrating: away from siloed point solutions and toward orchestrated intelligence that coordinates every campaign layer simultaneously. Its TL Spark platform claims 70% longer view time than standard banners and 3.6x brand lift in CTV \u2014 metrics that matter for luxury houses trying to protect brand perception while automating at scale. As premium inventory curation becomes the new brand-safety moat, sell-side platforms that can guarantee context quality will command a disproportionate share of luxury budgets.",
+      "source": "PR Newswire",
+      "date": "4 August 2026",
+      "url": "https://www.prnewswire.com/news-releases/triplelift-named-a-winner-in-adweeks-2026-tech-stack-awards-302842705.html"
+    },
+    {
+      "category": "MEDIA & PLATFORMS",
+      "score": 4,
+      "headline": "Attentive Named Best Agentic AI Platform at Adweek Tech Stack Awards \u2014 Replacing Static Campaigns With Adaptive Customer Journeys Across SMS, Email, RCS and Push",
+      "summary": "Attentive's August 4 win in the Agentic AI category \u2014 beating a field of autonomous marketing systems \u2014 validates the strategic bet that the next performance frontier is not smarter bidding but smarter sequencing: AI that reads real-time behaviour and decides the best message, channel and moment without human intervention. More than 8,000 brands, including high-growth retail and e-commerce players, already run on the platform. For luxury marketers, the implication is immediate: the 1-to-1 clienteling promise that defined luxury CRM is now achievable at scale, but only for brands that have unified their customer identity data well enough to feed the agent.",
+      "source": "BusinessWire",
+      "date": "4 August 2026",
+      "url": "https://finance.yahoo.com/technology/ai/articles/attentive-wins-2026-adweek-tech-130000410.html"
     },
     {
       "category": "COMMERCE & RETAIL",
       "score": 4,
-      "headline": "Kering Breaks a 12-Quarter Losing Streak \u2014 and CEO Luca de Meo's Turnaround Playbook Is Now Under the Microscope",
-      "summary": "Kering's official H1 2026 results, released 28 July via GlobeNewswire, confirmed H1 revenue of \u20ac7.22bn (up 1% comparable), with Q2 marking the group's first return to growth in three years and shares jumping 13.8% on the day. CEO Luca de Meo attributed recovery to brand playbook execution, 84 net store closures, \u20ac4.7bn in net debt reduction and Gucci retail performance improving seven sequential points. The divergence within the group \u2014 Kering Jewelry up 18% in Q2 while Gucci's mainland China performance remains below regional averages \u2014 gives luxury media planners a precise geo-and-category targeting brief for H2.",
-      "source": "GlobeNewswire",
-      "date": "28 July 2026",
-      "url": "https://www.globenewswire.com/news-release/2026/07/28/3334524/0/en/kering-2026-first-half-results-back-to-growth-performance-improvement-strategy-execution-on-track.html"
+      "headline": "The Week in Ecommerce: AI Commerce Agents and Agentic Conversion Lifts Reset Platform Economics for Retailers \u2014 Including Luxury",
+      "summary": "The Art of CTO's August 3 ecommerce intelligence briefing confirmed that agentic AI is now proving measurable conversion lift at scale: Amazon's Rufus chatbot doubled Black Friday sales conversion versus non-agent sessions, while Kohl's AI gift finder data underscored a structural shift toward end-to-end agentic journeys. The same briefing flagged AI spend as a growing share of retailer capex, with implications for how luxury players price and position their digital product data for machine-readable discovery. Brands not investing in structured, agent-friendly product catalogues risk becoming invisible to the growing share of purchase journeys that start \u2014 and increasingly end \u2014 inside an AI interface.",
+      "source": "The Art of CTO",
+      "date": "3 August 2026",
+      "url": "https://theartofcto.com/industry-outlook/2026-w32-ecommerce-industry-outlook"
     }
   ],
-  "date_slug": "2026-08-05"
+  "date_slug": "2026-08-06"
 }
