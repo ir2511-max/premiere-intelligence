@@ -85,8 +85,20 @@ Your final selection should maximize both relevance AND recency.
 Return ONLY valid JSON, no markdown, no preamble:
 {
   "date": "Day, D Month YYYY",
-  "days_old": 1
   "lede": "One sentence editorial summary of today's signal.",
+  "stories": [
+    {
+      "category": "MAISONS & BRANDS",
+      "score": 5,
+      "headline": "Story headline here",
+      "summary": "MAXIMUM 3 sentences. No more. Sharp and editorial.",
+      "source": "Publication Name",
+      "date": "D Month YYYY",
+      "days_old": 1,
+      "url": "https://real-article-url.com"
+    }
+  ]
+}
   "stories": [
     {
       "category": "MAISONS & BRANDS",
@@ -114,7 +126,7 @@ def fetch_briefing(today_str: str, recent_articles: list) -> dict:
     messages = [{"role": "user", "content": (
         f"Today is {today_str}. Search for the 5 most important and MOST RECENT news stories published in the past 7 days. "
         f"Prioritize stories published in the last 72 hours whenever possible. "
-m       f"Avoid selecting stories that are 5-7 days old unless they are significantly more important than newer alternatives. "
+        f"Avoid selecting stories that are 5-7 days old unless they are significantly more important than newer alternatives. "
         f"at the intersection of AI, luxury, media, and technology. "
         f"For each story, confirm its publication date before including it. "
         f"Return only verified, linkable stories in the JSON format specified."
@@ -301,19 +313,49 @@ def main():
 
     # Retry once if JSON parsing fails
     data = None
-    for attempt in range(2):
-        try:
-            data = fetch_briefing(today_str, recent_articles)
-            break
-        except Exception as e:
-            print(f"Attempt {attempt + 1} failed: {e}")
-            if attempt == 1:
-                raise
-            print("Retrying...")
-    
-    if not data.get("stories"):
-        print("No stories found today — skipping.")
-        return
+   for attempt in range(2):
+    try:
+        data = fetch_briefing(today_str, recent_articles)
+        break
+    except Exception as e:
+        print(f"Attempt {attempt + 1} failed: {e}")
+        if attempt == 1:
+            raise
+        print("Retrying...")
+
+# Validate story freshness
+MAX_AGE_DAYS = 7
+
+validated_stories = []
+
+for story in data.get("stories", []):
+    try:
+        pub_date = datetime.strptime(
+            story["date"],
+            "%d %B %Y"
+        )
+
+        age_days = (datetime.now() - pub_date).days
+
+        if age_days <= MAX_AGE_DAYS:
+            validated_stories.append(story)
+        else:
+            print(
+                f"Removing old story: "
+                f"{story['headline']} ({age_days} days old)"
+            )
+
+    except Exception as e:
+        print(
+            f"Could not validate date for "
+            f"{story.get('headline', 'Unknown')}: {e}"
+        )
+
+data["stories"] = validated_stories
+
+if not data.get("stories"):
+    print("No stories found today — skipping.")
+    return
 
     print(f"Found {len(data['stories'])} stories.")
 
