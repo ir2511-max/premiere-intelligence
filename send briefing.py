@@ -99,18 +99,7 @@ Return ONLY valid JSON, no markdown, no preamble:
     }
   ]
 }
-  "stories": [
-    {
-      "category": "MAISONS & BRANDS",
-      "score": 5,
-      "headline": "Story headline here",
-      "summary": "MAXIMUM 3 sentences. No more. Sharp and editorial.",
-      "source": "Publication Name",
-      "date": "D Month YYYY",
-      "url": "https://real-article-url.com"
-    }
-  ]
-}"""
+
 
 # ── FETCH BRIEFING ────────────────────────────────────────────────────────────
 def fetch_briefing(today_str: str, recent_articles: list) -> dict:
